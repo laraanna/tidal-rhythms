@@ -44,7 +44,7 @@ function apply(lang: Lang) {
   });
 
   document.querySelectorAll('[data-lang-knob]').forEach((knob) => {
-    knob.classList.toggle('translate-x-4', lang === 'fr');
+    knob.classList.toggle('translate-x-5', lang === 'fr');
   });
   document.querySelectorAll('[data-lang-label="en"]').forEach((label) => {
     label.classList.toggle('opacity-80', lang === 'en');

@@ -1,0 +1,41 @@
+---
+import { t } from '../i18n';
+---
+
+<aside
+  class="fixed right-8 bottom-8 z-[400] w-[19.5rem] bg-black/75 px-5 py-5 text-white backdrop-blur-[2px] max-lg:hidden"
+  data-contact-card
+>
+  <div class="flex items-start justify-between gap-3">
+    <p
+      class="font-founders text-[0.9rem] leading-[1.35] font-light tracking-[0.2em] uppercase"
+      data-i18n-html="hero.contactHeading"
+      set:html={t('hero.contactHeading')}
+    />
+    <button
+      type="button"
+      class="mt-0.5 text-[1.15rem] leading-none text-white/80"
+      data-contact-close
+      data-i18n-aria-label="hero.contactCloseAria"
+      aria-label={t('hero.contactCloseAria')}
+    >
+      ×
+    </button>
+  </div>
+  <p class="font-founders mt-6 text-l font-light tracking-wide" data-i18n="hero.contactPhone">
+    {t('hero.contactPhone')}
+  </p>
+  <a
+    href={`mailto:${t('hero.contactEmail')}`}
+    class="font-founders mt-1.5 block text-l font-light tracking-wide text-white"
+    data-i18n="hero.contactEmail"
+  >
+    {t('hero.contactEmail')}
+  </a>
+</aside>
+
+<script>
+  document.querySelector('[data-contact-close]')?.addEventListener('click', () => {
+    document.querySelector('[data-contact-card]')?.classList.add('hidden');
+  });
+</script>
