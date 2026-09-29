@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": {
+      "en": "Tidal Rhythms",
+      "fr": ""
+    },
+    "description": {
+      "en": "Dance and movement by Mytam Mayo-Smith",
+      "fr": ""
+    }
+  },
+  "hero": {
+    "logoTidal": {
+      "en": "Tidal",
+      "fr": ""
+    },
+    "logoRhythms": {
+      "en": "Rhythms",
+      "fr": ""
+    },
+    "motionAlt": {
+      "en": "Dancer in motion, bending toward the studio floor",
+      "fr": ""
+    },
+    "floorAlt": {
+      "en": "Dancer stretching on the studio floor",
+      "fr": ""
+    },
+    "titleDance": {
+      "en": "Dance",
+      "fr": ""
+    },
+    "titleAnd": {
+      "en": "and",
+      "fr": ""
+    },
+    "titleMovement": {
+      "en": "Movement",
+      "fr": ""
+    },
+    "byline": {
+      "en": "By Mytam Mayo-Smith",
+      "fr": ""
+    },
+    "langAriaEn": {
+      "en": "Switch language, English selected",
+      "fr": ""
+    },
+    "langAriaFr": {
+      "en": "Switch language, French selected",
+      "fr": ""
+    },
+    "menu": {
+      "en": "Menu",
+      "fr": ""
+    },
+    "menuAria": {
+      "en": "Open menu",
+      "fr": ""
+    },
+    "contactHeading": {
+      "en": "Contact me for<br />inquiries",
+      "fr": ""
+    },
+    "contactCloseAria": {
+      "en": "Close contact",
+      "fr": ""
+    },
+    "contactPhone": {
+      "en": "+33 6 00 00 00 00",
+      "fr": ""
+    },
+    "contactEmail": {
+      "en": "mytam.mayo-smith@cri-paris.org",
+      "fr": ""
+    }
+  },
+  "intro": {
+    "body": {
+      "en": "Movement stands at the center of Tidal Rhythms. As a way to reconnect, to our bodies, our emotions, our identities and ancestries, to one another, and to the world around us.",
+      "fr": ""
+    }
+  }
+}

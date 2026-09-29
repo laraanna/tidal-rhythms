@@ -82,6 +82,7 @@
 }
 
 /* @link https://utopia.fyi/type/calculator?c=390,12,1.2,1920,18,1.125,7,2,1440&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/space/calculator?c=390,12,1.2,1920,18,1.125,7,2,1440&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 :root {
   --step--2: clamp(0.5208rem, 0.427rem + 0.3849vw, 0.8889rem);
   --step--1: clamp(0.625rem, 0.5294rem + 0.3922vw, 1rem);
@@ -93,11 +94,46 @@
   --step-5: clamp(1.8662rem, 1.8252rem + 0.1684vw, 2.0273rem);
   --step-6: clamp(2.2395rem, 2.229rem + 0.0431vw, 2.2807rem);
   --step-7: clamp(2.5658rem, 2.7184rem + -0.1272vw, 2.6874rem);
+  --step-8: clamp(2.8865rem, 3.3111rem + -0.3538vw, 3.2249rem);
+  --step-9: clamp(3.2473rem, 4.0285rem + -0.651vw, 3.8698rem);
+
+  --space-3xs: clamp(0.1875rem, 0.1556rem + 0.1307vw, 0.3125rem);
+  --space-2xs: clamp(0.375rem, 0.3272rem + 0.1961vw, 0.5625rem);
+  --space-xs: clamp(0.5625rem, 0.4828rem + 0.3268vw, 0.875rem);
+  --space-s: clamp(0.75rem, 0.6544rem + 0.3922vw, 1.125rem);
+  --space-m: clamp(1.125rem, 0.9816rem + 0.5882vw, 1.6875rem);
+  --space-l: clamp(1.5rem, 1.3088rem + 0.7843vw, 2.25rem);
+  --space-xl: clamp(2.25rem, 1.9632rem + 1.1765vw, 3.375rem);
+  --space-2xl: clamp(3rem, 2.6176rem + 1.5686vw, 4.5rem);
+  --space-3xl: clamp(4.5rem, 3.9265rem + 2.3529vw, 6.75rem);
+  --space-4xl: clamp(6rem, 5.2353rem + 3.1373vw, 9rem);
+  --space-5xl: clamp(7.5rem, 6.5441rem + 3.9216vw, 11.25rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.1875rem, 0.0919rem + 0.3922vw, 0.5625rem);
+  --space-2xs-xs: clamp(0.375rem, 0.2475rem + 0.5229vw, 0.875rem);
+  --space-xs-s: clamp(0.5625rem, 0.4191rem + 0.5882vw, 1.125rem);
+  --space-s-m: clamp(0.75rem, 0.511rem + 0.9804vw, 1.6875rem);
+  --space-m-l: clamp(1.125rem, 0.8382rem + 1.1765vw, 2.25rem);
+  --space-l-xl: clamp(1.5rem, 1.0221rem + 1.9608vw, 3.375rem);
+  --space-xl-2xl: clamp(2.25rem, 1.6765rem + 2.3529vw, 4.5rem);
+  --space-2xl-3xl: clamp(3rem, 2.0441rem + 3.9216vw, 6.75rem);
+  --space-3xl-4xl: clamp(4.5rem, 3.3529rem + 4.7059vw, 9rem);
+  --space-4xl-5xl: clamp(6rem, 4.6618rem + 5.4902vw, 11.25rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(0.75rem, 0.3676rem + 1.5686vw, 2.25rem);
+
+  --charcoal: #414141;
+  --paper: #fefefe;
 }
 
 @theme inline {
+  --font-sans: "Founders Grotesk", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
   --font-cormorant: "Cormorant Garamond", serif;
   --font-founders: "Founders Grotesk", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
   --text-step--2: var(--step--2);
   --text-step--1: var(--step--1);
   --text-step-0: var(--step-0);
@@ -108,6 +144,32 @@
   --text-step-5: var(--step-5);
   --text-step-6: var(--step-6);
   --text-step-7: var(--step-7);
+  --text-step-8: var(--step-8);
+  --text-step-9: var(--step-9);
+  --spacing-3xs: var(--space-3xs);
+  --spacing-2xs: var(--space-2xs);
+  --spacing-xs: var(--space-xs);
+  --spacing-s: var(--space-s);
+  --spacing-m: var(--space-m);
+  --spacing-l: var(--space-l);
+  --spacing-xl: var(--space-xl);
+  --spacing-2xl: var(--space-2xl);
+  --spacing-3xl: var(--space-3xl);
+  --spacing-4xl: var(--space-4xl);
+  --spacing-5xl: var(--space-5xl);
+  --spacing-3xs-2xs: var(--space-3xs-2xs);
+  --spacing-2xs-xs: var(--space-2xs-xs);
+  --spacing-xs-s: var(--space-xs-s);
+  --spacing-s-m: var(--space-s-m);
+  --spacing-m-l: var(--space-m-l);
+  --spacing-l-xl: var(--space-l-xl);
+  --spacing-xl-2xl: var(--space-xl-2xl);
+  --spacing-2xl-3xl: var(--space-2xl-3xl);
+  --spacing-3xl-4xl: var(--space-3xl-4xl);
+  --spacing-4xl-5xl: var(--space-4xl-5xl);
+  --spacing-s-l: var(--space-s-l);
+  --color-charcoal: var(--charcoal);
+  --color-paper: var(--paper);
 }
 
 .cormorant-garamond {
@@ -119,4 +181,15 @@
 .founders-grotesk {
   font-family: var(--font-founders);
   font-style: normal;
+}
+
+.nunito {
+  font-family: var(--font-nunito);
+}
+
+html,
+body {
+  min-height: 100%;
+  background: #111;
+  color: #fff;
 }
