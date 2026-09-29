@@ -1,1 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-SemiboldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=390,12,1.2,1920,18,1.125,7,2,1440&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+:root {
+  --step--2: clamp(0.5208rem, 0.427rem + 0.3849vw, 0.8889rem);
+  --step--1: clamp(0.625rem, 0.5294rem + 0.3922vw, 1rem);
+  --step-0: clamp(0.75rem, 0.6544rem + 0.3922vw, 1.125rem);
+  --step-1: clamp(0.9rem, 0.8068rem + 0.3824vw, 1.2656rem);
+  --step-2: clamp(1.08rem, 0.9924rem + 0.3596vw, 1.4238rem);
+  --step-3: clamp(1.296rem, 1.218rem + 0.3198vw, 1.6018rem);
+  --step-4: clamp(1.5552rem, 1.4923rem + 0.2581vw, 1.802rem);
+  --step-5: clamp(1.8662rem, 1.8252rem + 0.1684vw, 2.0273rem);
+  --step-6: clamp(2.2395rem, 2.229rem + 0.0431vw, 2.2807rem);
+  --step-7: clamp(2.5658rem, 2.7184rem + -0.1272vw, 2.6874rem);
+}
+
+@theme inline {
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-founders: "Founders Grotesk", sans-serif;
+  --text-step--2: var(--step--2);
+  --text-step--1: var(--step--1);
+  --text-step-0: var(--step-0);
+  --text-step-1: var(--step-1);
+  --text-step-2: var(--step-2);
+  --text-step-3: var(--step-3);
+  --text-step-4: var(--step-4);
+  --text-step-5: var(--step-5);
+  --text-step-6: var(--step-6);
+  --text-step-7: var(--step-7);
+}
+
+.cormorant-garamond {
+  font-family: var(--font-cormorant);
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.founders-grotesk {
+  font-family: var(--font-founders);
+  font-style: normal;
+}
