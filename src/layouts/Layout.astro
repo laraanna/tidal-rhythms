@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { t } from '../i18n';
 import Menu from '../components/Menu.astro';
 import ContactCard from '../components/ContactCard.astro';
+import Trainings from '../components/Trainings.astro';
 ---
 
 <!doctype html>
@@ -22,6 +23,7 @@ import ContactCard from '../components/ContactCard.astro';
   </head>
   <body class="antialiased">
     <Menu />
+    <Trainings />
     <ContactCard />
     <slot />
   </body>
@@ -30,12 +32,14 @@ import ContactCard from '../components/ContactCard.astro';
 <script>
   import { initI18n } from '../scripts/i18n';
   import { initMenu } from '../scripts/menu';
+  import { initTrainings } from '../scripts/trainings';
   import { initLenis } from '../scripts/lenis';
   import { initFadeIn } from '../scripts/fade';
   import { initCursor } from '../scripts/cursor';
   initLenis();
   initI18n();
   initMenu();
+  initTrainings();
   initFadeIn();
   initCursor();
 </script>

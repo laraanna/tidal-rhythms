@@ -1,0 +1,61 @@
+---
+import { Image } from 'astro:assets';
+import { t } from '../i18n';
+import portrait from '../images/mytam_portrait.jpg';
+
+const paragraphs = ['about.p1', 'about.p2', 'about.p3', 'about.p4'] as const;
+---
+
+<section
+  id="about"
+  class="bg-mist text-charcoal flex min-h-dvh items-center px-8 py-4xl md:px-16 lg:px-20 lg:pt-24 lg:pb-44 xl:px-24"
+>
+  <div
+    class="mx-auto grid w-full max-w-[92rem] items-center gap-12 lg:grid-cols-[1fr_auto_1fr] lg:gap-14 xl:gap-20"
+  >
+    <h2
+      class="font-founders text-step-0 leading-[1.75] font-normal tracking-[0.24em] uppercase md:text-step-1"
+      data-i18n-html="about.title"
+      data-fade-in
+      set:html={t('about.title')}
+    />
+
+    <div class="justify-self-center" data-fade-in style="--fade-delay: 80ms">
+      <Image
+        src={portrait}
+        alt={t('about.photoAlt')}
+        data-i18n-alt="about.photoAlt"
+        widths={[480, 720, 1080, 1400]}
+        sizes="(min-width: 1024px) 28vw, 85vw"
+        class="h-auto w-full max-w-[22rem] object-cover xl:max-w-[26rem]"
+      />
+    </div>
+
+    <div class="flex max-w-[22rem] flex-col xl:max-w-[26rem]" data-fade-in style="--fade-delay: 140ms">
+      <div class="flex flex-col gap-5 lg:gap-6">
+        {
+          paragraphs.map((key) => (
+            <p
+              class="font-nunito text-step--2 leading-[1.65] font-light md:text-step--1"
+              data-i18n={key}
+            >
+              {t(key)}
+            </p>
+          ))
+        }
+      </div>
+      <button
+        type="button"
+        class="font-nunito mt-8 inline-flex w-fit border border-charcoal px-10 py-3 text-step--1 font-light tracking-[0.32em] uppercase lg:mt-10"
+        data-trainings-open
+        data-i18n="about.trainings"
+        data-i18n-aria-label="about.trainingsOpenAria"
+        aria-haspopup="dialog"
+        aria-controls="trainings-title"
+        aria-label={t('about.trainingsOpenAria')}
+      >
+        {t('about.trainings')}
+      </button>
+    </div>
+  </div>
+</section>

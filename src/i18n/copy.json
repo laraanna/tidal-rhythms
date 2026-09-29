@@ -173,6 +173,48 @@
       "fr": ""
     }
   },
+  "about": {
+    "title": {
+      "en": "Dancer, workshop<br />creator, collaborator<br />and facilitator.",
+      "fr": ""
+    },
+    "p1": {
+      "en": "My work is centered on creating shared moments where we can be present, sensitive, creative together; where we can reflect on the cultures we are part of and our ways of seeing.",
+      "fr": ""
+    },
+    "p2": {
+      "en": "The co-created workshops are primarily based on movement, collective dialogue, and musical soundscapes to reflect on a variety of connected topics such as patriarchy, mental health, and ecology. I have also offered dance as therapy, for domestic violence and sexual violence survivors in an institutional framework.",
+      "fr": ""
+    },
+    "p3": {
+      "en": "Dance, movement, is an integral part of the workshops. I see movement as a way to reconnect to our body, to the persons that surround us, to the life that surrounds us, and to the nature we may not always see, but can feel.",
+      "fr": ""
+    },
+    "p4": {
+      "en": "Personally, dancing is a practice of decolonization. Of Vietnamese and U.S. origins, I feel the legacy of colonialism, racism, and war. Through dance, I find the space to embody, and release.",
+      "fr": ""
+    },
+    "trainings": {
+      "en": "Trainings",
+      "fr": ""
+    },
+    "trainingsTitle": {
+      "en": "Training and practices",
+      "fr": ""
+    },
+    "trainingsOpenAria": {
+      "en": "Open trainings",
+      "fr": ""
+    },
+    "trainingsList": {
+      "en": "<ul><li><a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Authentic flow</a> 200H training <span>Portugal, July 2023</span></li><li>Body-Mind-Centering (BMC) 144H training with <a href=\"http://www.etrebiendansmoncorps.com/a-propos-de/\" target=\"_blank\" rel=\"noreferrer\">Tamara Milla Vigo</a> <span>France, 2022</span></li><li>\"Fundamentals in Dance-movement therapy\", 32H training with <a href=\"https://irpecor.fr/\" target=\"_blank\" rel=\"noreferrer\">Benoit Lesage</a> <span>France, February 2021</span></li><li>Dance-rhythm therapy 50H training with <a href=\"https://www.drt-international.com/\" target=\"_blank\" rel=\"noreferrer\">France Schott-Billmann</a> <span>France, October 2021</span></li><li>Masters in Interdisciplinary approaches to research and education - Learning Sciences - Center for Interdisciplinary research (now <a href=\"https://www.learningplanetinstitute.org/en/\" target=\"_blank\" rel=\"noreferrer\">Learning Planet Institute</a>), Université de Paris <span>France, 2019-2021</span><ul><li>Masters thesis: \"Examining trauma-informed care: University students’ mental health experiences and strategies of mental health care during the COVID-19 pandemic\"</li><li>Thesis presented at two conferences:<p>\"Colloque du Care\", <span>Montpellier, France, November 2021</span></p><p>\"Colloque Numérique et pandémie. Les enjeux d’éthique un an après\", <span>online, July 2021</span></p></li><li><a href=\"https://www.notion.so/mytam/in-relation-conceptual-guide-ac27f15a95734a70bd9d2a37d95e1ee8\" target=\"_blank\" rel=\"noreferrer\">Research project and workshop creation:</a> what is collective trauma, and can we heal it through somatic therapies?</li></ul></li><li>Contemporary dance practice since childhood, improvisation for +7 years</li></ul>",
+      "fr": ""
+    },
+    "photoAlt": {
+      "en": "Portrait of Mytam Mayo-Smith",
+      "fr": ""
+    }
+  },
   "footer": {
     "headline": {
       "en": "Be the first to find out about our latest events",
