@@ -17,6 +17,7 @@ import Menu from '../components/Menu.astro';
       rel="stylesheet"
     />
     <title>{t('meta.title')}</title>
+    <script is:inline>document.documentElement.classList.add('js')</script>
   </head>
   <body class="antialiased">
     <Menu />
@@ -27,6 +28,10 @@ import Menu from '../components/Menu.astro';
 <script>
   import { initI18n } from '../scripts/i18n';
   import { initMenu } from '../scripts/menu';
+  import { initLenis } from '../scripts/lenis';
+  import { initFadeIn } from '../scripts/fade';
+  initLenis();
   initI18n();
   initMenu();
+  initFadeIn();
 </script>

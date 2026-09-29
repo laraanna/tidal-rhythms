@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import { setLenisStopped } from './lenis';
 
 export function initMenu() {
   const menu = document.querySelector<HTMLElement>('[data-menu]');
@@ -38,6 +39,7 @@ export function initMenu() {
     timeline.reversed(!open);
     document.body.classList.toggle('overflow-hidden', open);
     menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+    setLenisStopped(open);
 
     if (video) {
       video.muted = true;

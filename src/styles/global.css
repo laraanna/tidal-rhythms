@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
 @import "tailwindcss";
+@import "lenis/dist/lenis.css";
 
 @font-face {
   font-family: "Founders Grotesk";
@@ -204,4 +205,26 @@ body {
   min-height: 100%;
   background: #111;
   color: #fff;
+}
+
+.js [data-fade-in] {
+  opacity: 0;
+  transform: translate3d(0, 0.8rem, 0);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+  transition-delay: var(--fade-delay, 0ms);
+}
+
+.js [data-fade-in].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-fade-in] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

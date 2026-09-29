@@ -12,6 +12,7 @@ const links = [
 
 <footer>
   <section class="bg-charcoal text-paper px-8 py-4xl md:px-16">
+    <div class="mx-auto" data-fade-in>
     <h2
       class="font-cormorant mx-auto max-w-[18em] text-center text-step-6 font-light md:text-step-8"
       data-i18n="footer.headline"
@@ -24,6 +25,7 @@ const links = [
     >
       {t('footer.lede')}
     </p>
+    </div>
   </section>
 
   <form
@@ -55,7 +57,7 @@ const links = [
   </form>
 
   <section class="bg-sand text-charcoal px-8 py-3xl md:px-16 md:py-4xl">
-    <div class="grid items-end gap-12 lg:grid-cols-[1fr_18rem] lg:gap-16">
+    <div class="grid items-end gap-12 lg:grid-cols-[1fr_18rem] lg:gap-16" data-fade-in>
       <div class="flex min-h-[18rem] flex-col justify-between">
         <nav class="flex flex-col gap-s" aria-label="Footer">
           {
