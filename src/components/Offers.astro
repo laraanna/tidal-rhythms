@@ -1,5 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import { t } from '../i18n';
+import offerA from '../images/offer_A.jpg';
+import offerB from '../images/offer_B.jpg';
+import offerC from '../images/offer_C.jpg';
 
 const offers = [
   {
@@ -7,89 +11,94 @@ const offers = [
     titleKey: 'menu.itemTherapy',
     eyebrowKey: 'offers.therapy.eyebrow',
     blurbKey: 'offers.therapy.blurb',
-    tone: 'bg-offer-khaki',
+    image: offerA,
   },
   {
     id: 'somatics-dance',
     titleKey: 'menu.itemSomatics',
     eyebrowKey: 'offers.somatics.eyebrow',
     blurbKey: 'offers.somatics.blurb',
-    tone: 'bg-offer-sage',
+    image: offerB,
   },
   {
     id: 'somatic-yoga',
     titleKey: 'menu.itemYoga',
     eyebrowKey: 'offers.yoga.eyebrow',
     blurbKey: 'offers.yoga.blurb',
-    tone: 'bg-offer-slate',
+    image: offerC,
   },
 ] as const;
 ---
 
-<section class="lg:grid lg:min-h-dvh lg:grid-cols-3" aria-label="Offers">
+<section class="lg:grid lg:grid-cols-3" aria-label="Offers">
   {
     offers.map((offer, index) => (
       <article
         id={offer.id}
-        class:list={[
-          'text-charcoal relative flex flex-col px-10 py-12 md:px-12 md:py-14 lg:h-dvh lg:min-h-dvh lg:px-14 lg:pt-16 lg:pb-20',
-          offer.tone,
-        ]}
+        class="text-charcoal relative flex flex-col overflow-hidden px-10 py-12 md:px-12 md:py-14 lg:aspect-[4/5] lg:px-14 lg:pt-16 lg:pb-20"
       >
+        <Image
+          src={offer.image}
+          alt=""
+          widths={[640, 960, 1400]}
+          sizes="(min-width: 1024px) 33vw, 100vw"
+          class="absolute inset-0 size-full object-cover"
+          aria-hidden="true"
+        />
         <div
-          class="flex min-h-full flex-1 flex-col"
+          class="relative z-10 flex min-h-full flex-1 flex-col"
           data-fade-in
           style={`--fade-delay: ${index * 90}ms`}
         >
-        <header class="flex items-start justify-between gap-6">
+          <header class="flex items-start justify-between gap-6">
+            <p
+              class="font-nunito text-step-0 font-light text-charcoal/75 lg:text-step-1"
+              data-i18n={offer.eyebrowKey}
+            >
+              {t(offer.eyebrowKey)}
+            </p>
+            <a
+              href={`#${offer.id}`}
+              class="text-paper mt-0.5 flex shrink-0 flex-col items-end gap-1 lg:mt-0 lg:flex-row lg:items-center lg:gap-2"
+            >
+              <span
+                class="font-nunito order-2 text-[0.68rem] font-light tracking-[0.22em] uppercase lg:order-1"
+                data-i18n="offers.readMore"
+              >
+                {t('offers.readMore')}
+              </span>
+              <svg
+                class="order-1 h-4 w-9 lg:order-2 lg:h-3.5 lg:w-8"
+                viewBox="0 0 44 18"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path d="M2 15c12 1 24-6 38-12" stroke="currentColor" stroke-width="1.15"></path>
+                <path d="M32.5 1.5 40 3.4 36.8 9" stroke="currentColor" stroke-width="1.15"></path>
+              </svg>
+            </a>
+          </header>
+
+          <h2
+            class="font-cormorant mt-8 text-step-4 leading-[1.15] font-medium lg:mt-20 lg:max-w-[5.2em] lg:text-step-7"
+            data-i18n={offer.titleKey}
+          >
+            {t(offer.titleKey)}
+          </h2>
           <p
-            class="font-nunito text-step-0 font-light text-charcoal/75 lg:text-step-1"
-            data-i18n={offer.eyebrowKey}
+            class="font-nunito mt-5 max-w-[16em] text-step--1 font-light tracking-[0.14em] uppercase lg:mt-8"
+            data-i18n={offer.blurbKey}
           >
-            {t(offer.eyebrowKey)}
+            {t(offer.blurbKey)}
           </p>
+
           <a
-            href={`#${offer.id}`}
-            class="text-paper mt-0.5 flex shrink-0 flex-col items-end gap-1 lg:mt-0 lg:flex-row lg:items-center lg:gap-2"
+            href={`mailto:${t('footer.email')}`}
+            class="font-nunito text-paper mt-12 inline-flex w-fit border border-paper px-9 py-3.5 text-step--1 font-light tracking-[0.28em] uppercase lg:mt-auto lg:px-10"
+            data-i18n="offers.reserve"
           >
-            <span
-              class="font-nunito order-2 text-[0.68rem] font-light tracking-[0.22em] uppercase lg:order-1"
-              data-i18n="offers.readMore"
-            >
-              {t('offers.readMore')}
-            </span>
-            <svg
-              class="order-1 h-4 w-9 lg:order-2 lg:h-3.5 lg:w-8"
-              viewBox="0 0 44 18"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path d="M2 15c12 1 24-6 38-12" stroke="currentColor" stroke-width="1.15"></path>
-              <path d="M32.5 1.5 40 3.4 36.8 9" stroke="currentColor" stroke-width="1.15"></path>
-            </svg>
+            {t('offers.reserve')}
           </a>
-        </header>
-
-        <h2
-          class="font-cormorant mt-8 text-step-4 leading-[1.15] font-medium lg:mt-20 lg:max-w-[5.2em] lg:text-step-7"
-          data-i18n={offer.titleKey}
-        >
-          {t(offer.titleKey)}
-        </h2>
-        <p
-          class="font-nunito mt-5 max-w-[16em] text-step--1 font-light tracking-[0.14em] uppercase lg:mt-8"
-          data-i18n={offer.blurbKey}
-        >
-          {t(offer.blurbKey)}
-        </p>
-
-        <a
-          href={`mailto:${t('footer.email')}`}
-          class="font-nunito text-paper mt-12 inline-flex w-fit border border-paper px-9 py-3.5 text-step--1 font-light tracking-[0.28em] uppercase lg:mt-auto lg:px-10"
-          data-i18n="offers.reserve"
-        >
-          {t('offers.reserve')}
-        </a>
         </div>
       </article>
     ))
