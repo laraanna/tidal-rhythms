@@ -1,0 +1,33 @@
+---
+import { t } from '../i18n';
+import heroVideo from '../videos/3E1A0315.mov?url';
+---
+
+<section class="relative flex h-dvh min-h-dvh items-center justify-center overflow-hidden bg-black" id="video">
+  <video
+    class="absolute inset-0 size-full object-cover"
+    src={heroVideo}
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-hidden="true"
+    data-hero-video
+  ></video>
+  <div class="absolute inset-0 bg-black/25"></div>
+  <p
+    class="font-cormorant relative z-10 px-8 text-center text-step-6 font-light tracking-[0.06em] text-paper md:text-step-8"
+    data-i18n="video.overlay"
+  >
+    {t('video.overlay')}
+  </p>
+</section>
+
+<script>
+  const video = document.querySelector<HTMLVideoElement>('[data-hero-video]');
+  if (video) {
+    video.muted = true;
+    video.play().catch(() => {});
+  }
+</script>

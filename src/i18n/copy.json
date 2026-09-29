@@ -75,9 +75,135 @@
       "fr": ""
     }
   },
+  "menu": {
+    "close": {
+      "en": "Close",
+      "fr": ""
+    },
+    "closeAria": {
+      "en": "Close menu",
+      "fr": ""
+    },
+    "photoAlt": {
+      "en": "Mytam dancing in the studio",
+      "fr": ""
+    },
+    "keywordReconnection": {
+      "en": "reconnection",
+      "fr": ""
+    },
+    "keywordFeeling": {
+      "en": "feeling",
+      "fr": ""
+    },
+    "keywordExpression": {
+      "en": ". expression",
+      "fr": ""
+    },
+    "itemTherapy": {
+      "en": "Dance Movement Therapy",
+      "fr": ""
+    },
+    "itemSomatics": {
+      "en": "Somatics & Dance",
+      "fr": ""
+    },
+    "itemYoga": {
+      "en": "Somatic Yoga",
+      "fr": ""
+    },
+    "itemArchive": {
+      "en": "Archive",
+      "fr": ""
+    },
+    "contact": {
+      "en": "Contact",
+      "fr": ""
+    }
+  },
   "intro": {
     "body": {
       "en": "Movement stands at the center of Tidal Rhythms. As a way to reconnect, to our bodies, our emotions, our identities and ancestries, to one another, and to the world around us.",
+      "fr": ""
+    }
+  },
+  "offers": {
+    "readMore": {
+      "en": "Read more",
+      "fr": ""
+    },
+    "reserve": {
+      "en": "Reserve now",
+      "fr": ""
+    },
+    "therapy": {
+      "eyebrow": {
+        "en": "1:1",
+        "fr": ""
+      },
+      "blurb": {
+        "en": "A slow process for deeper healing.",
+        "fr": ""
+      }
+    },
+    "somatics": {
+      "eyebrow": {
+        "en": "Group Sessions",
+        "fr": ""
+      },
+      "blurb": {
+        "en": "A collective practice for inner freedom.",
+        "fr": ""
+      }
+    },
+    "yoga": {
+      "eyebrow": {
+        "en": "1:1",
+        "fr": ""
+      },
+      "blurb": {
+        "en": "A structured practice for embodied flow.",
+        "fr": ""
+      }
+    }
+  },
+  "video": {
+    "overlay": {
+      "en": "we are here to dance",
+      "fr": ""
+    }
+  },
+  "footer": {
+    "headline": {
+      "en": "Be the first to find out about our latest events",
+      "fr": ""
+    },
+    "lede": {
+      "en": "My work is centered on creating shared moments where we can be present, sensitive, creative together; where we can reflect on the cultures we are part of and our ways of seeing.",
+      "fr": ""
+    },
+    "emailPlaceholder": {
+      "en": "Your Email",
+      "fr": ""
+    },
+    "signUp": {
+      "en": "Sign up",
+      "fr": ""
+    },
+    "brand": {
+      "en": "Dance and Movement",
+      "fr": ""
+    },
+    "email": {
+      "en": "mytam@mytammayosmith.com",
+      "fr": ""
+    },
+    "phone": {
+      "en": "+33 999 9999 99",
+      "fr": ""
+    },
+    "photoAlt": {
+      "en": "Dancer in the studio reaching toward the window",
       "fr": ""
     }
   }

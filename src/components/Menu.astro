@@ -1,0 +1,205 @@
+---
+import { Image } from 'astro:assets';
+import { t } from '../i18n';
+import menuPhoto from '../images/tf_menu_mytam.jpg';
+import menuVideo from '../videos/earth_bodies_2026_small_cut.mp4?url';
+
+const links = [
+  { key: 'menu.itemTherapy', href: '/#dance-movement-therapy', desktop: 'lg:top-8 lg:right-[18%]' },
+  { key: 'menu.itemSomatics', href: '/#somatics-dance', desktop: 'lg:top-[22%] lg:right-[10%]' },
+  { key: 'menu.itemYoga', href: '/#somatic-yoga', desktop: 'lg:top-[34%] lg:right-[6%]' },
+  { key: 'menu.itemArchive', href: '/#archive', desktop: 'lg:top-[46%] lg:right-10' },
+] as const;
+---
+
+<div
+  class="pointer-events-none fixed inset-0 z-[500] hidden opacity-0"
+  data-menu
+  aria-hidden="true"
+>
+  <div class="pointer-events-auto relative h-full w-full overflow-hidden">
+    <div
+      class="bg-mist absolute top-0 left-0 hidden h-full w-1/2 lg:block"
+      data-menu-left
+    >
+    </div>
+    <div
+      class="bg-olive absolute top-0 right-0 h-full w-full overflow-hidden lg:w-1/2"
+      data-menu-right
+    >
+      <video
+        class="pointer-events-none absolute top-1/2 left-1/2 h-[140%] w-[140%] -translate-x-1/2 -translate-y-1/2 object-cover blur-[90px] brightness-[2] saturate-150"
+        src={menuVideo}
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+        data-menu-video
+      ></video>
+      <div class="pointer-events-none absolute inset-0 z-[1] bg-black/25"></div>
+    </div>
+
+    <header
+      class="absolute inset-x-0 top-0 z-20 flex items-start justify-between px-6 pt-7 opacity-0 lg:px-10 lg:pt-8"
+      data-menu-header
+    >
+      <a href="/" class="text-paper lg:text-charcoal" data-menu-close>
+        <span
+          class="block font-founders text-[1.05rem] font-medium leading-none tracking-[0.42em] uppercase"
+          data-i18n="hero.logoTidal"
+        >
+          {t('hero.logoTidal')}
+        </span>
+        <span
+          class="mt-1.5 block font-founders text-[0.62rem] font-light leading-none tracking-[0.62em] uppercase"
+          data-i18n="hero.logoRhythms"
+        >
+          {t('hero.logoRhythms')}
+        </span>
+      </a>
+
+      <button
+        type="button"
+        class="font-nunito menu-dot text-paper flex items-center gap-2 text-xl font-normal tracking-[0.3em] uppercase"
+        data-menu-close
+        data-i18n-aria-label="menu.closeAria"
+        aria-label={t('menu.closeAria')}
+      >
+        <span data-i18n="menu.close">{t('menu.close')}</span>
+      </button>
+    </header>
+
+    <div class="relative z-10 flex h-full">
+      <div class="relative hidden h-full w-1/2 lg:block">
+        <div class="absolute inset-0">
+          <p
+            class="font-nunito text-olive/70 absolute top-[14%] left-[12%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
+            data-menu-stagger
+            data-i18n="menu.keywordReconnection"
+          >
+            {t('menu.keywordReconnection')}
+          </p>
+          <p
+            class="font-nunito text-olive/70 absolute top-[40%] left-[4%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
+            data-menu-stagger
+            data-i18n="menu.keywordFeeling"
+          >
+            {t('menu.keywordFeeling')}
+          </p>
+          <p
+            class="font-nunito text-olive/70 absolute right-[6%] bottom-[16%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
+            data-menu-stagger
+            data-i18n="menu.keywordExpression"
+          >
+            {t('menu.keywordExpression')}
+          </p>
+          <div
+            class="absolute top-[42%] left-1/2 w-[min(25vw,20rem)] -translate-x-1/2 -translate-y-1/2"
+            data-menu-image-desktop
+          >
+            <Image
+              src={menuPhoto}
+              alt={t('menu.photoAlt')}
+              data-i18n-alt="menu.photoAlt"
+              widths={[480, 720, 1080]}
+              sizes="25vw"
+              class="h-auto w-full"
+            />
+          </div>
+        </div>
+
+        <div class="absolute bottom-8 left-10">
+          <button
+            type="button"
+            class="font-founders text-charcoal flex items-center gap-2.5 text-[0.6rem] font-light tracking-[0.28em] uppercase"
+            data-lang-toggle
+            aria-label={t('hero.langAriaEn')}
+          >
+            <span data-lang-label="en" class="opacity-80">EN</span>
+            <span class="relative h-4 w-8 rounded-full bg-black/70 ring-1 ring-black/20" aria-hidden="true">
+              <span
+                data-lang-knob
+                class="absolute top-0.5 left-0.5 size-3 rounded-full bg-white transition-transform duration-200"
+              ></span>
+            </span>
+            <span data-lang-label="fr" class="opacity-35">FR</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="relative flex h-full w-full flex-col px-6 pt-28 pb-10 lg:w-1/2 lg:p-0">
+        <nav class="flex flex-col items-start gap-8 lg:block lg:h-full lg:w-full" aria-label="Primary">
+          {
+            links.map((link) => (
+              <a
+                href={link.href}
+                class:list={[
+                  'font-nunito text-paper text-step-3 font-light tracking-[0.2em] uppercase lg:absolute lg:text-[clamp(1.05rem,1.45vw,1.4rem)]',
+                  link.desktop,
+                ]}
+                data-menu-stagger
+                data-menu-close
+                data-i18n={link.key}
+              >
+                {t(link.key)}
+              </a>
+            ))
+          }
+        </nav>
+
+        <div class="mt-12 w-[min(70%,18rem)] lg:hidden" data-menu-image-mobile>
+          <Image
+            src={menuPhoto}
+            alt={t('menu.photoAlt')}
+            data-i18n-alt="menu.photoAlt"
+            widths={[480, 720]}
+            sizes="70vw"
+            class="h-auto w-full"
+          />
+        </div>
+
+        <button
+          type="button"
+          class="font-nunito text-paper mt-auto self-start text-sm tracking-[0.28em] uppercase lg:absolute lg:right-10 lg:bottom-8 lg:mt-0 lg:self-auto"
+          data-menu-stagger
+          data-menu-contact
+          data-i18n="menu.contact"
+        >
+          {t('menu.contact')}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  [data-menu-left] {
+    transform: translate3d(0, -100vh, 0);
+  }
+
+  [data-menu-right] {
+    transform: translate3d(0, 100vh, 0);
+  }
+
+  [data-menu-image-desktop],
+  [data-menu-image-mobile] {
+    clip-path: inset(0 0 100%);
+  }
+
+  .menu-dot::before {
+    content: '';
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 999px;
+    background: currentColor;
+    transition:
+      width 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+      height 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .menu-dot:hover::before {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+</style>

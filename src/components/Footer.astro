@@ -1,0 +1,116 @@
+---
+import { Image } from 'astro:assets';
+import { t } from '../i18n';
+import footerPhoto from '../images/tf_hero_mytam_2.jpg';
+
+const links = [
+  { key: 'menu.itemTherapy', href: '/#dance-movement-therapy' },
+  { key: 'menu.itemSomatics', href: '/#somatics-dance' },
+  { key: 'menu.itemYoga', href: '/#somatic-yoga' },
+] as const;
+---
+
+<footer>
+  <section class="bg-charcoal text-paper px-8 py-4xl md:px-16">
+    <h2
+      class="font-cormorant mx-auto max-w-[18em] text-center text-step-6 font-light md:text-step-8"
+      data-i18n="footer.headline"
+    >
+      {t('footer.headline')}
+    </h2>
+    <p
+      class="font-nunito mx-auto mt-m max-w-[34em] text-center text-step--2 font-light tracking-wide text-paper/80"
+      data-i18n="footer.lede"
+    >
+      {t('footer.lede')}
+    </p>
+  </section>
+
+  <form
+    class="bg-charcoal text-paper grid border-y border-white/20 md:grid-cols-[1.7fr_1fr]"
+    data-newsletter
+  >
+    <div class="md:border-r md:border-white/20">
+      <label class="sr-only" for="newsletter-email" data-i18n="footer.emailPlaceholder">
+        {t('footer.emailPlaceholder')}
+      </label>
+      <input
+        id="newsletter-email"
+        name="email"
+        type="email"
+        required
+        autocomplete="email"
+        placeholder={t('footer.emailPlaceholder')}
+        data-i18n-placeholder="footer.emailPlaceholder"
+        class="font-cormorant h-20 w-full bg-transparent px-6 text-center text-step-2 font-light tracking-[0.22em] text-paper italic placeholder:text-paper/70 focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-[-1px] focus-visible:outline-paper/40 md:h-24"
+      />
+    </div>
+    <button
+      type="submit"
+      class="font-nunito h-20 border-t border-white/20 text-step-1 font-light tracking-[0.35em] uppercase focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-[-1px] focus-visible:outline-paper/40 md:h-24 md:border-t-0"
+      data-i18n="footer.signUp"
+    >
+      {t('footer.signUp')}
+    </button>
+  </form>
+
+  <section class="bg-sand text-charcoal px-8 py-3xl md:px-16 md:py-4xl">
+    <div class="grid items-end gap-12 lg:grid-cols-[1fr_18rem] lg:gap-16">
+      <div class="flex min-h-[18rem] flex-col justify-between">
+        <nav class="flex flex-col gap-s" aria-label="Footer">
+          {
+            links.map((link) => (
+              <a
+                href={link.href}
+                class="font-nunito text-step-1 font-light tracking-[0.22em]"
+                data-i18n={link.key}
+              >
+                {t(link.key)}
+              </a>
+            ))
+          }
+        </nav>
+
+        <div class="mt-3xl flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p
+              class="font-founders text-step-1 font-normal tracking-[0.22em] uppercase"
+              data-i18n="footer.brand"
+            >
+              {t('footer.brand')}
+            </p>
+            <a
+              href={`mailto:${t('footer.email')}`}
+              class="font-nunito mt-2 block text-step--1 font-light tracking-[0.18em]"
+              data-i18n="footer.email"
+            >
+              {t('footer.email')}
+            </a>
+          </div>
+          <a
+            href={`tel:${t('footer.phone').replace(/\s/g, '')}`}
+            class="font-nunito text-step--1 font-light tracking-[0.18em]"
+            data-i18n="footer.phone"
+          >
+            {t('footer.phone')}
+          </a>
+        </div>
+      </div>
+
+      <Image
+        src={footerPhoto}
+        alt={t('footer.photoAlt')}
+        data-i18n-alt="footer.photoAlt"
+        widths={[480, 720, 960]}
+        sizes="(min-width: 1024px) 18rem, 80vw"
+        class="aspect-square w-full max-w-[18rem] justify-self-end object-cover object-[center_20%] grayscale"
+      />
+    </div>
+  </section>
+</footer>
+
+<script>
+  document.querySelector('[data-newsletter]')?.addEventListener('submit', (event) => {
+    event.preventDefault();
+  });
+</script>

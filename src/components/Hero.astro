@@ -16,6 +16,17 @@ import heroFloor from '../images/tf_hero_mytam_1.jpg';
       class="absolute inset-0 size-full object-cover object-[center_28%] lg:object-[center_58%]"
     />
 
+    <button
+      type="button"
+      class="font-nunito text-paper absolute top-7 right-6 z-10 flex items-center gap-2 text-xl tracking-[0.3em] uppercase lg:hidden"
+      data-menu-open
+      data-i18n-aria-label="hero.menuAria"
+      aria-label={t('hero.menuAria')}
+    >
+      <span class="size-3.5 rounded-full bg-white"></span>
+      <span data-i18n="hero.menu">{t('hero.menu')}</span>
+    </button>
+
     <a href="/" class="absolute top-7 left-6 z-10 lg:top-8 lg:left-10">
       <span
         class="block font-founders text-[1.05rem] font-medium leading-none tracking-[0.42em] uppercase"
@@ -54,14 +65,14 @@ import heroFloor from '../images/tf_hero_mytam_1.jpg';
         data-lang-toggle
         aria-label={t('hero.langAriaEn')}
       >
-        <span data-lang-label="en" class="text-white/80">EN</span>
+        <span data-lang-label="en" class="opacity-80">EN</span>
         <span class="relative h-4 w-8 rounded-full bg-black/80 ring-1 ring-white/35" aria-hidden="true">
           <span
             data-lang-knob
             class="absolute top-0.5 left-0.5 size-3 rounded-full bg-white transition-transform duration-200"
           ></span>
         </span>
-        <span data-lang-label="fr" class="text-white/35">FR</span>
+        <span data-lang-label="fr" class="opacity-35">FR</span>
       </button>
     </div>
   </div>
@@ -79,6 +90,7 @@ import heroFloor from '../images/tf_hero_mytam_1.jpg';
     <button
       type="button"
       class="font-nunito absolute top-8 right-10 z-10 flex items-center gap-2 text-xl tracking-[0.3em] font-normal uppercase"
+      data-menu-open
       data-i18n-aria-label="hero.menuAria"
       aria-label={t('hero.menuAria')}
     >

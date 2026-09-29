@@ -126,6 +126,12 @@
 
   --charcoal: #414141;
   --paper: #fefefe;
+  --mist: #e6e6e4;
+  --olive: #7a7e70;
+  --sand: #e7e5de;
+  --offer-khaki: #c9b58a;
+  --offer-sage: #aeb996;
+  --offer-slate: #b7c5c4;
 }
 
 @theme inline {
@@ -170,6 +176,12 @@
   --spacing-s-l: var(--space-s-l);
   --color-charcoal: var(--charcoal);
   --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-olive: var(--olive);
+  --color-sand: var(--sand);
+  --color-offer-khaki: var(--offer-khaki);
+  --color-offer-sage: var(--offer-sage);
+  --color-offer-slate: var(--offer-slate);
 }
 
 .cormorant-garamond {

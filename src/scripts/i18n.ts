@@ -31,26 +31,35 @@ function apply(lang: Lang) {
     el.setAttribute('alt', t(key, lang));
   });
 
+  document.querySelectorAll<HTMLElement>('[data-i18n-placeholder]').forEach((el) => {
+    const key = el.dataset.i18nPlaceholder;
+    if (!key) return;
+    el.setAttribute('placeholder', t(key, lang));
+  });
+
   document.querySelectorAll<HTMLElement>('[data-i18n-aria-label]').forEach((el) => {
     const key = el.dataset.i18nAriaLabel;
     if (!key) return;
     el.setAttribute('aria-label', t(key, lang));
   });
 
-  const langToggle = document.querySelector('[data-lang-toggle]');
-  const knob = document.querySelector('[data-lang-knob]');
-  const enLabel = document.querySelector('[data-lang-label="en"]');
-  const frLabel = document.querySelector('[data-lang-label="fr"]');
-
-  knob?.classList.toggle('translate-x-4', lang === 'fr');
-  enLabel?.classList.toggle('text-white/80', lang === 'en');
-  enLabel?.classList.toggle('text-white/35', lang === 'fr');
-  frLabel?.classList.toggle('text-white/80', lang === 'fr');
-  frLabel?.classList.toggle('text-white/35', lang === 'en');
-  langToggle?.setAttribute(
-    'aria-label',
-    t(lang === 'en' ? 'hero.langAriaEn' : 'hero.langAriaFr', lang),
-  );
+  document.querySelectorAll('[data-lang-knob]').forEach((knob) => {
+    knob.classList.toggle('translate-x-4', lang === 'fr');
+  });
+  document.querySelectorAll('[data-lang-label="en"]').forEach((label) => {
+    label.classList.toggle('opacity-80', lang === 'en');
+    label.classList.toggle('opacity-35', lang === 'fr');
+  });
+  document.querySelectorAll('[data-lang-label="fr"]').forEach((label) => {
+    label.classList.toggle('opacity-80', lang === 'fr');
+    label.classList.toggle('opacity-35', lang === 'en');
+  });
+  document.querySelectorAll('[data-lang-toggle]').forEach((toggle) => {
+    toggle.setAttribute(
+      'aria-label',
+      t(lang === 'en' ? 'hero.langAriaEn' : 'hero.langAriaFr', lang),
+    );
+  });
 }
 
 export function initI18n() {
@@ -58,7 +67,9 @@ export function initI18n() {
   const lang: Lang = isLang(saved) ? saved : 'en';
   apply(lang);
 
-  document.querySelector('[data-lang-toggle]')?.addEventListener('click', () => {
+  document.addEventListener('click', (event) => {
+    const toggle = (event.target as HTMLElement).closest('[data-lang-toggle]');
+    if (!toggle) return;
     const next: Lang = document.documentElement.lang === 'fr' ? 'en' : 'fr';
     localStorage.setItem(STORAGE_KEY, next);
     apply(next);

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { t } from '../i18n';
+import Menu from '../components/Menu.astro';
 ---
 
 <!doctype html>
@@ -18,11 +19,14 @@ import { t } from '../i18n';
     <title>{t('meta.title')}</title>
   </head>
   <body class="antialiased">
+    <Menu />
     <slot />
   </body>
 </html>
 
 <script>
   import { initI18n } from '../scripts/i18n';
+  import { initMenu } from '../scripts/menu';
   initI18n();
+  initMenu();
 </script>
