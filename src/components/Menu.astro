@@ -1,14 +1,14 @@
 ---
 import { Image } from 'astro:assets';
 import { t } from '../i18n';
-import menuPhoto from '../images/tf_menu_mytam.jpg';
+import menuPhoto from '../images/mytam_menu.jpg';
 import menuVideo from '../videos/earth_bodies_2026_small_cut.mp4?url';
 
 const links = [
-  { key: 'menu.itemTherapy', href: '/#dance-movement-therapy', desktop: 'lg:top-8 lg:right-[18%]' },
-  { key: 'menu.itemSomatics', href: '/#somatics-dance', desktop: 'lg:top-[22%] lg:right-[10%]' },
-  { key: 'menu.itemYoga', href: '/#somatic-yoga', desktop: 'lg:top-[34%] lg:right-[6%]' },
-  { key: 'menu.itemArchive', href: '/#archive', desktop: 'lg:top-[46%] lg:right-10' },
+  { key: 'menu.itemTherapy', href: '/#dance-movement-therapy' },
+  { key: 'menu.itemSomatics', href: '/#somatics-dance' },
+  { key: 'menu.itemYoga', href: '/#somatic-yoga' },
+  { key: 'menu.itemArchive', href: '/#archive' },
 ] as const;
 ---
 
@@ -75,28 +75,28 @@ const links = [
       <div class="relative hidden h-full w-1/2 lg:block">
         <div class="absolute inset-0">
           <p
-            class="font-nunito text-olive/70 absolute top-[14%] left-[12%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
+            class="font-nunito text-[#484848] opacity-20 tracking-[0.15em] absolute top-[14%] left-[12%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
             data-menu-stagger
             data-i18n="menu.keywordReconnection"
           >
             {t('menu.keywordReconnection')}
           </p>
           <p
-            class="font-nunito text-olive/70 absolute top-[40%] left-[4%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
+            class="font-nunito text-[#484848] opacity-20 tracking-[0.15em] absolute top-[40%] left-[4%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
             data-menu-stagger
             data-i18n="menu.keywordFeeling"
           >
             {t('menu.keywordFeeling')}
           </p>
           <p
-            class="font-nunito text-olive/70 absolute right-[6%] bottom-[16%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
+            class="font-nunito text-[#484848] opacity-20 tracking-[0.15em] absolute right-[6%] bottom-[16%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
             data-menu-stagger
             data-i18n="menu.keywordExpression"
           >
             {t('menu.keywordExpression')}
           </p>
           <div
-            class="absolute top-[42%] left-1/2 w-[min(25vw,20rem)] -translate-x-1/2 -translate-y-1/2"
+            class="absolute top-[49%] left-1/2 w-[min(25vw,20rem)] -translate-x-1/2 -translate-y-1/2"
             data-menu-image-desktop
           >
             <Image
@@ -113,32 +113,32 @@ const links = [
         <div class="absolute bottom-8 left-10">
           <button
             type="button"
-            class="font-nunito text-charcoal flex items-center gap-2 text-xl font-normal tracking-[0.3em] uppercase"
+            class="font-nunito flex items-center gap-2 text-xl font-medium tracking-[0.3em] text-[rgb(65,65,65)] uppercase"
             data-lang-toggle
             aria-label={t('hero.langAriaEn')}
           >
-            <span data-lang-label="en" class="opacity-80">EN</span>
-            <span class="relative h-6 w-11 rounded-full bg-black/70 ring-1 ring-black/20" aria-hidden="true">
+            <span data-lang-label="en" class="text-[rgb(65,65,65)] opacity-80">EN</span>
+            <span class="relative h-6 w-11 rounded-full bg-black/80 ring-1 ring-white/35" aria-hidden="true">
               <span
                 data-lang-knob
                 class="absolute top-0.5 left-0.5 size-5 rounded-full bg-white transition-transform duration-200"
               ></span>
             </span>
-            <span data-lang-label="fr" class="opacity-35">FR</span>
+            <span data-lang-label="fr" class="text-[rgb(65,65,65)] opacity-35">FR</span>
           </button>
         </div>
       </div>
 
-      <div class="relative flex h-full w-full flex-col px-6 pt-28 pb-10 lg:w-1/2 lg:p-0">
-        <nav class="flex flex-col items-start gap-8 lg:block lg:h-full lg:w-full" aria-label="Primary">
+      <div class="relative flex h-full w-full flex-col px-6 pt-28 pb-10 lg:w-1/2 lg:px-10 lg:py-0">
+        <nav
+          class="flex flex-1 flex-col items-start justify-center gap-8 lg:items-end"
+          aria-label="Primary"
+        >
           {
             links.map((link) => (
               <a
                 href={link.href}
-                class:list={[
-                  'font-nunito text-paper text-step-3 font-light tracking-[0.2em] uppercase lg:absolute lg:text-[clamp(1.05rem,1.45vw,1.4rem)]',
-                  link.desktop,
-                ]}
+                class="font-nunito text-paper self-start text-left text-step-3 font-light tracking-[0.3em] uppercase lg:self-end lg:text-right"
                 data-menu-stagger
                 data-menu-close
                 data-i18n={link.key}
@@ -149,7 +149,7 @@ const links = [
           }
         </nav>
 
-        <div class="mt-12 w-[min(70%,18rem)] lg:hidden" data-menu-image-mobile>
+        <div class="mb-20 w-[min(45%,18rem)] md:hidden" data-menu-image-mobile>
           <Image
             src={menuPhoto}
             alt={t('menu.photoAlt')}

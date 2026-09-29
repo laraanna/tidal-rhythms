@@ -228,3 +228,21 @@ body {
     transition: none;
   }
 }
+
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+}
+
+@media (pointer: coarse) {
+  .cursor-follower {
+    display: none;
+  }
+}
