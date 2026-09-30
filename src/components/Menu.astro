@@ -65,7 +65,7 @@ const links = [
 
       <button
         type="button"
-        class="font-nunito menu-dot text-paper flex items-center gap-2 text-xl font-normal tracking-[0.3em] uppercase"
+        class="font-nunito menu-dot text-paper flex items-center gap-2 text-sm font-normal tracking-[0.3em] uppercase lg:text-xl"
         data-menu-close
         data-i18n-aria-label="menu.closeAria"
         aria-label={t('menu.closeAria')}
@@ -99,15 +99,15 @@ const links = [
             {t('menu.keywordExpression')}
           </p>
           <div
-            class="absolute top-[49%] left-1/2 w-[min(25vw,20rem)] -translate-x-1/2 -translate-y-1/2"
+            class="absolute top-[49%] left-1/2 w-[min(30vw,24rem)] -translate-x-1/2 -translate-y-1/2"
             data-menu-image-desktop
           >
             <Image
               src={menuPhoto}
               alt={t('menu.photoAlt')}
               data-i18n-alt="menu.photoAlt"
-              widths={[480, 720, 1080]}
-              sizes="25vw"
+              widths={[480, 720, 1080, 1400]}
+              sizes="30vw"
               class="h-auto w-full"
             />
           </div>
@@ -163,15 +163,16 @@ const links = [
           />
         </div>
 
-        <button
-          type="button"
+        <a
+          href="#footer"
           class="font-nunito text-paper mt-auto self-start text-sm tracking-[0.28em] uppercase lg:absolute lg:right-10 lg:bottom-8 lg:mt-0 lg:self-auto"
           data-menu-stagger
-          data-menu-contact
+          data-menu-close
+          data-scroll-bottom
           data-i18n="menu.contact"
         >
           {t('menu.contact')}
-        </button>
+        </a>
       </div>
     </div>
   </div>

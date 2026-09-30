@@ -11,9 +11,11 @@ export function initTrainings() {
     root.setAttribute('aria-hidden', open ? 'false' : 'true');
     document.body.classList.toggle('overflow-hidden', open);
     setLenisStopped(open);
+    root.scrollLeft = 0;
+    root.scrollTop = 0;
 
     if (open) {
-      panel?.focus();
+      panel?.focus({ preventScroll: true });
     }
   }
 

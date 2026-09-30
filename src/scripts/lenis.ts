@@ -25,9 +25,16 @@ export function initLenis() {
 
       event.preventDefault();
       const hash = url.hash;
+      const toBottom = link.hasAttribute('data-scroll-bottom');
       requestAnimationFrame(() => {
-        lenis?.scrollTo(hash, { duration: 1.4 });
-        history.pushState(null, '', hash);
+        requestAnimationFrame(() => {
+          if (toBottom) {
+            lenis?.scrollTo('bottom', { duration: 1.4, force: true });
+          } else {
+            lenis?.scrollTo(hash, { duration: 1.4, force: true });
+          }
+          history.pushState(null, '', hash);
+        });
       });
     },
     true,

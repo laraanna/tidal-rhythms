@@ -53,14 +53,8 @@ export function initMenu() {
   }
 
   document.addEventListener('click', (event) => {
-    const target = (event.target as HTMLElement).closest('[data-menu-open], [data-menu-close], [data-menu-contact]');
+    const target = (event.target as HTMLElement).closest('[data-menu-open], [data-menu-close]');
     if (!target) return;
-
-    if (target.hasAttribute('data-menu-contact')) {
-      setOpen(false);
-      document.querySelector('[data-contact-card]')?.classList.remove('hidden');
-      return;
-    }
 
     if (target.hasAttribute('data-menu-open')) {
       setOpen(true);
