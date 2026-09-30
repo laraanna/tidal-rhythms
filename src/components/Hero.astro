@@ -1,19 +1,28 @@
 ---
 import { Image } from 'astro:assets';
 import { t } from '../i18n';
-import heroMotion from '../images/tf_hero_mytam_2.jpg';
-import heroFloor from '../images/tf_hero_mytam_1.jpg';
+import heroMobile from '../images/tf_hero_mytam_2.jpg';
+import heroMotion from '../images/hero_tf_mimi_2.jpg';
+import heroPortrait from '../images/hero_tf_mimi_1.jpg';
 ---
 
-<section class="relative grid h-dvh min-h-dvh overflow-hidden bg-neutral-950 lg:grid-cols-2">
+<section class="relative grid h-dvh min-h-dvh overflow-hidden bg-mist lg:grid-cols-2">
   <div class="relative min-h-dvh overflow-hidden">
+    <Image
+      src={heroMobile}
+      alt={t('hero.mobileAlt')}
+      data-i18n-alt="hero.mobileAlt"
+      widths={[640, 960, 1280]}
+      sizes="100vw"
+      class="absolute inset-0 size-full object-cover object-center lg:hidden"
+    />
     <Image
       src={heroMotion}
       alt={t('hero.motionAlt')}
       data-i18n-alt="hero.motionAlt"
       widths={[640, 960, 1280, 2000]}
-      sizes="(min-width: 1024px) 50vw, 100vw"
-      class="absolute inset-0 size-full object-cover object-[center_28%] lg:object-[center_58%]"
+      sizes="50vw"
+      class="absolute inset-0 hidden size-full object-cover object-center lg:block"
     />
 
     <button
@@ -42,23 +51,26 @@ import heroFloor from '../images/tf_hero_mytam_1.jpg';
       </span>
     </a>
 
-    <div class="absolute top-[46%] left-xl z-10 -translate-y-1/2 md:top-[52%] md:left-3xl">
+    <div class="absolute bottom-[22%] left-10 right-8 z-10 md:left-14 lg:left-16 lg:right-10">
       <h1
-        class="font-founders text-step-6 md:text-step-8 leading-[1.2]  font-normal tracking-[0.18em] text-paper uppercase"
+        class="font-founders text-step-5 md:text-step-6 lg:text-step-8 leading-[1.15] font-normal tracking-[0.22em] text-paper uppercase"
       >
-        <span data-i18n="hero.titleDance">{t('hero.titleDance')}</span><br class="lg:hidden" />
-        <span class="hidden lg:inline"> </span><span data-i18n="hero.titleAnd">{t('hero.titleAnd')}</span><br class="lg:hidden" />
-        <span class="hidden lg:inline"> </span><span data-i18n="hero.titleMovement">{t('hero.titleMovement')}</span>
+        <span data-i18n="hero.titleDance">{t('hero.titleDance')}</span>
+        <span> </span>
+        <span data-i18n="hero.titleAnd">{t('hero.titleAnd')}</span>
+        <span class="hidden xl:inline"> </span>
+        <br class="xl:hidden" />
+        <span data-i18n="hero.titleMovement">{t('hero.titleMovement')}</span>
       </h1>
       <p
-        class="font-cormorant mt-1 text-step-4 leading-none font-normal text-paper"
+        class="font-cormorant mt-2 text-step-2 leading-none font-normal text-paper md:text-step-3"
         data-i18n="hero.byline"
       >
         {t('hero.byline')}
       </p>
     </div>
 
-    <div class="absolute bottom-7 left-6 z-10 lg:bottom-8 lg:left-10">
+    <div class="absolute bottom-7 left-6 z-10 hidden lg:bottom-8 lg:left-10">
       <button
         type="button"
         class="font-nunito text-paper flex items-center gap-2 text-xl font-medium tracking-[0.3em] uppercase"
@@ -79,22 +91,22 @@ import heroFloor from '../images/tf_hero_mytam_1.jpg';
 
   <div class="relative hidden min-h-dvh overflow-hidden lg:block">
     <Image
-      src={heroFloor}
+      src={heroPortrait}
       alt={t('hero.floorAlt')}
       data-i18n-alt="hero.floorAlt"
       widths={[640, 960, 1280, 2000]}
       sizes="50vw"
-      class="absolute inset-0 size-full object-cover object-[center_42%]"
+      class="absolute inset-0 size-full object-cover object-[center_38%]"
     />
 
     <button
       type="button"
-      class="font-nunito absolute top-8 right-10 z-10 flex items-center gap-2 text-xl tracking-[0.3em] font-normal uppercase"
+      class="font-nunito text-charcoal absolute top-8 right-10 z-10 flex items-center gap-2 text-xl tracking-[0.3em] font-normal uppercase"
       data-menu-open
       data-i18n-aria-label="hero.menuAria"
       aria-label={t('hero.menuAria')}
     >
-      <span class="size-3.5 rounded-full bg-white"></span>
+      <span class="bg-charcoal size-3.5 rounded-full"></span>
       <span data-i18n="hero.menu">{t('hero.menu')}</span>
     </button>
   </div>

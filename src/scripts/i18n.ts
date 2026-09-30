@@ -8,7 +8,8 @@ function isLang(value: string | null): value is Lang {
 
 function apply(lang: Lang) {
   document.documentElement.lang = lang;
-  document.title = t('meta.title', lang);
+  const titleKey = document.querySelector('title')?.dataset.i18n || 'meta.title';
+  document.title = t(titleKey, lang);
 
   const description = document.querySelector('meta[name="description"]');
   description?.setAttribute('content', t('meta.description', lang));

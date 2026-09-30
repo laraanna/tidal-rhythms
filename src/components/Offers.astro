@@ -40,7 +40,7 @@ const offers = [
         <Image
           src={offer.image}
           alt=""
-          widths={[640, 960, 1400]}
+          widths={[720, 1100, 1600]}
           sizes="(min-width: 1024px) 33vw, 100vw"
           class="absolute inset-0 size-full object-cover"
           aria-hidden="true"
@@ -50,51 +50,28 @@ const offers = [
           data-fade-in
           style={`--fade-delay: ${index * 90}ms`}
         >
-          <header class="flex items-start justify-between gap-6">
-            <p
-              class="font-nunito text-step-0 font-light text-charcoal/75 lg:text-step-1"
-              data-i18n={offer.eyebrowKey}
-            >
-              {t(offer.eyebrowKey)}
-            </p>
-            <a
-              href={`#${offer.id}`}
-              class="text-paper mt-0.5 flex shrink-0 flex-col items-end gap-1 lg:mt-0 lg:flex-row lg:items-center lg:gap-2"
-            >
-              <span
-                class="font-nunito order-2 text-[0.68rem] font-light tracking-[0.22em] uppercase lg:order-1"
-                data-i18n="offers.readMore"
-              >
-                {t('offers.readMore')}
-              </span>
-              <svg
-                class="order-1 h-4 w-9 lg:order-2 lg:h-3.5 lg:w-8"
-                viewBox="0 0 44 18"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path d="M2 15c12 1 24-6 38-12" stroke="currentColor" stroke-width="1.15"></path>
-                <path d="M32.5 1.5 40 3.4 36.8 9" stroke="currentColor" stroke-width="1.15"></path>
-              </svg>
-            </a>
-          </header>
-
-          <h2
-            class="font-cormorant mt-8 text-step-4 leading-[1.15] font-medium lg:mt-20 lg:max-w-[5.2em] lg:text-step-7"
-            data-i18n={offer.titleKey}
+          <p
+            class="mt-5 font-founder text-step-3 md:text-step-3 xl:text-step-5 font-light text-charcoal/75"
+            data-i18n={offer.eyebrowKey}
           >
-            {t(offer.titleKey)}
+            {t(offer.eyebrowKey)}
+          </p>
+
+          <h2 class="font-founders mt-8 text-step-4 md:text-step-5 leading-[1.15] font-light lg:max-w-[5.2em] xl:text-step-7">
+            <a href={`/offers/${offer.id}`} data-i18n={offer.titleKey}>
+              {t(offer.titleKey)}
+            </a>
           </h2>
           <p
-            class="font-nunito mt-5 max-w-[16em] text-step--1 font-light tracking-[0.14em] uppercase lg:mt-8"
+            class="font-founder mt-5 max-w-[16em] text-step-0 md:text-step-1 xl:text-step-2 font-light tracking-[0.1em] uppercase lg:mt-8 lg:max-w-[70%]"
             data-i18n={offer.blurbKey}
           >
             {t(offer.blurbKey)}
           </p>
 
           <a
-            href={`mailto:${t('footer.email')}`}
-            class="font-nunito text-paper mt-12 inline-flex w-fit border border-paper px-9 py-3.5 text-step--1 font-light tracking-[0.28em] uppercase lg:mt-auto lg:px-10"
+            href={`/offers/${offer.id}`}
+            class="font-nunito text-paper mt-8 inline-flex w-fit border border-paper px-9 py-3.5 text-step--1 font-light tracking-[0.28em] uppercase lg:mt-auto lg:px-10"
             data-i18n="offers.reserve"
           >
             {t('offers.reserve')}

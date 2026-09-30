@@ -3,7 +3,7 @@ import { t } from '../i18n';
 ---
 
 <div
-  class="pointer-events-none fixed inset-0 z-[450]"
+  class="pointer-events-none fixed inset-0 z-[450] overflow-hidden"
   data-trainings
   aria-hidden="true"
 >
@@ -60,15 +60,17 @@ import { t } from '../i18n';
 
   [data-trainings-overlay] {
     opacity: 0;
-    transition: opacity 0.3s ease;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
   [data-trainings].is-open [data-trainings-overlay] {
     opacity: 1;
+    visibility: visible;
   }
 
   [data-trainings-panel] {
-    translate: 100% 0;
+    translate: calc(100% + 12px) 0;
     transition: translate 0.3s ease-out;
   }
 

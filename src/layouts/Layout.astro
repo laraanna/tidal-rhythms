@@ -4,6 +4,13 @@ import { t } from '../i18n';
 import Menu from '../components/Menu.astro';
 import ContactCard from '../components/ContactCard.astro';
 import Trainings from '../components/Trainings.astro';
+
+interface Props {
+  titleKey?: string;
+  showContact?: boolean;
+}
+
+const { titleKey = 'meta.title', showContact = true } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,13 +25,13 @@ import Trainings from '../components/Trainings.astro';
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-    <title>{t('meta.title')}</title>
+    <title data-i18n={titleKey}>{t(titleKey)}</title>
     <script is:inline>document.documentElement.classList.add('js')</script>
   </head>
   <body class="antialiased">
     <Menu />
     <Trainings />
-    <ContactCard />
+    {showContact && <ContactCard />}
     <slot />
   </body>
 </html>

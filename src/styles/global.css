@@ -200,10 +200,17 @@
   font-family: var(--font-nunito);
 }
 
-html,
+html {
+  min-height: 100%;
+  background: var(--mist);
+  overflow-x: clip;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(65 65 65 / 0.28) var(--mist);
+}
+
 body {
   min-height: 100%;
-  background: #111;
+  background: var(--mist);
   color: #fff;
 }
 

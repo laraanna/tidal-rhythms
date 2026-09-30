@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets';
 import { t } from '../i18n';
-import footerPhoto from '../images/tf_hero_mytam_2.jpg';
+import footerPhoto from '../images/tf_footer_mytam.jpg';
 
 const links = [
-  { key: 'menu.itemTherapy', href: '/#dance-movement-therapy' },
-  { key: 'menu.itemSomatics', href: '/#somatics-dance' },
-  { key: 'menu.itemYoga', href: '/#somatic-yoga' },
+  { key: 'menu.itemTherapy', href: '/offers/dance-movement-therapy' },
+  { key: 'menu.itemSomatics', href: '/offers/somatics-dance' },
+  { key: 'menu.itemYoga', href: '/offers/somatic-yoga' },
 ] as const;
 ---
 
@@ -14,13 +14,13 @@ const links = [
   <section class="bg-charcoal text-paper px-8 py-4xl md:px-16">
     <div class="mx-auto" data-fade-in>
     <h2
-      class="font-cormorant mx-auto max-w-[18em] text-center text-step-6 font-light md:text-step-8"
+      class="font-founder mx-auto max-w-[12em] text-center text-step-6 leading-[1.1] font-light md:text-step-9"
       data-i18n="footer.headline"
     >
       {t('footer.headline')}
     </h2>
     <p
-      class="font-nunito mx-auto mt-m max-w-[34em] text-center text-step--2 font-light tracking-wide text-paper/80"
+      class="font-nunito mx-auto mt-m max-w-[34em] text-center text-[12px] leading-[1.65] font-light text-paper/80 md:text-step--1"
       data-i18n="footer.lede"
     >
       {t('footer.lede')}
@@ -31,6 +31,7 @@ const links = [
   <form
     class="bg-charcoal text-paper grid border-y border-white/20 md:grid-cols-[1.7fr_1fr]"
     data-newsletter
+    data-signup-url={import.meta.env.PUBLIC_SIGNUP_URL}
   >
     <div class="md:border-r md:border-white/20">
       <label class="sr-only" for="newsletter-email" data-i18n="footer.emailPlaceholder">
@@ -44,20 +45,26 @@ const links = [
         autocomplete="email"
         placeholder={t('footer.emailPlaceholder')}
         data-i18n-placeholder="footer.emailPlaceholder"
-        class="font-cormorant h-20 w-full bg-transparent px-6 text-center text-step-2 font-light tracking-[0.22em] text-paper italic placeholder:text-paper/70 focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-[-1px] focus-visible:outline-paper/40 md:h-24"
+        class="font-founder h-20 w-full bg-transparent px-6 text-center text-step-2 font-light tracking-[0.22em] text-paper placeholder:text-paper/70 focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-[-1px] focus-visible:outline-paper/40 md:h-24"
       />
     </div>
     <button
       type="submit"
-      class="font-nunito h-20 border-t border-white/20 text-step-1 font-light tracking-[0.35em] uppercase focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-[-1px] focus-visible:outline-paper/40 md:h-24 md:border-t-0"
+      class="font-founder h-20 border-t border-white/20 text-step-1 font-light tracking-[0.35em] uppercase focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-[-1px] focus-visible:outline-paper/40 md:h-24 md:border-t-0"
       data-i18n="footer.signUp"
     >
       {t('footer.signUp')}
     </button>
+    <p
+      class="font-nunito col-span-full hidden border-t border-white/20 px-6 py-3 text-center text-step--1 font-light tracking-[0.18em] text-paper/80"
+      data-newsletter-status
+      aria-live="polite"
+    >
+    </p>
   </form>
 
-  <section class="bg-sand text-charcoal px-8 py-3xl md:px-16 md:py-4xl">
-    <div class="grid items-end gap-12 lg:grid-cols-[1fr_18rem] lg:gap-16" data-fade-in>
+  <section class="bg-sand text-charcoal px-8 pt-3xl pb-xl md:px-16 md:pt-4xl md:pb-2xl">
+    <div class="grid items-end gap-12 lg:grid-cols-[1fr_auto] lg:gap-16" data-fade-in>
       <div class="flex min-h-[18rem] flex-col justify-between">
         <nav class="flex flex-col gap-s" aria-label="Footer">
           {
@@ -105,14 +112,65 @@ const links = [
         data-i18n-alt="footer.photoAlt"
         widths={[480, 720, 960]}
         sizes="(min-width: 1024px) 18rem, 80vw"
-        class="aspect-square w-full max-w-[18rem] justify-self-end object-cover object-[center_20%] grayscale"
+        class="h-[18rem] w-auto justify-self-end grayscale"
       />
     </div>
   </section>
 </footer>
 
 <script>
-  document.querySelector('[data-newsletter]')?.addEventListener('submit', (event) => {
+  import { t, type Lang } from '../i18n';
+
+  const form = document.querySelector<HTMLFormElement>('[data-newsletter]');
+  const signupUrl = form?.dataset.signupUrl;
+
+  const lang = (): Lang => (document.documentElement.lang === 'fr' ? 'fr' : 'en');
+
+  const setStatus = (key: string) => {
+    const status = form?.querySelector<HTMLElement>('[data-newsletter-status]');
+    if (!status) return;
+    status.textContent = t(key, lang());
+    status.classList.remove('hidden');
+  };
+
+  form?.addEventListener('submit', async (event) => {
     event.preventDefault();
+    if (!form || !signupUrl) {
+      setStatus('footer.signUpError');
+      return;
+    }
+
+    const input = form.querySelector<HTMLInputElement>('input[type="email"]');
+    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    const email = input?.value.trim();
+    if (!input || !button || !email) return;
+
+    button.disabled = true;
+
+    try {
+      const payload = new URLSearchParams({
+        Date: new Date().toISOString(),
+        Name: '',
+        Email: email,
+        Consent: 'Yes',
+        Page: window.location.href,
+      });
+
+      const response = await fetch(`${signupUrl}?${payload.toString()}`);
+      const result = await response.json().catch(() => null);
+      if (!response.ok || result?.ok === false) {
+        throw new Error('Signup failed');
+      }
+      if (result?.duplicate) {
+        setStatus('footer.signUpExists');
+      } else {
+        input.value = '';
+        setStatus('footer.signUpSuccess');
+      }
+    } catch {
+      setStatus('footer.signUpError');
+    } finally {
+      button.disabled = false;
+    }
   });
 </script>

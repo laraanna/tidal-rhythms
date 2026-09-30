@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import OfferPage from '../../components/OfferPage.astro';
+import Footer from '../../components/Footer.astro';
+import { getOffer, offers } from '../../data/offers';
+import therapyLeft from '../../images/tf_hero_1.jpg';
+import therapyRight from '../../images/tf_hero_2.jpg';
+import somaticsLeft from '../../images/tf_mytam_hero.jpg';
+import somaticsRight from '../../images/mytam_menu.jpg';
+import yogaLeft from '../../images/tf_hero_mytam_1.jpg';
+import yogaRight from '../../images/tf_hero_mytam_2.jpg';
+
+const photos = {
+  'dance-movement-therapy': { left: therapyLeft, right: therapyRight },
+  'somatics-dance': { left: somaticsLeft, right: somaticsRight },
+  'somatic-yoga': { left: yogaLeft, right: yogaRight },
+} as const;
+
+export function getStaticPaths() {
+  return offers.map((offer) => ({ params: { slug: offer.slug } }));
+}
+
+const offer = getOffer(Astro.params.slug ?? '');
+
+if (!offer) {
+  throw new Error(`Unknown offer: ${Astro.params.slug}`);
+}
+
+const pair = photos[offer.slug];
+---
+
+<Layout titleKey={`offers.${offer.key}.metaTitle`} showContact={false}>
+  <OfferPage offer={offer} photoLeft={pair.left} photoRight={pair.right} />
+  <Footer />
+</Layout>

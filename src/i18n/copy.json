@@ -19,11 +19,15 @@
       "fr": ""
     },
     "motionAlt": {
-      "en": "Dancer in motion, bending toward the studio floor",
+      "en": "Blurred dancers moving through a studio",
+      "fr": ""
+    },
+    "mobileAlt": {
+      "en": "Mytam in motion in the studio, hands on the floor",
       "fr": ""
     },
     "floorAlt": {
-      "en": "Dancer stretching on the studio floor",
+      "en": "Mytam dancing in the studio, hands raised near her face",
       "fr": ""
     },
     "titleDance": {
@@ -128,12 +132,116 @@
     }
   },
   "offers": {
-    "readMore": {
-      "en": "Read more",
-      "fr": ""
-    },
     "reserve": {
       "en": "Reserve now",
+      "fr": ""
+    },
+    "bookCta": {
+      "en": "Book a free intro call",
+      "fr": ""
+    },
+    "detailsTitle": {
+      "en": "Details & Pricing",
+      "fr": ""
+    },
+    "detailsFormatLabel": {
+      "en": "Format",
+      "fr": ""
+    },
+    "detailsLocationLabel": {
+      "en": "Location",
+      "fr": ""
+    },
+    "detailsPriceLabel": {
+      "en": "Price",
+      "fr": ""
+    },
+    "detailsLocation": {
+      "en": "Studio in Paris",
+      "fr": ""
+    },
+    "detailsPrice": {
+      "en": "70€ - 80€",
+      "fr": ""
+    },
+    "quote": {
+      "en": "When we meet our difficult experiences with care and tenderness — or with rawness and surrender — we come back to ourselves.",
+      "fr": ""
+    },
+    "approachTitle": {
+      "en": "Approach",
+      "fr": ""
+    },
+    "pillarSomatic": {
+      "en": "Somatic",
+      "fr": ""
+    },
+    "pillarSomaticBody": {
+      "en": "We begin with body awareness: sensing, breathing, moving, and listening to what is present. Somatic awareness offers another way of knowing ourselves — one that can unfold beyond words and through sensation, movement, and pleasure.",
+      "fr": ""
+    },
+    "pillarRelational": {
+      "en": "Relational",
+      "fr": ""
+    },
+    "pillarRelationalBody": {
+      "en": "Healing happens in relationship. You are accompanied in this therapeutic space where your experience can be expressed, explored, and met with curiosity and compassion. Through movement, words, writing, and conversation, we create new possibilities for relating to yourself and others.",
+      "fr": ""
+    },
+    "pillarAgency": {
+      "en": "Agency-centered",
+      "fr": ""
+    },
+    "pillarAgencyBody": {
+      "en": "We explore your capacity to sense, choose, express, and act. Dance creates a space to experience agency in the body — to discover that you can move, change direction, take space, set boundaries, connect, and create.",
+      "fr": ""
+    },
+    "pillarContextual": {
+      "en": "Contextual &<br />Historical",
+      "fr": ""
+    },
+    "pillarContextualBody": {
+      "en": "We are shaped by the worlds we belong to. Personal experiences are connected to family histories, culture, society, and our environment. When relevant, we make space for collective and transgenerational experiences of trauma, displacement, oppression, or loss, without reducing your story to them.",
+      "fr": ""
+    },
+    "pillarSlow": {
+      "en": "Slow",
+      "fr": ""
+    },
+    "pillarSlowBody": {
+      "en": "Sessions are 60 minutes, held in a studio in the 11th arrondissement in Paris. It can take place weekly, bi-weekly, or monthly, according to your needs and rhythm.",
+      "fr": ""
+    },
+    "sessionTitle": {
+      "en": "What happens in a session",
+      "fr": ""
+    },
+    "sessionIntro": {
+      "en": "You do not need any formal dance training. We cultivate your body's own natural expression.",
+      "fr": ""
+    },
+    "sessionArrive": {
+      "en": "Arrive",
+      "fr": ""
+    },
+    "sessionArriveBody": {
+      "en": "A gentle grounding practice to help you land in the present moment and tune into your body.",
+      "fr": ""
+    },
+    "sessionExplore": {
+      "en": "Explore",
+      "fr": ""
+    },
+    "sessionExploreBody": {
+      "en": "Space to speak about what is present for you, your needs, and your expectations. From there, we move into guided exercises, improvisation, or simply noticing what your body is communicating.",
+      "fr": ""
+    },
+    "sessionIntegrate": {
+      "en": "Integrate",
+      "fr": ""
+    },
+    "sessionIntegrateBody": {
+      "en": "We close through words, drawing, or writing — reflecting on what emerged so you can carry that wisdom beyond the session.",
       "fr": ""
     },
     "therapy": {
@@ -143,6 +251,38 @@
       },
       "blurb": {
         "en": "A slow process for deeper healing.",
+        "fr": ""
+      },
+      "pageTitle": {
+        "en": "1:1 Dance Movement Therapy",
+        "fr": ""
+      },
+      "introLead": {
+        "en": "Meet your whole self, at your own pace.",
+        "fr": ""
+      },
+      "introBody": {
+        "en": "60-minute Dance Movement Therapy sessions in a quiet studio in Paris. A space to reconnect to your body, express, and integrate your lived experiences.",
+        "fr": ""
+      },
+      "approachIntro": {
+        "en": "Rather than leaving big emotions behind, Dance Movement Therapy creates space to feel, express, and integrate them.",
+        "fr": ""
+      },
+      "detailsFormat": {
+        "en": "60-minute 1-on-1 session",
+        "fr": ""
+      },
+      "photoLeftAlt": {
+        "en": "Dancer crouching on the studio floor beside a mirror",
+        "fr": ""
+      },
+      "photoRightAlt": {
+        "en": "Dancer arching backward in front of a studio window",
+        "fr": ""
+      },
+      "metaTitle": {
+        "en": "1:1 Dance Movement Therapy — Tidal Rhythms",
         "fr": ""
       }
     },
@@ -154,6 +294,38 @@
       "blurb": {
         "en": "A collective practice for inner freedom.",
         "fr": ""
+      },
+      "pageTitle": {
+        "en": "Somatics & Dance",
+        "fr": ""
+      },
+      "introLead": {
+        "en": "Meet your whole self, in collective practice.",
+        "fr": ""
+      },
+      "introBody": {
+        "en": "Somatics & Dance group sessions in a quiet studio in Paris. A space to reconnect to your body, express, and integrate your lived experiences.",
+        "fr": ""
+      },
+      "approachIntro": {
+        "en": "Rather than leaving big emotions behind, Somatics & Dance creates space to feel, express, and integrate them.",
+        "fr": ""
+      },
+      "detailsFormat": {
+        "en": "Group session",
+        "fr": ""
+      },
+      "photoLeftAlt": {
+        "en": "Mytam dancing in the studio, hands raised near her face",
+        "fr": ""
+      },
+      "photoRightAlt": {
+        "en": "Mytam leaning back in a black dress, arms extended",
+        "fr": ""
+      },
+      "metaTitle": {
+        "en": "Somatics & Dance — Tidal Rhythms",
+        "fr": ""
       }
     },
     "yoga": {
@@ -164,12 +336,44 @@
       "blurb": {
         "en": "A structured practice for embodied flow.",
         "fr": ""
+      },
+      "pageTitle": {
+        "en": "1:1 Somatic Yoga",
+        "fr": ""
+      },
+      "introLead": {
+        "en": "Meet your whole self, at your own pace.",
+        "fr": ""
+      },
+      "introBody": {
+        "en": "60-minute Somatic Yoga sessions in a quiet studio in Paris. A space to reconnect to your body, express, and integrate your lived experiences.",
+        "fr": ""
+      },
+      "approachIntro": {
+        "en": "Rather than leaving big emotions behind, Somatic Yoga creates space to feel, express, and integrate them.",
+        "fr": ""
+      },
+      "detailsFormat": {
+        "en": "60-minute 1-on-1 session",
+        "fr": ""
+      },
+      "photoLeftAlt": {
+        "en": "Dancer on the studio floor, arm extended across the wood",
+        "fr": ""
+      },
+      "photoRightAlt": {
+        "en": "Blurred dancer folding forward, hair in motion",
+        "fr": ""
+      },
+      "metaTitle": {
+        "en": "1:1 Somatic Yoga — Tidal Rhythms",
+        "fr": ""
       }
     }
   },
   "video": {
     "overlay": {
-      "en": "we are here to dance",
+      "en": "We are here to dance",
       "fr": ""
     }
   },
@@ -215,6 +419,20 @@
       "fr": ""
     }
   },
+  "rdv": {
+    "title": {
+      "en": "A moment together",
+      "fr": ""
+    },
+    "body": {
+      "en": "My work is centered on creating shared moments where we can be present, sensitive, creative together; where we can reflect on the cultures we are part of and our ways of seeing.",
+      "fr": ""
+    },
+    "embedTitle": {
+      "en": "Schedule an appointment",
+      "fr": ""
+    }
+  },
   "footer": {
     "headline": {
       "en": "Be the first to find out about our latest events",
@@ -232,6 +450,18 @@
       "en": "Sign up",
       "fr": ""
     },
+    "signUpSuccess": {
+      "en": "Thank you",
+      "fr": ""
+    },
+    "signUpExists": {
+      "en": "Already signed up",
+      "fr": ""
+    },
+    "signUpError": {
+      "en": "Try again",
+      "fr": ""
+    },
     "brand": {
       "en": "Dance and Movement",
       "fr": ""
@@ -241,11 +471,11 @@
       "fr": ""
     },
     "phone": {
-      "en": "+33 999 9999 99",
+      "en": "+33 6 43 76 41 57",
       "fr": ""
     },
     "photoAlt": {
-      "en": "Dancer in the studio reaching toward the window",
+      "en": "Dancer in the studio, hair in motion",
       "fr": ""
     }
   }

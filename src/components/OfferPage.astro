@@ -1,0 +1,231 @@
+---
+import { Image } from 'astro:assets';
+import { t } from '../i18n';
+import type { Offer } from '../data/offers';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  offer: Offer;
+  photoLeft: ImageMetadata;
+  photoRight: ImageMetadata;
+}
+
+const { offer, photoLeft, photoRight } = Astro.props;
+const prefix = `offers.${offer.key}`;
+
+const pillars = [
+  { label: 'offers.pillarSomatic', body: 'offers.pillarSomaticBody' },
+  { label: 'offers.pillarRelational', body: 'offers.pillarRelationalBody' },
+  { label: 'offers.pillarAgency', body: 'offers.pillarAgencyBody' },
+  { label: 'offers.pillarContextual', body: 'offers.pillarContextualBody' },
+  { label: 'offers.pillarSlow', body: 'offers.pillarSlowBody' },
+] as const;
+
+const steps = [
+  { label: 'offers.sessionArrive', body: 'offers.sessionArriveBody', color: offer.sessionColors[0] },
+  { label: 'offers.sessionExplore', body: 'offers.sessionExploreBody', color: offer.sessionColors[1] },
+  { label: 'offers.sessionIntegrate', body: 'offers.sessionIntegrateBody', color: offer.sessionColors[2] },
+] as const;
+---
+
+<article class="bg-mist text-charcoal">
+  <header class="flex items-start justify-between px-8 pt-7 md:px-16 lg:px-20 lg:pt-8">
+    <a href="/" class="text-charcoal">
+      <span
+        class="block font-founders text-[28px] leading-none font-normal tracking-[0.3em] uppercase md:text-[36px]"
+        data-i18n="hero.logoTidal"
+      >
+        {t('hero.logoTidal')}
+      </span>
+      <span
+        class="block font-founders text-[17px] leading-none font-light tracking-[0.3em] uppercase md:text-[22px]"
+        data-i18n="hero.logoRhythms"
+      >
+        {t('hero.logoRhythms')}
+      </span>
+    </a>
+    <button
+      type="button"
+      class="font-nunito text-charcoal mt-1 flex items-center gap-2 text-xl tracking-[0.3em] uppercase"
+      data-menu-open
+      data-i18n-aria-label="hero.menuAria"
+      aria-label={t('hero.menuAria')}
+    >
+      <span class="size-3.5 rounded-full bg-charcoal"></span>
+      <span data-i18n="hero.menu">{t('hero.menu')}</span>
+    </button>
+  </header>
+
+  <section class="px-8 pt-16 pb-20 md:px-16 md:pt-24 lg:px-20 lg:pt-28 lg:pb-28">
+    <div class="mx-auto max-w-[92rem]">
+      <div class="flex items-start gap-6 md:gap-10" data-fade-in>
+        <span class="mt-2 size-12 shrink-0 sm:size-16 md:mt-3 md:size-20" style={`background: ${offer.accent}`}
+        ></span>
+        <div>
+          <h1 class="font-cormorant text-step-6 leading-[1.1] font-light md:text-step-8" data-i18n={`${prefix}.pageTitle`}>
+            {t(`${prefix}.pageTitle`)}
+          </h1>
+          <p
+            class="font-founders mt-4 text-step-0 font-light tracking-[0.22em] uppercase md:text-step-1"
+            data-i18n={`${prefix}.blurb`}
+          >
+            {t(`${prefix}.blurb`)}
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-16 grid items-end gap-12 lg:mt-24 lg:grid-cols-[1fr_minmax(16rem,22rem)] lg:gap-16">
+        <div data-fade-in style="--fade-delay: 80ms">
+          <p class="font-cormorant text-step-2 font-light italic md:text-step-3" data-i18n={`${prefix}.introLead`}>
+            {t(`${prefix}.introLead`)}
+          </p>
+          <p
+            class="font-nunito mt-4 max-w-[36rem] text-step--1 leading-[1.7] font-light md:text-step-0"
+            data-i18n={`${prefix}.introBody`}
+          >
+            {t(`${prefix}.introBody`)}
+          </p>
+          <a
+            href="/#rdv"
+            class="font-nunito mt-10 inline-flex border border-charcoal px-10 py-3.5 text-step--1 font-light tracking-[0.32em] uppercase"
+            data-i18n="offers.bookCta"
+          >
+            {t('offers.bookCta')}
+          </a>
+        </div>
+
+        <aside class="bg-paper px-8 py-8 md:px-10 md:py-10" data-fade-in style="--fade-delay: 140ms">
+          <h2
+            class="font-founders text-step--1 font-medium tracking-[0.18em] uppercase"
+            data-i18n="offers.detailsTitle"
+          >
+            {t('offers.detailsTitle')}
+          </h2>
+          <dl class="font-nunito mt-5 space-y-1 text-step--1 font-light leading-[1.7]">
+            <div>
+              <dt class="inline" data-i18n="offers.detailsFormatLabel">{t('offers.detailsFormatLabel')}</dt>
+              <span>: </span>
+              <dd class="inline" data-i18n={`${prefix}.detailsFormat`}>{t(`${prefix}.detailsFormat`)}</dd>
+            </div>
+            <div>
+              <dt class="inline" data-i18n="offers.detailsLocationLabel">{t('offers.detailsLocationLabel')}</dt>
+              <span>: </span>
+              <dd class="inline" data-i18n="offers.detailsLocation">{t('offers.detailsLocation')}</dd>
+            </div>
+            <div>
+              <dt class="inline" data-i18n="offers.detailsPriceLabel">{t('offers.detailsPriceLabel')}</dt>
+              <span>: </span>
+              <dd class="inline" data-i18n="offers.detailsPrice">{t('offers.detailsPrice')}</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-8 py-20 text-center md:px-16 md:py-24 lg:px-20" style={`background: ${offer.accent}`}>
+    <p
+      class="font-cormorant mx-auto max-w-[22em] text-step-3 leading-[1.35] font-light text-paper italic md:text-step-5"
+      data-i18n="offers.quote"
+    >
+      {t('offers.quote')}
+    </p>
+  </section>
+
+  <section class="grid md:grid-cols-2">
+    <Image
+      src={photoLeft}
+      alt={t(`${prefix}.photoLeftAlt`)}
+      data-i18n-alt={`${prefix}.photoLeftAlt`}
+      widths={[720, 1100, 1600]}
+      sizes="(min-width: 768px) 50vw, 100vw"
+      class="aspect-[4/5] h-full w-full object-cover md:aspect-auto md:min-h-[70vh]"
+    />
+    <Image
+      src={photoRight}
+      alt={t(`${prefix}.photoRightAlt`)}
+      data-i18n-alt={`${prefix}.photoRightAlt`}
+      widths={[720, 1100, 1600]}
+      sizes="(min-width: 768px) 50vw, 100vw"
+      class="aspect-[4/5] h-full w-full object-cover md:aspect-auto md:min-h-[70vh]"
+    />
+  </section>
+
+  <section class="px-8 py-20 md:px-16 md:py-28 lg:px-20 lg:py-32">
+    <div class="mx-auto max-w-[92rem]">
+      <h2 class="font-cormorant text-step-6 font-light md:text-step-8" data-i18n="offers.approachTitle" data-fade-in>
+        {t('offers.approachTitle')}
+      </h2>
+      <p
+        class="font-cormorant mt-4 max-w-[28em] text-step-1 font-light italic md:text-step-3"
+        data-i18n={`${prefix}.approachIntro`}
+        data-fade-in
+      >
+        {t(`${prefix}.approachIntro`)}
+      </p>
+
+      <div class="mt-16 flex flex-col gap-10 md:mt-20 md:gap-12">
+        {
+          pillars.map((pillar, index) => (
+            <div
+              class="grid items-start gap-4 md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]"
+              data-fade-in
+              style={`--fade-delay: ${index * 60}ms`}
+            >
+              <div class="flex items-center gap-5">
+                <span class="hidden h-px flex-1 bg-charcoal/50 md:block"></span>
+                <p
+                  class="font-nunito shrink-0 text-right text-step--1 leading-tight font-light tracking-[0.28em] uppercase"
+                  data-i18n-html={pillar.label}
+                  set:html={t(pillar.label)}
+                />
+              </div>
+              <p class="font-nunito max-w-[38rem] text-step--1 leading-[1.7] font-light" data-i18n={pillar.body}>
+                {t(pillar.body)}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="mt-24 md:mt-32 md:grid md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]">
+        <div class="hidden md:block"></div>
+        <div data-fade-in>
+          <h2 class="font-cormorant text-step-6 font-light md:text-step-8" data-i18n="offers.sessionTitle">
+            {t('offers.sessionTitle')}
+          </h2>
+          <p
+            class="font-cormorant mt-4 max-w-[24em] text-step-1 font-light italic md:text-step-3"
+            data-i18n="offers.sessionIntro"
+          >
+            {t('offers.sessionIntro')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-24 md:pb-32">
+    <div class="flex flex-col">
+      {
+        steps.map((step) => (
+          <div class="grid items-center md:grid-cols-[minmax(16rem,38%)_1fr]">
+            <p
+              class="font-nunito flex h-16 items-center justify-center text-step--1 font-light tracking-[0.4em] text-charcoal uppercase md:h-20"
+              style={`background: ${step.color}`}
+              data-i18n={step.label}
+            >
+              {t(step.label)}
+            </p>
+            <div class="flex items-center gap-6 px-8 py-5 md:px-10">
+              <span class="hidden h-px w-16 shrink-0 bg-charcoal/35 md:block"></span>
+              <p class="font-nunito max-w-[36rem] text-step--2 leading-[1.65] font-light md:text-step--1" data-i18n={step.body}>
+                {t(step.body)}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</article>
