@@ -26,11 +26,21 @@ import { t } from '../i18n';
       {t('work.body')}
     </p>
     <a
-      href="/#rdv"
-      class="font-nunito mt-3 inline-flex border border-paper px-10 py-3 text-step--1 font-light tracking-[0.32em] uppercase"
-      data-i18n="work.cta"
+      href="/offers/somatics-at-work"
+      class="font-nunito inline-flex w-fit items-center gap-3 whitespace-nowrap text-paper text-step--1 font-light tracking-[0.32em] uppercase"
     >
-      {t('work.cta')}
+      <span data-i18n="offers.readMore">{t('offers.readMore')}</span>
+      <svg class="h-2.5 w-14 shrink-0" viewBox="0 0 56 10" fill="none" aria-hidden="true">
+        <path d="M0 5h50" stroke="currentColor" stroke-width="1" />
+        <path d="M47 2.5 53 5 47 7.5" stroke="currentColor" stroke-width="1" />
+      </svg>
+    </a>
+    <a
+      href="/offers/somatics-at-work#reserve"
+      class="font-nunito mt-3 inline-flex border border-paper px-10 py-3 text-step--1 font-light tracking-[0.32em] uppercase"
+      data-i18n="offers.bookCta"
+    >
+      {t('offers.bookCta')}
     </a>
   </div>
 </section>

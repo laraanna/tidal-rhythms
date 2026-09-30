@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import WorkPage from '../../components/WorkPage.astro';
+import Footer from '../../components/Footer.astro';
+import photoLeft from '../../images/sad_hero_1.jpg';
+import photoRight from '../../images/sad_hero_2.jpg';
+import bg from '../../images/bg_option_B.jpg';
+---
+
+<Layout titleKey="work.metaTitle" showContact={false}>
+  <WorkPage photoLeft={photoLeft} photoRight={photoRight} bg={bg} />
+  <Footer />
+</Layout>

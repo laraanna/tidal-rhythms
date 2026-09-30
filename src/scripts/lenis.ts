@@ -40,6 +40,14 @@ export function initLenis() {
     true,
   );
 
+  if (location.hash && document.querySelector(location.hash)) {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        lenis?.scrollTo(location.hash, { immediate: true, force: true });
+      });
+    });
+  }
+
   return lenis;
 }
 

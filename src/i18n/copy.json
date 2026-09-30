@@ -147,11 +147,247 @@
     "cta": {
       "en": "Discover more",
       "fr": ""
+    },
+    "metaTitle": {
+      "en": "Somatics at Work — Tidal Rhythms",
+      "fr": ""
+    },
+    "bookCta": {
+      "en": "Book an Introductory Strategy Call",
+      "fr": ""
+    },
+    "detailsTitle": {
+      "en": "Details",
+      "fr": ""
+    },
+    "detailsBasedLabel": {
+      "en": "Based in",
+      "fr": ""
+    },
+    "detailsBased": {
+      "en": "Paris, France",
+      "fr": ""
+    },
+    "detailsDeliveryLabel": {
+      "en": "Delivery",
+      "fr": ""
+    },
+    "detailsDelivery": {
+      "en": "Global travel & hybrid",
+      "fr": ""
+    },
+    "detailsContactLabel": {
+      "en": "Contact",
+      "fr": ""
+    },
+    "detailsContact": {
+      "en": "mayosmith.mytam@gmail.com",
+      "fr": ""
+    },
+    "quoteLabel": {
+      "en": "What is Somatics?",
+      "fr": ""
+    },
+    "quote": {
+      "en": "“Somatic” simply means “of the body.” Instead of discussing stress and teamwork purely as mental ideas, somatic practices work directly through breath, movement, and physical awareness to build embodied emotional intelligence with immediate, lasting shifts.",
+      "fr": ""
+    },
+    "photoLeftAlt": {
+      "en": "Mytam dancing in the studio, hands raised near her face",
+      "fr": ""
+    },
+    "photoRightAlt": {
+      "en": "Mytam leaning back in a black dress, arms extended",
+      "fr": ""
+    },
+    "overviewTitle": {
+      "en": "Executive Overview",
+      "fr": ""
+    },
+    "overviewBody": {
+      "en": "Combining dance movement therapy (DMT) principles with Body-Mind Centering, these sessions offer an embodied approach to releasing accumulated tension, reconnecting with physical presence, and restoring collective energy.",
+      "fr": ""
+    },
+    "audienceTitle": {
+      "en": "Targeted for Global & High-Growth Organizations",
+      "fr": ""
+    },
+    "audience1": {
+      "en": "Distributed & Hybrid Teams",
+      "fr": ""
+    },
+    "audience1Body": {
+      "en": "Reconnect team members who spend most of their days behind screens or working across time zones through a shared physical experience.",
+      "fr": ""
+    },
+    "audience2": {
+      "en": "High-Growth Environments",
+      "fr": ""
+    },
+    "audience2Body": {
+      "en": "Give teams in high-pressure cycles practical, bodily tools to lower cortisol and prevent burnout before it happens.",
+      "fr": ""
+    },
+    "audience3": {
+      "en": "Cross-Cultural Teams",
+      "fr": ""
+    },
+    "audience3Body": {
+      "en": "Leverage non-verbal movement as a universal medium that transcends native languages, immediately building trust and ease.",
+      "fr": ""
+    },
+    "audience4": {
+      "en": "Executive Retreats & Offsites",
+      "fr": ""
+    },
+    "audience4Body": {
+      "en": "Elevate retreat programs with immersive, non-traditional experiences that build psychological safety and deep mutual understanding.",
+      "fr": ""
+    },
+    "benefitsTitle": {
+      "en": "Measurable Team Benefits",
+      "fr": ""
+    },
+    "benefitsCol1": {
+      "en": "Core Team Benefit",
+      "fr": ""
+    },
+    "benefitsCol2": {
+      "en": "Enterprise & Workplace Outcome",
+      "fr": ""
+    },
+    "benefit1": {
+      "en": "Relieve Deep Stress",
+      "fr": ""
+    },
+    "benefit1Body": {
+      "en": "Practical somatic tools to lower stress, release physical tension, and restore focus during intense work cycles.",
+      "fr": ""
+    },
+    "benefit2": {
+      "en": "Reconnect with the Body",
+      "fr": ""
+    },
+    "benefit2Body": {
+      "en": "Heightened awareness of physical cues and stress signals to shift out of screen fatigue and mental overthinking.",
+      "fr": ""
+    },
+    "benefit3": {
+      "en": "Renew Motivation & Vitality",
+      "fr": ""
+    },
+    "benefit3Body": {
+      "en": "Dynamic, creative movement that clears mental blockages and restores energy after long hours at screens.",
+      "fr": ""
+    },
+    "benefit4": {
+      "en": "Strengthen Team Connection",
+      "fr": ""
+    },
+    "benefit4Body": {
+      "en": "Shared, low-stakes movement that breaks down hierarchy, builds psychological safety, and deepens non-verbal trust.",
+      "fr": ""
+    },
+    "sessionTitle": {
+      "en": "Session Structure",
+      "fr": ""
+    },
+    "sessionIntro": {
+      "en": "Every session is designed to gently move participants from cognitive overload into grounded, physical connection—no choreography or performance required.",
+      "fr": ""
+    },
+    "stage1": {
+      "en": "1. Grounding",
+      "fr": ""
+    },
+    "stage1Body": {
+      "en": "Guided breathwork and somatic alignment to step out of the daily rush, lower nervous system activation, and arrive in the body.",
+      "fr": ""
+    },
+    "stage2": {
+      "en": "2. Guided Exploration & Dance",
+      "fr": ""
+    },
+    "stage2Body": {
+      "en": "Experiential movement sequences built around a theme chosen for your team—such as releasing stress, deep listening, handling conflict, or collective energy.",
+      "fr": ""
+    },
+    "stage3": {
+      "en": "3. Reflective Sharing",
+      "fr": ""
+    },
+    "stage3Body": {
+      "en": "Facilitated discussion in pairs or small groups connecting what was felt physically directly to everyday workplace interactions.",
+      "fr": ""
+    },
+    "stage4": {
+      "en": "4. Integration",
+      "fr": ""
+    },
+    "stage4Body": {
+      "en": "A gentle closing that provides simple, practical somatic micro-habits teams can carry back to their desks or use before high-stakes moments.",
+      "fr": ""
+    },
+    "accessTitle": {
+      "en": "Accessibility & Preparation",
+      "fr": ""
+    },
+    "accessBody": {
+      "en": "Suitable for all mobility levels—no prior dance experience needed. Participants simply need comfortable, flexible clothing (activewear or loose layers) allowing ease of movement.",
+      "fr": ""
+    },
+    "formatsTitle": {
+      "en": "Delivery Formats",
+      "fr": ""
+    },
+    "format1": {
+      "en": "Discovery Workshop (2 Hours)",
+      "fr": ""
+    },
+    "format1Body": {
+      "en": "A focused session to relieve stress and reset team dynamics (8–20 participants).",
+      "fr": ""
+    },
+    "format2": {
+      "en": "Ongoing Resilience Cycle (4–6 Sessions)",
+      "fr": ""
+    },
+    "format2Body": {
+      "en": "Sustained practice over time for habit formation, ongoing stress management, and culture building.",
+      "fr": ""
+    },
+    "format3": {
+      "en": "Interactive Keynote (45–60 Min)",
+      "fr": ""
+    },
+    "format3Body": {
+      "en": "High-impact talk combining brief concepts with guided movement for conferences, summits, or all-hands.",
+      "fr": ""
+    },
+    "format4": {
+      "en": "Offsite Immersion (Half/Full Day)",
+      "fr": ""
+    },
+    "format4Body": {
+      "en": "Deep-dive experience tailored for executive retreats and team seminars.",
+      "fr": ""
+    },
+    "programTitle": {
+      "en": "Build a Program for Your Team",
+      "fr": ""
+    },
+    "programBody": {
+      "en": "Every session is custom-designed around your team's headcount, location, and current priorities.",
+      "fr": ""
     }
   },
   "offers": {
     "reserve": {
       "en": "Discover",
+      "fr": ""
+    },
+    "readMore": {
+      "en": "Read more",
       "fr": ""
     },
     "bookCta": {
