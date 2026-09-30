@@ -3,17 +3,20 @@ import Layout from '../../layouts/Layout.astro';
 import OfferPage from '../../components/OfferPage.astro';
 import Footer from '../../components/Footer.astro';
 import { getOffer, offers } from '../../data/offers';
-import therapyLeft from '../../images/tf_hero_1.jpg';
-import therapyRight from '../../images/tf_hero_2.jpg';
-import somaticsLeft from '../../images/tf_mytam_hero.jpg';
-import somaticsRight from '../../images/mytam_menu.jpg';
-import yogaLeft from '../../images/tf_hero_mytam_1.jpg';
-import yogaRight from '../../images/tf_hero_mytam_2.jpg';
+import therapyLeft from '../../images/dmt_hero_1.jpg';
+import therapyRight from '../../images/dmt_hero_2.jpg';
+import somaticsLeft from '../../images/sad_hero_1.jpg';
+import somaticsRight from '../../images/sad_hero_2.jpg';
+import yogaLeft from '../../images/sy_hero_1.jpg';
+import yogaRight from '../../images/sy_hero_2.jpg';
+import bgA from '../../images/bg_option_A.jpg';
+import bgB from '../../images/bg_option_B.jpg';
+import bgC from '../../images/bg_option_C.jpg';
 
 const photos = {
-  'dance-movement-therapy': { left: therapyLeft, right: therapyRight },
-  'somatics-dance': { left: somaticsLeft, right: somaticsRight },
-  'somatic-yoga': { left: yogaLeft, right: yogaRight },
+  'dance-movement-therapy': { left: therapyLeft, right: therapyRight, bg: bgA },
+  'somatics-dance': { left: somaticsLeft, right: somaticsRight, bg: bgB },
+  'somatic-yoga': { left: yogaLeft, right: yogaRight, bg: bgC },
 } as const;
 
 export function getStaticPaths() {
@@ -30,6 +33,6 @@ const pair = photos[offer.slug];
 ---
 
 <Layout titleKey={`offers.${offer.key}.metaTitle`} showContact={false}>
-  <OfferPage offer={offer} photoLeft={pair.left} photoRight={pair.right} />
+  <OfferPage offer={offer} photoLeft={pair.left} photoRight={pair.right} bg={pair.bg} />
   <Footer />
 </Layout>

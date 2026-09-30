@@ -1,8 +1,8 @@
 ---
 import { t } from '../i18n';
+import CalendlyEmbed from './CalendlyEmbed.astro';
 
-const calendlyUrl =
-  'https://calendly.com/mayosmith-mytam/introduction-call?hide_gdpr_banner=1&background_color=ffffff&text_color=414141&primary_color=414141';
+const calendlyUrl = 'https://calendly.com/mayosmith-mytam/introduction-call';
 ---
 
 <section
@@ -25,45 +25,8 @@ const calendlyUrl =
       </p>
     </div>
 
-    <div class="relative mt-2xl min-h-[43.75rem] overflow-hidden md:mt-0" data-calendly-wrap>
-      <div
-        class="calendly-inline-widget h-full min-h-[43.75rem] w-full shadow-none"
-        data-url={calendlyUrl}
-        role="region"
-        aria-label={t('rdv.embedTitle')}
-        data-i18n-aria-label="rdv.embedTitle"
-        style="min-width: 320px; height: 700px; box-shadow: none"
-      >
-      </div>
-      <div class="absolute inset-0 z-10" data-calendly-shield aria-hidden="true"></div>
+    <div class="mt-2xl md:mt-0">
+      <CalendlyEmbed url={calendlyUrl} label={t('rdv.embedTitle')} />
     </div>
   </div>
 </section>
-
-<script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-<style>
-  [data-calendly-wrap] :global(iframe) {
-    box-shadow: none !important;
-    filter: none !important;
-    outline: none !important;
-    border: 0 !important;
-  }
-</style>
-
-<script>
-  const wrap = document.querySelector('[data-calendly-wrap]');
-  const shield = document.querySelector<HTMLElement>('[data-calendly-shield]');
-
-  if (wrap instanceof HTMLElement && shield) {
-    const arm = () => {
-      shield.style.pointerEvents = 'auto';
-    };
-    const disarm = () => {
-      shield.style.pointerEvents = 'none';
-    };
-
-    shield.addEventListener('pointerdown', disarm);
-    wrap.addEventListener('mouseleave', arm);
-  }
-</script>

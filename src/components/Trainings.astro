@@ -1,5 +1,13 @@
 ---
 import { t } from '../i18n';
+
+const faqs = [
+  { q: 'faq.q1', a: 'faq.a1' },
+  { q: 'faq.q2', a: 'faq.a2' },
+  { q: 'faq.q3', a: 'faq.a3' },
+  { q: 'faq.q4', a: 'faq.a4' },
+  { q: 'faq.q5', a: 'faq.a5' },
+] as const;
 ---
 
 <div
@@ -49,6 +57,32 @@ import { t } from '../i18n';
         data-i18n-html="about.trainingsList"
         set:html={t('about.trainingsList')}
       />
+
+      <section class="mt-16 max-w-[36rem] pb-8">
+        <h3
+          class="font-cormorant text-step-4 font-light md:text-step-5"
+          data-i18n="faq.title"
+        >
+          {t('faq.title')}
+        </h3>
+        <div class="mt-8">
+          {
+            faqs.map((item) => (
+              <details class="faq-item">
+                <summary>
+                  <span data-i18n={item.q}>{t(item.q)}</span>
+                </summary>
+                <p
+                  class="font-nunito pt-1 pb-5 text-[12px] leading-[1.65] font-light text-paper/85"
+                  data-i18n={item.a}
+                >
+                  {t(item.a)}
+                </p>
+              </details>
+            ))
+          }
+        </div>
+      </section>
     </div>
   </aside>
 </div>
@@ -124,5 +158,40 @@ import { t } from '../i18n';
 
   .trainings-list :global(p) {
     margin-bottom: 0.3rem;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgb(254 254 254 / 0.28);
+  }
+
+  .faq-item summary {
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.25rem;
+    padding: 1.15rem 0;
+    font-family: var(--font-nunito);
+    font-size: var(--step--2);
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    line-height: 1.45;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    flex-shrink: 0;
+    font-size: 1.1em;
+    line-height: 1;
+  }
+
+  .faq-item[open] summary::after {
+    content: '−';
   }
 </style>

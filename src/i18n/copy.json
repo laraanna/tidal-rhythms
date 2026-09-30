@@ -151,11 +151,15 @@
   },
   "offers": {
     "reserve": {
-      "en": "Reserve now",
+      "en": "Discover",
       "fr": ""
     },
     "bookCta": {
-      "en": "Book a free intro call",
+      "en": "Reserve now",
+      "fr": ""
+    },
+    "reserveTitle": {
+      "en": "Reserve your moment",
       "fr": ""
     },
     "detailsTitle": {
@@ -172,18 +176,6 @@
     },
     "detailsPriceLabel": {
       "en": "Price",
-      "fr": ""
-    },
-    "detailsLocation": {
-      "en": "Studio in Paris",
-      "fr": ""
-    },
-    "detailsPrice": {
-      "en": "70€ - 80€",
-      "fr": ""
-    },
-    "quote": {
-      "en": "When we meet our difficult experiences with care and tenderness — or with rawness and surrender — we come back to ourselves.",
       "fr": ""
     },
     "approachTitle": {
@@ -287,8 +279,20 @@
         "en": "Rather than leaving big emotions behind, Dance Movement Therapy creates space to feel, express, and integrate them.",
         "fr": ""
       },
+      "quote": {
+        "en": "When we meet our difficult experiences with care and tenderness — or with rawness and surrender — we come back to ourselves.",
+        "fr": ""
+      },
       "detailsFormat": {
         "en": "60-minute 1-on-1 session",
+        "fr": ""
+      },
+      "detailsLocation": {
+        "en": "Studio in Paris",
+        "fr": ""
+      },
+      "detailsPrice": {
+        "en": "70€ - 80€",
         "fr": ""
       },
       "photoLeftAlt": {
@@ -314,7 +318,7 @@
         "fr": ""
       },
       "pageTitle": {
-        "en": "Somatics & Dance",
+        "en": "Somatic & Dance - Group Session",
         "fr": ""
       },
       "introLead": {
@@ -322,15 +326,79 @@
         "fr": ""
       },
       "introBody": {
-        "en": "Somatics & Dance group sessions in a quiet studio in Paris. A space to reconnect to your body, express, and integrate your lived experiences.",
+        "en": "A collective practice for inner freedom, open to all. Sessions are in cycles with different themes. You can join for one, or multiple sessions.",
         "fr": ""
       },
       "approachIntro": {
-        "en": "Rather than leaving big emotions behind, Somatics & Dance creates space to feel, express, and integrate them.",
+        "en": "Somatics is a body awareness practice. Through breath, movement, and soft attention, we become present to our inner sensations. Rather than thinking about the body, we learn to experience from the body, grounding into ourselves and the present moment.\n\nTogether, somatics and dance offer a practice of reconnecting — with ourselves, with one another, and with the world around us.",
+        "fr": ""
+      },
+      "quote": {
+        "en": "Dance gives space for feeling, and through this feeling an inner place of freedom may open. From this opening, we may find a way to our unique agency.",
+        "fr": ""
+      },
+      "sessionIntro": {
+        "en": "Each cycle of sessions are focused on a different topic, but generally the guided somatic dance follows these different stages:",
+        "fr": ""
+      },
+      "stage1": {
+        "en": "1. Grounding",
+        "fr": ""
+      },
+      "stage1Body": {
+        "en": "Returning to breath, and to the earth as a support beneath you.",
+        "fr": ""
+      },
+      "stage2": {
+        "en": "2. Sensing",
+        "fr": ""
+      },
+      "stage2Body": {
+        "en": "Coming into the senses, slowly landing in the here and now.",
+        "fr": ""
+      },
+      "stage3": {
+        "en": "3. Exploring",
+        "fr": ""
+      },
+      "stage3Body": {
+        "en": "Listening to the body through movement propositions.",
+        "fr": ""
+      },
+      "stage4": {
+        "en": "4. Expressing",
+        "fr": ""
+      },
+      "stage4Body": {
+        "en": "Embodying your own stories and present emotions, with care.",
+        "fr": ""
+      },
+      "stage5": {
+        "en": "5. Resting",
+        "fr": ""
+      },
+      "stage5Body": {
+        "en": "Allowing time to rest and let the experience settle.",
+        "fr": ""
+      },
+      "whoTitle": {
+        "en": "Who is this for?",
+        "fr": ""
+      },
+      "whoBody": {
+        "en": "This space is open to everyone, regardless of background or prior experience. It is for anyone seeking to slow down, reconnect with their body, and move through the world with more presence. Whether you are looking to process emotions, nourish your creativity, or simply find a supportive community practice, no background in dance or somatics is required—just a curiosity to listen inward.",
         "fr": ""
       },
       "detailsFormat": {
-        "en": "Group session",
+        "en": "90 minute group sessions",
+        "fr": ""
+      },
+      "detailsLocation": {
+        "en": "Across various studios in Paris",
+        "fr": ""
+      },
+      "detailsPrice": {
+        "en": "25 € - 30 €",
         "fr": ""
       },
       "photoLeftAlt": {
@@ -342,7 +410,7 @@
         "fr": ""
       },
       "metaTitle": {
-        "en": "Somatics & Dance — Tidal Rhythms",
+        "en": "Somatic & Dance - Group Session — Tidal Rhythms",
         "fr": ""
       }
     },
@@ -360,19 +428,71 @@
         "fr": ""
       },
       "introLead": {
-        "en": "Meet your whole self, at your own pace.",
+        "en": "Inhabit your body more fully, through a slow practice of asana (yoga postures) and contemplation.",
         "fr": ""
       },
       "introBody": {
-        "en": "60-minute Somatic Yoga sessions in a quiet studio in Paris. A space to reconnect to your body, express, and integrate your lived experiences.",
+        "en": "A 60-minute 1-on-1 session held at your home or at a studio in the 11th arrondissement of Paris.",
         "fr": ""
       },
       "approachIntro": {
-        "en": "Rather than leaving big emotions behind, Somatic Yoga creates space to feel, express, and integrate them.",
+        "en": "<p>“Somatic” brings attention to the senses, and to a slower rhythm of movement in a Yoga Asana practice (physical postures). That slowness lets us arrive in the present moment, to be with our body.</p><p>Each session is curated for you and what you are working towards.</p><p>Somatic yoga sessions are based on Authentic Flow, an approach founded by <a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Satu Tuomela</a>. Read more about Authentic Flow → <a href=\"https://www.authentic-flow.com/authenticflow\" target=\"_blank\" rel=\"noreferrer\">www.authentic-flow.com/authenticflow</a></p>",
+        "fr": ""
+      },
+      "quote": {
+        "en": "We work with breath, sound, sensation, yoga asana, and intuitive movement — listening inward rather than performing outward.",
+        "fr": ""
+      },
+      "stage1": {
+        "en": "1. Breath & body awareness",
+        "fr": ""
+      },
+      "stage1Body": {
+        "en": "Settling into breath and sensation, arriving in the present moment.",
+        "fr": ""
+      },
+      "stage2": {
+        "en": "2. Asana",
+        "fr": ""
+      },
+      "stage2Body": {
+        "en": "Physical postures, taken slowly and adapted to your body.",
+        "fr": ""
+      },
+      "stage3": {
+        "en": "3. Relaxation",
+        "fr": ""
+      },
+      "stage3Body": {
+        "en": "Rest, and time for the practice to settle.",
+        "fr": ""
+      },
+      "stage4": {
+        "en": "4. Sharing, if you wish",
+        "fr": ""
+      },
+      "stage4Body": {
+        "en": "Journaling or conversation — optional, never required",
+        "fr": ""
+      },
+      "whoTitle": {
+        "en": "Who is this for?",
+        "fr": ""
+      },
+      "whoBody": {
+        "en": "These 1-on-1 sessions are for anyone who feels drawn to a gentler, more intuitive relationship with Yoga. They are ideal if you are navigating stress, seeking a personalized practice, or wanting to move away from rigid alignment and performance. Whether you are a beginner looking for a safe, supportive space to explore movement or an experienced practitioner wanting to slow down and listen inward, these sessions can meet you where you are.",
         "fr": ""
       },
       "detailsFormat": {
         "en": "60-minute 1-on-1 session",
+        "fr": ""
+      },
+      "detailsLocation": {
+        "en": "At your home/ studio Paris 11",
+        "fr": ""
+      },
+      "detailsPrice": {
+        "en": "60 € – 75 €",
         "fr": ""
       },
       "photoLeftAlt": {
@@ -438,6 +558,56 @@
     },
     "photoAlt": {
       "en": "Portrait of Mytam Mayo-Smith",
+      "fr": ""
+    }
+  },
+  "faq": {
+    "title": {
+      "en": "Questions",
+      "fr": ""
+    },
+    "photoAlt": {
+      "en": "Mytam moving in the studio",
+      "fr": ""
+    },
+    "q1": {
+      "en": "Do I need any dance or movement experience?",
+      "fr": ""
+    },
+    "a1": {
+      "en": "No. These sessions are open to all bodies, whether you have danced for years or never at all. We follow what is present, at your pace.",
+      "fr": ""
+    },
+    "q2": {
+      "en": "What should I wear to a session?",
+      "fr": ""
+    },
+    "a2": {
+      "en": "Wear comfortable clothes you can move in easily. You may be invited to work without shoes.",
+      "fr": ""
+    },
+    "q3": {
+      "en": "What if I have physical limitations, chronic pain, or injuries?",
+      "fr": ""
+    },
+    "a3": {
+      "en": "We adapt the work to your body. Share any limitations, pain, or injuries beforehand so we can move with care and find what is possible for you.",
+      "fr": ""
+    },
+    "q4": {
+      "en": "Where do sessions take place, and are the studios accessible?",
+      "fr": ""
+    },
+    "a4": {
+      "en": "Sessions take place in a studio in the 11th arrondissement in Paris. Please get in touch with any accessibility needs so we can find a suitable arrangement.",
+      "fr": ""
+    },
+    "q5": {
+      "en": "How does a session differ from a traditional talk therapy session?",
+      "fr": ""
+    },
+    "a5": {
+      "en": "We work through the body as well as through words — movement, sensation, and dialogue — rather than sitting and speaking only.",
       "fr": ""
     }
   },
