@@ -116,8 +116,8 @@
       "en": "Somatic Yoga",
       "fr": ""
     },
-    "itemArchive": {
-      "en": "Archive",
+    "itemSomaticsAtWork": {
+      "en": "Somatics at work",
       "fr": ""
     },
     "contact": {
@@ -128,6 +128,24 @@
   "intro": {
     "body": {
       "en": "Movement stands at the center of Tidal Rhythms. As a way to reconnect, to our bodies, our emotions, our identities and ancestries, to one another, and to the world around us.",
+      "fr": ""
+    }
+  },
+  "work": {
+    "question": {
+      "en": "Looking for a team building session that helps your people reconnect?",
+      "fr": ""
+    },
+    "title": {
+      "en": "Somatics & Dance for Embodied Emotional Intelligence",
+      "fr": ""
+    },
+    "body": {
+      "en": "Guided somatic and dance movement sessions that help global teams regulate stress, reconnect with their bodies, and build lasting motivation and team cohesion.",
+      "fr": ""
+    },
+    "cta": {
+      "en": "Discover more",
       "fr": ""
     }
   },
@@ -380,6 +398,10 @@
   "about": {
     "title": {
       "en": "Dancer, workshop<br />creator, collaborator<br />and facilitator.",
+      "fr": ""
+    },
+    "intro": {
+      "en": "I'm Mytam",
       "fr": ""
     },
     "p1": {

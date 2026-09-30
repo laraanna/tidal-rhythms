@@ -1,0 +1,36 @@
+---
+import { t } from '../i18n';
+---
+
+<section
+  id="somatics-at-work"
+  class="bg-olive text-paper px-8 py-4xl md:px-16 lg:px-20 lg:py-24 xl:px-24"
+>
+  <div class="mx-auto flex max-w-[42rem] flex-col items-center gap-5 text-center" data-fade-in>
+    <p
+      class="font-cormorant text-step-3 leading-[1.3] font-light italic md:text-step-4"
+      data-i18n="work.question"
+    >
+      {t('work.question')}
+    </p>
+    <h2
+      class="font-founders text-step-4 leading-[1.15] font-light md:text-step-5 xl:text-step-7"
+      data-i18n="work.title"
+    >
+      {t('work.title')}
+    </h2>
+    <p
+      class="font-nunito text-[12px] leading-[1.65] font-light text-paper/85 md:text-step--1"
+      data-i18n="work.body"
+    >
+      {t('work.body')}
+    </p>
+    <a
+      href="/#rdv"
+      class="font-nunito mt-3 inline-flex border border-paper px-10 py-3 text-step--1 font-light tracking-[0.32em] uppercase"
+      data-i18n="work.cta"
+    >
+      {t('work.cta')}
+    </a>
+  </div>
+</section>
