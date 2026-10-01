@@ -17,7 +17,7 @@ export const offers = [
       'rgb(168 177 148 / 0.7)',
       '#A8B194',
     ],
-    calendly: 'https://calendly.com/mayosmith-mytam/introduction-call',
+    calendly: 'https://calendly.com/mayosmith-mytam/somatics-dance-sessions',
   },
   {
     slug: 'somatic-yoga',

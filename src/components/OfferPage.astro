@@ -21,7 +21,7 @@ const pillars = [
   { label: 'offers.pillarRelational', body: 'offers.pillarRelationalBody' },
   { label: 'offers.pillarAgency', body: 'offers.pillarAgencyBody' },
   { label: 'offers.pillarContextual', body: 'offers.pillarContextualBody' },
-  { label: 'offers.pillarSlow', body: 'offers.pillarSlowBody' },
+  { label: 'offers.pillarSlow', body: offer.key === 'therapy' ? 'offers.therapy.pillarSlowBody' : 'offers.pillarSlowBody' },
 ] as const;
 
 const defaultSteps = [
@@ -176,14 +176,14 @@ const faqs = [
     </p>
   </section>
 
-  <section class="grid md:grid-cols-2">
+  <section class="grid overflow-hidden md:grid-cols-2">
     <Image
       src={photoLeft}
       alt={t(`${prefix}.photoLeftAlt`)}
       data-i18n-alt={`${prefix}.photoLeftAlt`}
       widths={[720, 1100, 1600]}
       sizes="(min-width: 768px) 50vw, 100vw"
-      class="aspect-[4/5] h-full w-full object-cover md:aspect-auto md:min-h-[70vh]"
+      class="aspect-[4/5] h-full w-full object-cover md:aspect-auto md:h-[85vh]"
     />
     <Image
       src={photoRight}
@@ -191,7 +191,7 @@ const faqs = [
       data-i18n-alt={`${prefix}.photoRightAlt`}
       widths={[720, 1100, 1600]}
       sizes="(min-width: 768px) 50vw, 100vw"
-      class="hidden aspect-[4/5] h-full w-full object-cover md:block md:aspect-auto md:min-h-[70vh]"
+      class="hidden aspect-[4/5] h-full w-full object-cover md:block md:aspect-auto md:h-[85vh]"
     />
   </section>
 
@@ -332,7 +332,7 @@ const faqs = [
       data-i18n-alt="faq.photoAlt"
       widths={[720, 1100, 1600]}
       sizes="(min-width: 768px) 50vw, 100vw"
-      class="aspect-[4/5] h-full w-full object-cover md:aspect-auto md:min-h-[70vh]"
+      class="aspect-[4/5] h-full w-full object-cover md:aspect-auto md:min-h-[85vh]"
     />
     <div class="bg-[#575757] text-paper flex flex-col justify-center px-8 py-16 md:px-12 md:py-20 lg:px-16">
       <h2

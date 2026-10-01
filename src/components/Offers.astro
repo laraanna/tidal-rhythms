@@ -30,12 +30,12 @@ const offers = [
 ] as const;
 ---
 
-<section class="lg:grid lg:grid-cols-3" aria-label="Offers">
+<section class="min-[1000px]:grid min-[1000px]:grid-cols-3" aria-label="Offers">
   {
     offers.map((offer, index) => (
       <article
         id={offer.id}
-        class="text-charcoal relative flex flex-col overflow-hidden px-10 py-12 md:px-12 md:py-14 lg:aspect-[4/5] lg:px-14 lg:pt-16 lg:pb-20"
+        class="text-charcoal relative flex flex-col overflow-hidden px-10 py-12 md:px-12 md:py-14 min-[1000px]:aspect-[4/5] min-[1000px]:max-[1379px]:px-8 min-[1000px]:max-[1379px]:py-8 min-[1380px]:px-14 min-[1380px]:pt-16 min-[1380px]:pb-20"
       >
         <Image
           src={offer.image}
@@ -51,41 +51,42 @@ const offers = [
           style={`--fade-delay: ${index * 90}ms`}
         >
           <p
-            class="mt-5 font-founder text-step-3 md:text-step-3 xl:text-step-5 font-light text-charcoal/75"
+            class="mt-5 font-founder text-step-3 font-light text-charcoal/75 min-[1000px]:max-[1379px]:mt-2 min-[1000px]:max-[1379px]:text-step-1 min-[1380px]:text-step-5"
             data-i18n={offer.eyebrowKey}
           >
             {t(offer.eyebrowKey)}
           </p>
 
-          <h2 class="font-founders mt-8 text-step-4 md:text-step-5 leading-[1.15] font-light lg:max-w-[5.2em] xl:text-step-7">
+          <h2 class="font-founders mt-8 text-step-4 leading-[1.15] font-light md:text-step-5 min-[1000px]:max-[1379px]:mt-4 min-[1000px]:max-[1379px]:max-w-none min-[1000px]:max-[1379px]:text-step-3 lg:max-w-[5.2em] min-[1380px]:text-step-7">
             <a href={`/offers/${offer.id}`} data-i18n={offer.titleKey}>
               {t(offer.titleKey)}
             </a>
           </h2>
           <p
-            class="font-founder mt-5 max-w-[16em] text-step-0 md:text-step-1 xl:text-step-2 font-light tracking-[0.1em] uppercase lg:mt-8 lg:max-w-[70%]"
+            class="font-founder mt-5 max-w-[16em] text-step-0 font-light tracking-[0.1em] uppercase md:text-step-1 min-[1000px]:max-[1379px]:mt-3 min-[1000px]:max-[1379px]:text-step--1 lg:mt-8 lg:max-w-[70%] min-[1000px]:max-[1379px]:lg:mt-3 min-[1380px]:text-step-2"
             data-i18n={offer.blurbKey}
           >
             {t(offer.blurbKey)}
           </p>
-          <a
-            href={`/offers/${offer.id}`}
-            class="font-nunito mt-4 inline-flex w-fit items-center gap-3 whitespace-nowrap text-charcoal text-step--1 font-light tracking-[0.28em] uppercase"
-          >
-            <span data-i18n="offers.readMore">{t('offers.readMore')}</span>
-            <svg class="h-2.5 w-14 shrink-0" viewBox="0 0 56 10" fill="none" aria-hidden="true">
-              <path d="M0 5h50" stroke="currentColor" stroke-width="1" />
-              <path d="M47 2.5 53 5 47 7.5" stroke="currentColor" stroke-width="1" />
-            </svg>
-          </a>
-
-          <a
-            href={`/offers/${offer.id}#reserve`}
-            class="font-nunito text-charcoal mt-8 inline-flex w-fit border border-charcoal px-9 py-3.5 text-step--1 font-light tracking-[0.28em] uppercase lg:mt-auto lg:px-10"
-            data-i18n="offers.bookCta"
-          >
-            {t('offers.bookCta')}
-          </a>
+          <div class="mt-8 flex flex-col items-start gap-10 md:gap-12 min-[1000px]:mt-auto min-[1000px]:max-[1379px]:gap-6 min-[1000px]:max-[1379px]:pt-3 min-[1380px]:pt-8">
+            <a
+              href={`/offers/${offer.id}`}
+              class="font-nunito inline-flex w-fit items-center gap-3 whitespace-nowrap text-charcoal text-step--1 font-light tracking-[0.28em] uppercase"
+            >
+              <span data-i18n="offers.readMore">{t('offers.readMore')}</span>
+              <svg class="h-2.5 w-14 shrink-0" viewBox="0 0 56 10" fill="none" aria-hidden="true">
+                <path d="M0 5h50" stroke="currentColor" stroke-width="1" />
+                <path d="M47 2.5 53 5 47 7.5" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </a>
+            <a
+              href={`/offers/${offer.id}#reserve`}
+              class="font-nunito text-charcoal inline-flex w-fit border border-charcoal px-9 py-3.5 text-step--1 font-light tracking-[0.28em] uppercase lg:px-10"
+              data-i18n="offers.bookCta"
+            >
+              {t('offers.bookCta')}
+            </a>
+          </div>
         </div>
       </article>
     ))
