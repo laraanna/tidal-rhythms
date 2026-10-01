@@ -1,0 +1,21 @@
+---
+import { t } from '../i18n';
+---
+
+<div class="pointer-events-none fixed bottom-7 left-6 z-[400] lg:bottom-8 lg:left-10">
+  <button
+    type="button"
+    class="font-nunito pointer-events-auto flex items-center gap-2 text-sm tracking-[0.28em] text-charcoal uppercase"
+    data-lang-toggle
+    aria-label={t('hero.langAriaEn')}
+  >
+    <span data-lang-label="en" class="opacity-80">EN</span>
+    <span class="relative h-6 w-11 rounded-full bg-black/80 ring-1 ring-white/35" aria-hidden="true">
+      <span
+        data-lang-knob
+        class="absolute top-0.5 left-0.5 size-5 rounded-full bg-white transition-transform duration-200"
+      ></span>
+    </span>
+    <span data-lang-label="fr" class="opacity-35">FR</span>
+  </button>
+</div>
