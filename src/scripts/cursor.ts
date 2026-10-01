@@ -1,7 +1,7 @@
 import gsap from 'gsap';
 
 const CLICKABLE =
-  'a, button, input, label, select, textarea, [data-menu-open], [data-menu-close], [data-lang-toggle], [data-contact-close], .link';
+  'a[href], button:not(:disabled), summary, select, label, [role="button"], [data-menu-open], [data-menu-close], [data-lang-toggle], [data-contact-close], [data-scroll-bottom], .link';
 
 export function initCursor() {
   if (!window.matchMedia('(pointer: fine)').matches) return;

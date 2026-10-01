@@ -9,7 +9,6 @@ export function initMenu() {
   const right = menu.querySelector('[data-menu-right]');
   const header = menu.querySelector('[data-menu-header]');
   const imageDesktop = menu.querySelector('[data-menu-image-desktop]');
-  const imageMobile = menu.querySelector('[data-menu-image-mobile]');
   const stagger = menu.querySelectorAll('[data-menu-stagger]');
   const video = menu.querySelector<HTMLVideoElement>('[data-menu-video]');
 
@@ -32,7 +31,6 @@ export function initMenu() {
       },
       '-=0.5',
     )
-    .to(imageMobile, { clipPath: 'inset(0px 0px 0%)', duration: 0.2 })
     .reverse();
 
   function setOpen(open: boolean) {

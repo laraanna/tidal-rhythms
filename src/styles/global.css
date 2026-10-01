@@ -214,6 +214,21 @@ body {
   color: #fff;
 }
 
+a[href],
+button:not(:disabled),
+summary,
+select,
+label,
+[role="button"],
+[data-menu-open],
+[data-menu-close],
+[data-lang-toggle],
+[data-contact-close],
+[data-scroll-bottom],
+.link {
+  cursor: pointer;
+}
+
 .js [data-fade-in] {
   opacity: 0;
   transform: translate3d(0, 0.8rem, 0);

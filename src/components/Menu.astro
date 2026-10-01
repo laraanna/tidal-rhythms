@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { t } from '../i18n';
-import menuPhoto from '../images/mytam_menu.jpg';
+import menuPhoto from '../images/tf_menu_mytam.jpg';
 import menuVideo from '../videos/earth_bodies_2026_small_cut.mp4?url';
 
 const links = [
@@ -77,27 +77,6 @@ const links = [
     <div class="relative z-10 flex h-full">
       <div class="relative hidden h-full w-1/2 lg:block">
         <div class="absolute inset-0">
-          <p
-            class="font-nunito text-[#484848] opacity-20 tracking-[0.15em] absolute top-[14%] left-[12%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
-            data-menu-stagger
-            data-i18n="menu.keywordReconnection"
-          >
-            {t('menu.keywordReconnection')}
-          </p>
-          <p
-            class="font-nunito text-[#484848] opacity-20 tracking-[0.15em] absolute top-[40%] left-[4%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
-            data-menu-stagger
-            data-i18n="menu.keywordFeeling"
-          >
-            {t('menu.keywordFeeling')}
-          </p>
-          <p
-            class="font-nunito text-[#484848] opacity-20 tracking-[0.15em] absolute right-[6%] bottom-[16%] text-[clamp(2.75rem,5.4vw,5.75rem)] font-extralight italic"
-            data-menu-stagger
-            data-i18n="menu.keywordExpression"
-          >
-            {t('menu.keywordExpression')}
-          </p>
           <div
             class="absolute top-[49%] left-1/2 w-[min(30vw,24rem)] -translate-x-1/2 -translate-y-1/2"
             data-menu-image-desktop
@@ -152,17 +131,6 @@ const links = [
           }
         </nav>
 
-        <div class="mb-14 w-[min(34%,13rem)] md:hidden" data-menu-image-mobile>
-          <Image
-            src={menuPhoto}
-            alt={t('menu.photoAlt')}
-            data-i18n-alt="menu.photoAlt"
-            widths={[480, 720]}
-            sizes="70vw"
-            class="h-auto w-full"
-          />
-        </div>
-
         <div class="mt-auto flex w-full items-center justify-between lg:mt-0">
           <a
             href="#footer"
@@ -205,8 +173,7 @@ const links = [
     transform: translate3d(0, 100vh, 0);
   }
 
-  [data-menu-image-desktop],
-  [data-menu-image-mobile] {
+  [data-menu-image-desktop] {
     clip-path: inset(0 0 100%);
   }
 

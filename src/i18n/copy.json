@@ -126,7 +126,7 @@
     },
     "itemSomatics": {
       "en": "Somatics and Dance",
-      "fr": "Somatique et danse"
+      "fr": "Somatics & Danse"
     },
     "itemYoga": {
       "en": "Somatic Yoga",
@@ -134,7 +134,7 @@
     },
     "itemSomaticsAtWork": {
       "en": "Somatics at Work",
-      "fr": "Somatique au travail"
+      "fr": "Somatics En Entreprise"
     },
     "contact": {
       "en": "Contact",
@@ -144,37 +144,37 @@
   "intro": {
     "body": {
       "en": "Movement is at the center of Tidal Rhythms. As a way to reconnect, to our bodies, our emotions, our identities and ancestries, to one another, and to the world around\u00a0us.",
-      "fr": "Le mouvement est au cœur de Tidal Rhythms. Comme une façon de se reconnecter, à nos corps, à nos émotions, à nos identités et ancestralité, les uns aux autres, et au monde autour de\u00a0nous."
+      "fr": "Le mouvement est au cœur de Tidal Rhythms. Une invitation à se reconnecter à nos corps, nos émotions, nos identités et nos ancêtres, les uns aux autres, et au monde qui nous entoure."
     }
   },
   "work": {
     "question": {
       "en": "Looking for a team-building experience that cultivates genuine connection and well-being?",
-      "fr": "Vous cherchez une expérience de team building qui cultive une connexion véritable et le bien-être ?"
+      "fr": "Vous cherchez une expérience de team building qui cultive la cohésion et le bien-être ?"
     },
     "title": {
       "en": "Somatics at Work",
-      "fr": "Somatique au travail"
+      "fr": "Somatics En Entreprise"
     },
     "landingBody": {
       "en": "Guided somatic and dance movement sessions that help teams regulate stress, reconnect with their bodies, and build lasting team cohesion.",
-      "fr": "Des séances guidées de somatique et de danse-mouvement qui aident les équipes à réguler le stress, à se reconnecter à leur corps, et à construire une cohésion durable."
+      "fr": "Des séances guidées de somatics & mouvement qui aident les équipes à réguler le stress, à se reconnecter à leur corps, et à construire une cohésion durable."
     },
     "body": {
       "en": "Guided somatics and movement sessions that help teams regulate stress, reconnect with their bodies, and build lasting team cohesion.",
-      "fr": "Des séances guidées de somatique et de mouvement qui aident les équipes à réguler le stress, à se reconnecter à leur corps, et à construire une cohésion durable."
+      "fr": "Des séances guidées de somatics et danse/mouvement qui aident les équipes à réguler le stress, à se reconnecter à leur corps, et à construire une cohésion durable."
     },
     "cta": {
       "en": "Discover now",
       "fr": "Découvrir"
     },
     "metaTitle": {
-      "en": "Somatics at Work — Tidal Rhythms",
-      "fr": "Somatique au travail — Tidal Rhythms"
+      "en": "Somatics at Work, Tidal Rhythms",
+      "fr": "Somatics En Entreprise, Tidal Rhythms"
     },
     "bookCta": {
       "en": "Book an Introductory Strategy Call",
-      "fr": "Réserver un appel stratégique d'introduction"
+      "fr": "Réservez votre appel stratégique d'introduction"
     },
     "detailsTitle": {
       "en": "Details",
@@ -206,11 +206,11 @@
     },
     "quoteLabel": {
       "en": "What is Somatics?",
-      "fr": "Qu'est-ce que le somatique ?"
+      "fr": "Qu'est-ce que « Somatics » ?"
     },
     "quote": {
       "en": "“Somatic” simply means “of the body.” Instead of discussing stress and teamwork purely as mental ideas, somatic practices work directly through breath, movement, and physical awareness to build embodied emotional intelligence.",
-      "fr": "« Somatique » signifie simplement « du corps ». Au lieu d'aborder le stress et le travail d'équipe uniquement comme des idées mentales, les pratiques somatiques agissent directement par le souffle, le mouvement et la conscience physique pour développer une intelligence émotionnelle incarnée."
+      "fr": "« Somatics » signifie simplement « du corps ». C'est une pratique de conscience du corps, enracinée dans des lignées culturelles et des disciplines du mouvement diverses. Au lieu d'aborder le stress et le travail d'équipe uniquement comme des idées mentales, les pratiques somatiques agissent directement par le souffle, le mouvement et la conscience physique pour développer une intelligence émotionnelle incarnée."
     },
     "photoLeftAlt": {
       "en": "Blurred figures moving across a studio floor",
@@ -270,15 +270,15 @@
     },
     "benefit4Body": {
       "en": "Shared, low-stakes movement that breaks down hierarchy, builds psychological safety, and deepens non-verbal trust.",
-      "fr": "Un mouvement partagé, sans enjeu de performance, qui assouplit la hiérarchie, construit la sécurité psychologique, et approfondit la confiance non verbale."
+      "fr": "Un mouvement partagé, sans enjeu de performance, qui assouplit la hiérarchie, construit la sécurité psychologique, et approfondit la confiance."
     },
     "sessionTitle": {
       "en": "Session Structure",
       "fr": "Déroulement d'une séance"
     },
     "sessionIntro": {
-      "en": "Every session is designed to gently move participants from cognitive overload into grounded, physical connection—no choreography or performance required.",
-      "fr": "Chaque séance est conçue pour accompagner en douceur les participant·es, de la surcharge cognitive vers une connexion physique ancrée — aucune chorégraphie ni performance n'est demandée."
+      "en": "Every session is designed to gently move participants from cognitive overload into grounded, physical connection, no choreography or performance required.",
+      "fr": "Chaque séance est conçue pour accompagner en douceur les participant·es, de la surcharge cognitive vers une connexion physique ancrée, aucune chorégraphie ni performance n'est demandée."
     },
     "stage1": {
       "en": "1. Grounding",
@@ -290,11 +290,11 @@
     },
     "stage2": {
       "en": "2. Guided Exploration & Dance",
-      "fr": "2. Exploration guidée et danse"
+      "fr": "2. Exploration guidée et dansée"
     },
     "stage2Body": {
-      "en": "Experiential movement sequences built around a theme chosen for your team—such as releasing stress, deep listening, handling conflict, or collective energy.",
-      "fr": "Des séquences de mouvement expérientielles, autour d'un thème choisi pour votre équipe — relâcher le stress, écoute profonde, conflit, ou énergie collective."
+      "en": "Experiential movement sequences built around a theme chosen for your team, such as releasing stress, deep listening, handling conflict, or collective energy.",
+      "fr": "Des séquences de mouvement expérientielles, articulées autour d'un thème adapté à votre équipe : gestion du stress, écoute profonde, résolution de conflits ou énergie collective."
     },
     "stage3": {
       "en": "3. Reflective Sharing",
@@ -317,8 +317,8 @@
       "fr": "Accessibilité et préparation"
     },
     "accessBody": {
-      "en": "Suitable for all mobility levels—no prior dance experience needed. Participants simply need comfortable, flexible clothing (activewear or loose layers) allowing ease of movement.",
-      "fr": "Adapté à tous les niveaux de mobilité — aucune expérience de danse n'est nécessaire. Il suffit de porter des vêtements confortables et souples (tenue de sport ou couches amples) qui laissent le mouvement libre."
+      "en": "Suitable for all mobility levels, no prior dance experience needed. Participants simply need comfortable, flexible clothing (activewear or loose layers) allowing ease of movement.",
+      "fr": "Adapté à tous les niveaux de mobilité, aucune expérience de danse n'est nécessaire. Il suffit de porter des vêtements confortables et souples (tenue de sport ou couches amples) qui laissent le mouvement libre."
     },
     "formatsTitle": {
       "en": "Delivery Formats",
@@ -346,7 +346,7 @@
     },
     "format3Body": {
       "en": "High-impact talk combining brief concepts with guided movement for conferences, summits, or all-hands.",
-      "fr": "Une intervention à fort impact, associant de brefs apports et du mouvement guidé, pour conférences, sommets ou all-hands."
+      "fr": "Une intervention à fort impact, associant de brefs apports et du mouvement guidé, pour vos conférences, conventions ou séminaires d'entreprise."
     },
     "format4": {
       "en": "Offsite Immersion<br />(Half/Full Day)",
@@ -407,8 +407,8 @@
       "fr": "Somatique"
     },
     "pillarSomaticBody": {
-      "en": "We begin with body awareness: sensing, breathing, moving, and listening to what is present. Somatic awareness offers another way of knowing ourselves — one that can unfold beyond words and through sensation, movement, and pleasure.",
-      "fr": "Nous commençons par la conscience du corps : sentir, respirer, bouger, et écouter ce qui est présent. La conscience somatique offre une autre façon de se connaître — qui peut se déployer au-delà des mots, par la sensation, le mouvement et le plaisir."
+      "en": "We begin with body awareness: sensing, breathing, moving, and listening to what is present. Somatic awareness offers another way of knowing ourselves, one that can unfold beyond words and through sensation, movement, and pleasure.",
+      "fr": "Nous commençons par la conscience du corps : sentir, respirer, bouger, et écouter ce qui est présent. La conscience somatique offre une autre façon de se connaître, qui peut se déployer au-delà des mots, par la sensation, le mouvement et le plaisir."
     },
     "pillarRelational": {
       "en": "Relational",
@@ -416,15 +416,15 @@
     },
     "pillarRelationalBody": {
       "en": "Healing happens in relationship. You are accompanied in this therapeutic space where your experience can be expressed, explored, and met with curiosity and compassion. Through movement, words, writing, and conversation, we create new possibilities for relating to yourself and others.",
-      "fr": "La guérison advient dans la relation. Vous êtes accompagné·e dans cet espace thérapeutique où votre vécu peut s'exprimer, s'explorer, et être rencontré avec curiosité et compassion. Par le mouvement, les mots, l'écriture et la conversation, nous ouvrons de nouvelles possibilités de relation à soi et aux autres."
+      "fr": "Le soin advient dans la relation. Vous êtes accompagné·e dans cet espace thérapeutique où votre vécu peut s'exprimer, s'explorer, et être rencontré avec curiosité et compassion. Par le mouvement, les mots, l'écriture et la conversation, nous ouvrons de nouvelles possibilités de relation à soi et aux autres."
     },
     "pillarAgency": {
       "en": "Agency-centered",
       "fr": "Centré sur l'agentivité"
     },
     "pillarAgencyBody": {
-      "en": "We explore your capacity to sense, choose, express, and act. Dance creates a space to experience agency in the body — to discover that you can move, change direction, take space, set boundaries, connect, and create.",
-      "fr": "Nous explorons votre capacité à sentir, choisir, exprimer et agir. La danse crée un espace pour éprouver l'agentivité dans le corps — découvrir que vous pouvez bouger, changer de direction, prendre de la place, poser des limites, vous relier, et créer."
+      "en": "We explore your capacity to sense, choose, express, and act. Dance creates a space to experience agency in the body, to discover that you can move, change direction, take space, set boundaries, connect, and create.",
+      "fr": "Nous explorons votre capacité à sentir, choisir, exprimer et agir. La danse crée un espace pour éprouver l'agentivité dans le corps, découvrir que vous pouvez bouger, changer de direction, prendre de la place, poser des limites, vous relier, et créer."
     },
     "pillarContextual": {
       "en": "Contextual &<br />Historical",
@@ -471,21 +471,21 @@
       "fr": "Intégrer"
     },
     "sessionIntegrateBody": {
-      "en": "We close through words, drawing, or writing — reflecting on what emerged so you can carry that wisdom beyond the session.",
-      "fr": "Nous clôturons par les mots, le dessin ou l'écriture — pour relire ce qui a émergé, et emporter cette sagesse au-delà de la séance."
+      "en": "We close through words, drawing, or writing, reflecting on what emerged so you can carry that wisdom beyond the session.",
+      "fr": "Nous clôturons par les mots, le dessin ou l'écriture, pour relire ce qui a émergé, et emporter cette sagesse au-delà de la séance."
     },
     "therapy": {
       "eyebrow": {
-        "en": "1:1",
-        "fr": "1:1"
+        "en": "Individual",
+        "fr": "Individuel"
       },
       "blurb": {
         "en": "A slow process for deeper healing.",
-        "fr": "Un processus lent, pour une guérison plus profonde."
+        "fr": "Un processus plus lent pour un soin en profondeur."
       },
       "pageTitle": {
-        "en": "1:1 Dance Movement Therapy",
-        "fr": "Danse Mouvement Thérapie 1:1"
+        "en": "Dance Movement Therapy",
+        "fr": "Danse Mouvement Thérapie"
       },
       "introLead": {
         "en": "Meet your whole self, at your own pace.",
@@ -500,8 +500,8 @@
         "fr": "La danse-mouvement thérapie est un espace guidé pour sentir, exprimer et intégrer les émotions."
       },
       "quote": {
-        "en": "When we meet our difficult experiences with care and tenderness — or with rawness and surrender — we come back to ourselves.",
-        "fr": "Lorsque nous rencontrons nos expériences difficiles avec soin et tendresse — ou avec crudité et abandon — nous revenons à nous-mêmes."
+        "en": "When we meet our difficult experiences with care and tenderness, or with rawness and surrender, we come back to ourselves.",
+        "fr": "Lorsque nous faisons face à nos expériences difficiles avec soin et tendresse, nous revenons à nous-même."
       },
       "detailsFormat": {
         "en": "60-minute 1-on-1 session",
@@ -528,8 +528,8 @@
         "fr": "Danseuse cambrée devant une fenêtre de studio"
       },
       "metaTitle": {
-        "en": "1:1 Dance Movement Therapy — Tidal Rhythms",
-        "fr": "Danse Mouvement Thérapie 1:1 — Tidal Rhythms"
+        "en": "Dance Movement Therapy, Tidal Rhythms",
+        "fr": "Danse Mouvement Thérapie, Tidal Rhythms"
       }
     },
     "somatics": {
@@ -539,19 +539,19 @@
       },
       "blurb": {
         "en": "A collective practice for inner freedom.",
-        "fr": "Une pratique collective pour une liberté intérieure."
+        "fr": "Cultiver la liberté intérieure, en collectif."
       },
       "pageTitle": {
         "en": "Somatics and Dance",
-        "fr": "Somatique et danse"
+        "fr": "Somatics & Danse"
       },
       "introLead": {
         "en": "Move with your inner world, together.",
-        "fr": "Bouger avec son monde intérieur, ensemble."
+        "fr": "Danser avec son monde intérieur, ensemble."
       },
       "introBody": {
         "en": "A collective practice for inner freedom, open to all. Sessions are in cycles with different themes. You can join for one, or multiple sessions.",
-        "fr": "Une pratique collective pour une liberté intérieure, ouverte à toutes et tous. Les séances se déroulent par cycles, autour de thèmes différents. Vous pouvez venir pour une séance, ou plusieurs."
+        "fr": "Une pratique collective pour cultiver une liberté intérieure, ouverte à toutes et tous. Les séances se déroulent par cycles, autour de thèmes différents. Vous pouvez venir pour une séance, ou plusieurs."
       },
       "approachIntro": {
         "en": "Somatics is a body awareness practice rooted in diverse cultural lineages, spiritual traditions, and movement disciplines. Through breath, movement, and soft attention, we become present to our inner sensations. Rather than thinking about the body, we learn to experience from the body, grounding into ourselves and the present moment.",
@@ -567,7 +567,7 @@
       },
       "quote": {
         "en": "Dance gives space for feeling, and through this feeling an inner place of freedom may open. From this opening, we may find a way to our unique agency.",
-        "fr": "La danse donne de l'espace au sentir, et par ce sentir un lieu intérieur de liberté peut s'ouvrir. Depuis cette ouverture, un chemin vers notre agentivité unique peut se dessiner."
+        "fr": "La danse offre un espace au ressenti, ouvrant la voie à une liberté intérieure. C'est de cette ouverture que se dessine notre capacité d'agir singulière."
       },
       "sessionIntro": {
         "en": "Each cycle of sessions are focused on a different topic, but generally the guided somatic dance follows these different stages:",
@@ -579,7 +579,7 @@
       },
       "stage1Body": {
         "en": "Returning to breath, and to the earth as a support beneath you.",
-        "fr": "Revenir au souffle, et à la terre comme soutien sous soi."
+        "fr": "Revenir au souffle, et à la terre comme source de soutien tangible."
       },
       "stage2": {
         "en": "2. Sensing",
@@ -618,8 +618,8 @@
         "fr": "Pour qui ?"
       },
       "whoBody": {
-        "en": "This space is open to everyone, regardless of background or prior experience. It is for anyone seeking to slow down, reconnect with their body, and move through the world with more presence. Whether you are looking to process emotions, nourish your creativity, or simply find a supportive community practice, no background in dance or somatics is required—just a curiosity to listen inward.",
-        "fr": "Cet espace est ouvert à toutes et tous, quel que soit le parcours ou l'expérience. Il s'adresse à quiconque souhaite ralentir, se reconnecter à son corps, et traverser le monde avec plus de présence. Que vous cherchiez à traverser des émotions, nourrir votre créativité, ou simplement une pratique collective soutenante, aucune expérience en danse ou en somatique n'est requise — seulement la curiosité d'écouter vers l'intérieur."
+        "en": "This space is open to everyone, regardless of background or prior experience. It is for anyone seeking to slow down, reconnect with their body, and move through the world with more presence. Whether you are looking to process emotions, nourish your creativity, or simply find a supportive community practice, no background in dance or somatics is required, just a curiosity to listen inward.",
+        "fr": "Cet espace est ouvert à toutes et tous, quel que soit le parcours ou l'expérience. Il s'adresse à quiconque souhaite ralentir, se reconnecter à son corps, et traverser le monde avec plus de présence. Que vous cherchiez à traverser des émotions, nourrir votre créativité, ou simplement une pratique collective soutenante, aucune expérience en danse ou en somatique n'est requise, seulement la curiosité d'écouter vers l'intérieur."
       },
       "detailsFormat": {
         "en": "90 minute group sessions",
@@ -642,22 +642,22 @@
         "fr": "Mytam penchée en arrière, robe noire, les bras ouverts"
       },
       "metaTitle": {
-        "en": "Somatics and Dance — Tidal Rhythms",
-        "fr": "Somatique et danse — Tidal Rhythms"
+        "en": "Somatics and Dance, Tidal Rhythms",
+        "fr": "Somatics & Danse, Tidal Rhythms"
       }
     },
     "yoga": {
       "eyebrow": {
-        "en": "1:1",
-        "fr": "1:1"
+        "en": "Individual",
+        "fr": "Individuel"
       },
       "blurb": {
         "en": "A structured practice for embodied flow.",
-        "fr": "Une pratique structurée pour un flow incarné."
+        "fr": "Une pratique structurée pour un sentiment de fluidité."
       },
       "pageTitle": {
-        "en": "1:1 Somatic Yoga",
-        "fr": "Yoga somatique 1:1"
+        "en": "Somatic Yoga",
+        "fr": "Yoga somatique"
       },
       "introLead": {
         "en": "Inhabit your body more fully, through a slow practice of asana (yoga postures) and contemplation.",
@@ -668,12 +668,12 @@
         "fr": "Une séance individuelle de 60 minutes, à domicile ou dans un studio du 11e arrondissement de Paris."
       },
       "approachIntro": {
-        "en": "<p>“Somatic” brings attention to the senses, and to a slower rhythm of movement in a Yoga Asana practice (physical postures). That slowness lets us arrive in the present moment, to be with our body.</p><p>Each session is curated for you and what you are working towards.</p><p>Somatic yoga sessions are based on the Authentic Flow method —an approach founded by <a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Satu Tuomela</a> who shaped her practice from the Nondual Tantra lineage of Yoga, rooted in the land and cultures of India. Read more about Authentic Flow → <a href=\"https://www.authentic-flow.com/authenticflow\" target=\"_blank\" rel=\"noreferrer\">www.authentic-flow.com/authenticflow</a></p>",
-        "fr": "<p>« Somatique » porte l'attention vers les sens, et vers un rythme plus lent du mouvement dans une pratique d'asana (postures physiques). Cette lenteur nous permet d'arriver dans l'instant présent, d'être avec notre corps.</p><p>Chaque séance est conçue pour vous, et pour ce vers quoi vous travaillez.</p><p>Les séances de yoga somatique s'appuient sur la méthode Authentic Flow — une approche fondée par <a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Satu Tuomela</a>, qui a façonné sa pratique à partir de la lignée du Yoga Tantra non-duel, enracinée dans les terres et les cultures de l'Inde. En savoir plus sur Authentic Flow → <a href=\"https://www.authentic-flow.com/authenticflow\" target=\"_blank\" rel=\"noreferrer\">www.authentic-flow.com/authenticflow</a></p>"
+        "en": "<p>“Somatic” brings attention to the senses, and to a slower rhythm of movement in a Yoga Asana practice (physical postures). That slowness lets us arrive in the present moment, to be with our body.</p><p>Each session is curated for you and what you are working towards.</p><p>Somatic yoga sessions are based on the Authentic Flow method, an approach founded by <a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Satu Tuomela</a> who shaped her practice from the Nondual Tantra lineage of Yoga, rooted in the land and cultures of India. Read more about Authentic Flow → <a href=\"https://www.authentic-flow.com/authenticflow\" target=\"_blank\" rel=\"noreferrer\">www.authentic-flow.com/authenticflow</a></p>",
+        "fr": "<p>La pratique « somatique » porte l'attention vers les sens, et vers un rythme plus lent du mouvement dans une pratique d'asana (postures physiques). Cette lenteur nous permet d'arriver dans l'instant présent, d'être avec notre corps.</p><p>Chaque séance est conçue pour vous, et pour ce vers quoi vous travaillez.</p><p>Les séances de yoga somatique s'appuient sur la méthode Authentic Flow, une approche fondée par <a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Satu Tuomela</a>, qui a façonné sa pratique à partir de la lignée du Yoga Tantra non-duel, enracinée dans les terres et les cultures de l'Inde. En savoir plus sur Authentic Flow → <a href=\"https://www.authentic-flow.com/authenticflow\" target=\"_blank\" rel=\"noreferrer\">www.authentic-flow.com/authenticflow</a></p>"
       },
       "quote": {
-        "en": "We work with breath, sound, sensation, yoga asana, and intuitive movement — listening inward rather than performing outward.",
-        "fr": "Nous travaillons avec le souffle, le son, la sensation, les asanas, et le mouvement intuitif — écouter vers l'intérieur plutôt que performer vers l'extérieur."
+        "en": "We work with breath, sound, sensation, yoga asana, and intuitive movement, listening inward rather than performing outward.",
+        "fr": "Nous travaillons avec le souffle, le son, la sensation, les asanas, et le mouvement intuitif."
       },
       "stage1": {
         "en": "1. Breath & body awareness",
@@ -704,8 +704,8 @@
         "fr": "4. Partage, si vous le souhaitez"
       },
       "stage4Body": {
-        "en": "Journaling or conversation — optional, never required",
-        "fr": "Écriture ou conversation — optionnel, jamais obligatoire"
+        "en": "Journaling or conversation, optional, never required",
+        "fr": "Écriture ou conversation, optionnel, jamais obligatoire"
       },
       "whoTitle": {
         "en": "Who is this for?",
@@ -713,7 +713,7 @@
       },
       "whoBody": {
         "en": "These 1-on-1 sessions are for anyone who feels drawn to a gentler, more intuitive relationship with Yoga. They are ideal if you are navigating stress, seeking a personalized practice, or wanting to move away from rigid alignment and performance. Whether you are a beginner looking for a safe, supportive space to explore movement or an experienced practitioner wanting to slow down and listen inward, these sessions can meet you where you are.",
-        "fr": "Ces séances individuelles s'adressent à toute personne attirée par une relation plus douce et plus intuitive au yoga. Elles conviennent si vous traversez du stress, cherchez une pratique personnalisée, ou souhaitez vous éloigner d'un alignement rigide et de la performance. Que vous soyez débutant·e à la recherche d'un espace sûr pour explorer le mouvement, ou un·e pratiquant·e expérimenté·e qui souhaite ralentir et écouter vers l'intérieur, ces séances peuvent vous rejoindre là où vous en êtes."
+        "fr": "Ces séances individuelles s'adressent à toute personne attirée par une relation plus douce et plus intuitive au Yoga. Elles conviennent si vous traversez du stress, cherchez une pratique personnalisée, ou souhaitez vous éloigner d'un alignement rigide et de la performance. Que vous soyez débutant·e à la recherche d'un espace sûr pour explorer le mouvement, ou un·e pratiquant·e expérimenté·e qui souhaite ralentir et écouter vers l'intérieur, ces séances peuvent vous rejoindre là où vous en êtes."
       },
       "detailsFormat": {
         "en": "60-minute 1-on-1 session",
@@ -736,15 +736,15 @@
         "fr": "Danseuse floue penchée en avant, les cheveux en mouvement"
       },
       "metaTitle": {
-        "en": "1:1 Somatic Yoga — Tidal Rhythms",
-        "fr": "Yoga somatique 1:1 — Tidal Rhythms"
+        "en": "Somatic Yoga, Tidal Rhythms",
+        "fr": "Yoga somatique, Tidal Rhythms"
       }
     }
   },
   "video": {
     "overlay": {
       "en": "We are here to dance",
-      "fr": "Nous sommes ici pour danser"
+      "fr": "Nous sommes là pour danser."
     }
   },
   "about": {
@@ -758,11 +758,11 @@
     },
     "p1": {
       "en": "I’m a dancer, collaborator, facilitator, and dance-movement therapist based in Paris. My work moves between artistic, therapeutic, educational, and community spaces, and is centered on creating shared moments where we can be present, sensitive, creative together; where we can reflect on the cultures we are part of and our ways of seeing.",
-      "fr": "Je suis danseuse, collaboratrice, facilitatrice et danse-mouvement thérapeute, basée à Paris. Mon travail circule entre des espaces artistiques, thérapeutiques, éducatifs et communautaires, et se centre sur la création de moments partagés où nous pouvons être présent·es, sensibles, créatif·ves ensemble ; où nous pouvons réfléchir aux cultures dont nous faisons partie, et à nos manières de voir."
+      "fr": "Je suis danseuse, collaboratrice, facilitatrice et danse-mouvement thérapeute, basée à Paris. Mon travail met en lien des espaces artistiques, thérapeutiques, éducatifs et sociaux, et se centre sur la création de moments partagés où nous pouvons être présent·es, sensibles, créatif·ves ensemble ; où nous pouvons réfléchir aux cultures dont nous faisons partie, et à nos manières de voir."
     },
     "p2": {
-      "en": "Trained in contemporary and modern jazz, my passion lies in improvisation — using movement to explore story, emotion, and embodied expression. I create and facilitate somatics & dance workshops, wellbeing & mental health programs, and therapeutic workshops with a variety of publics.",
-      "fr": "Formée à la danse contemporaine et au modern jazz, ma passion est l'improvisation — utiliser le mouvement pour explorer le récit, l'émotion, et l'expression incarnée. Je crée et facilite des ateliers de somatique et de danse, des programmes de bien-être et de santé mentale, et des ateliers thérapeutiques auprès de publics variés."
+      "en": "Trained in contemporary and modern jazz, my passion lies in improvisation, using movement to explore story, emotion, and embodied expression. I create and facilitate somatics & dance workshops, wellbeing & mental health programs, and therapeutic workshops with a variety of publics.",
+      "fr": "Formée à la danse contemporaine et au modern jazz, ma passion est l'improvisation, utiliser le mouvement pour explorer le récit, l'émotion, et l'expression incarnée. Je crée et facilite des ateliers de somatique et de danse, des programmes de bien-être et de santé mentale, et des ateliers thérapeutiques auprès de publics variés."
     },
     "p3": {
       "en": "With roots in Vietnam and the United States, my relationship to dance is also shaped by questions of culture, colonialism, racism, and inherited histories. Dancing can be a process of decolonization. Through dance, I find space to embody, release, and imagine new possibilities of belonging.",
@@ -782,7 +782,7 @@
     },
     "trainingsList": {
       "en": "<ul><li>Master's in Dance Movement Therapy <span>Université Paris Cité, Institute of Psychology, 2024–2026</span><ul><li>Research Thesis: <em>\"Reconstructing the Self: How Dance Movement Therapy Contributes to the Resilience Process of Displaced Persons with Complex Trauma\"</em></li><li>Professional Thesis: <em>\"The Place of Culture in Care: Dance Movement Therapy with Bicultural Children in a CMPP\"</em></li><li>550 hours of clinical internship experience with children, adults, women, and displaced persons in hospitals, associations, and a multidisciplinary mental health clinic across the Paris region, France.</li></ul></li><li><a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Authentic flow</a> 200H training <span>Portugal, July 2023</span></li><li>Body-Mind-Centering (BMC) 144H training with <a href=\"http://www.etrebiendansmoncorps.com/a-propos-de/\" target=\"_blank\" rel=\"noreferrer\">Tamara Milla Vigo</a> <span>France, 2022</span></li><li>\"Fundamentals in Dance-movement therapy\", 32H training with <a href=\"https://irpecor.fr/\" target=\"_blank\" rel=\"noreferrer\">Benoit Lesage</a> <span>France, February 2021</span></li><li>Dance-rhythm therapy 100H training with <a href=\"https://www.drt-international.com/\" target=\"_blank\" rel=\"noreferrer\">France Schott-Billmann</a> <span>France, October 2021 & April 2026</span></li><li>Masters in Interdisciplinary approaches to research and education - Learning Sciences - Center for Interdisciplinary research (now <a href=\"https://www.learningplanetinstitute.org/en/\" target=\"_blank\" rel=\"noreferrer\">Learning Planet Institute</a>), Université de Paris <span>France, 2019-2021</span><ul><li>Masters thesis: \"Examining trauma-informed care: University students’ mental health experiences and strategies of mental health care during the COVID-19 pandemic\"</li><li>Thesis presented at two conferences:<p>\"Colloque du Care\", <span>Montpellier, France, November 2021</span></p><p>\"Colloque Numérique et pandémie. Les enjeux d’éthique un an après\", <span>online, July 2021</span></p></li><li><a href=\"https://www.notion.so/mytam/in-relation-conceptual-guide-ac27f15a95734a70bd9d2a37d95e1ee8\" target=\"_blank\" rel=\"noreferrer\">Research project and workshop creation:</a> what is collective trauma, and can we heal it through somatic therapies?</li></ul></li><li>Contemporary dance practice since childhood, improvisation for +7 years</li></ul>",
-      "fr": "<ul><li>Master en danse-mouvement thérapie <span>Université Paris Cité, Institut de psychologie, 2024–2026</span><ul><li>Mémoire de recherche : <em>« Reconstructing the Self: How Dance Movement Therapy Contributes to the Resilience Process of Displaced Persons with Complex Trauma »</em></li><li>Mémoire professionnel : <em>« The Place of Culture in Care: Dance Movement Therapy with Bicultural Children in a CMPP »</em></li><li>550 heures de stage clinique auprès d'enfants, d'adultes, de femmes, et de personnes déplacées, en hôpitaux, associations, et clinique pluridisciplinaire de santé mentale, en Île-de-France.</li></ul></li><li>Formation <a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Authentic flow</a> 200H <span>Portugal, juillet 2023</span></li><li>Formation Body-Mind-Centering (BMC) 144H avec <a href=\"http://www.etrebiendansmoncorps.com/a-propos-de/\" target=\"_blank\" rel=\"noreferrer\">Tamara Milla Vigo</a> <span>France, 2022</span></li><li>« Fondamentaux de la danse-mouvement thérapie », formation 32H avec <a href=\"https://irpecor.fr/\" target=\"_blank\" rel=\"noreferrer\">Benoit Lesage</a> <span>France, février 2021</span></li><li>Formation en danse-rythme thérapie 100H avec <a href=\"https://www.drt-international.com/\" target=\"_blank\" rel=\"noreferrer\">France Schott-Billmann</a> <span>France, octobre 2021 et avril 2026</span></li><li>Master Approches interdisciplinaires de la recherche et de l'éducation - Learning Sciences - Centre de recherches interdisciplinaires (aujourd'hui <a href=\"https://www.learningplanetinstitute.org/en/\" target=\"_blank\" rel=\"noreferrer\">Learning Planet Institute</a>), Université de Paris <span>France, 2019-2021</span><ul><li>Mémoire de master : « Examining trauma-informed care: University students’ mental health experiences and strategies of mental health care during the COVID-19 pandemic »</li><li>Mémoire présenté lors de deux colloques :<p>« Colloque du Care », <span>Montpellier, France, novembre 2021</span></p><p>« Colloque Numérique et pandémie. Les enjeux d’éthique un an après », <span>en ligne, juillet 2021</span></p></li><li><a href=\"https://www.notion.so/mytam/in-relation-conceptual-guide-ac27f15a95734a70bd9d2a37d95e1ee8\" target=\"_blank\" rel=\"noreferrer\">Projet de recherche et création d'atelier :</a> qu'est-ce que le trauma collectif, et peut-on le soigner par les thérapies somatiques ?</li></ul></li><li>Pratique de la danse contemporaine depuis l'enfance, improvisation depuis plus de 7 ans</li></ul>"
+      "fr": "<ul><li>Master en danse-mouvement thérapie <span>Université Paris Cité, Institut de psychologie, 2024–2026</span><ul><li>Mémoire de recherche : <em>« Se reconstruire par la danse: comment la danse-mouvement thérapie contribue au processus de résilience des personnes exilées polytraumatisées. »</em></li><li>Mémoire professionnel : <em>« Penser la culture dans le soin : la danse-mouvement thérapie auprès d'enfants biculturels en CMPP. »</em></li><li>550 heures de stage clinique auprès d'enfants, d'adultes, de femmes, et de personnes déplacées, en hôpitaux, associations, et clinique pluridisciplinaire de santé mentale, en Île-de-France.</li></ul></li><li>Formation <a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Authentic flow</a> 200H <span>Portugal, juillet 2023</span></li><li>Formation Body-Mind-Centering (BMC) 144H avec <a href=\"http://www.etrebiendansmoncorps.com/a-propos-de/\" target=\"_blank\" rel=\"noreferrer\">Tamara Milla Vigo</a> <span>France, 2022</span></li><li>« Fondamentaux de la danse-mouvement thérapie », formation 32H avec <a href=\"https://irpecor.fr/\" target=\"_blank\" rel=\"noreferrer\">Benoit Lesage</a> <span>France, février 2021</span></li><li>Formation en danse-rythme thérapie 100H avec <a href=\"https://www.drt-international.com/\" target=\"_blank\" rel=\"noreferrer\">France Schott-Billmann</a> <span>France, octobre 2021 et avril 2026</span></li><li>Master Approches interdisciplinaires de la recherche et de l'éducation - Learning Sciences - Centre de recherches interdisciplinaires (aujourd'hui <a href=\"https://www.learningplanetinstitute.org/en/\" target=\"_blank\" rel=\"noreferrer\">Learning Planet Institute</a>), Université de Paris <span>France, 2019-2021</span><ul><li>Mémoire de master : « Examining trauma-informed care: University students’ mental health experiences and strategies of mental health care during the COVID-19 pandemic »</li><li>Mémoire présenté lors de deux colloques :<p>« Colloque du Care », <span>Montpellier, France, novembre 2021</span></p><p>« Colloque Numérique et pandémie. Les enjeux d’éthique un an après », <span>en ligne, juillet 2021</span></p></li><li><a href=\"https://www.notion.so/mytam/in-relation-conceptual-guide-ac27f15a95734a70bd9d2a37d95e1ee8\" target=\"_blank\" rel=\"noreferrer\">Projet de recherche et création d'atelier :</a> qu'est-ce que le trauma collectif, et peut-on le soigner par les thérapies somatiques ?</li></ul></li><li>Pratique de la danse contemporaine depuis l'enfance, improvisation depuis plus de 7 ans</li></ul>"
     },
     "photoAlt": {
       "en": "Portrait of Mytam Mayo-Smith",
@@ -804,7 +804,7 @@
     },
     "a1": {
       "en": "No. These sessions are open to all bodies, whether you have danced for years or never at all. We follow what is present, at your pace.",
-      "fr": "Non. Ces séances sont ouvertes à tous les corps, que vous dansiez depuis des années ou jamais. Nous suivons ce qui est présent, à votre rythme."
+      "fr": "Non. Ces séances sont ouvertes à tous les niveaux, que vous dansiez depuis des années ou jamais. Nous suivons ce qui est présent, à votre rythme."
     },
     "q2": {
       "en": "What should I wear to a session?",
@@ -835,8 +835,8 @@
       "fr": "En quoi une séance diffère-t-elle d'une thérapie par la parole ?"
     },
     "a5": {
-      "en": "We work through the body as well as through words — movement, sensation, and dialogue — rather than sitting and speaking only.",
-      "fr": "Nous travaillons par le corps autant que par les mots — mouvement, sensation et dialogue — plutôt que de rester assis·e à parler uniquement."
+      "en": "We work through the body as well as through words, movement, sensation, and dialogue, rather than sitting and speaking only.",
+      "fr": "Nous travaillons par le corps autant que par les mots, mouvement, sensation et dialogue, plutôt que de rester assis·e à parler uniquement."
     }
   },
   "rdv": {
@@ -846,7 +846,7 @@
     },
     "body": {
       "en": "My work is centered on creating shared moments where we can be present, sensitive, creative together; where we can reflect on the cultures we are part of and our ways of seeing.",
-      "fr": "Mon travail se centre sur la création de moments partagés où nous pouvons être présent·es, sensibles, créatif·ves ensemble ; où nous pouvons réfléchir aux cultures dont nous faisons partie, et à nos manières de voir."
+      "fr": "Mon travail se centre sur la création de moments partagés où nous pouvons être présent·es, sensibles, créatif·ves ensemble ; où nous pouvons réfléchir aux cultures dont nous faisons partie, et à nos manières de percevoir le monde."
     },
     "embedTitle": {
       "en": "Schedule an appointment",
