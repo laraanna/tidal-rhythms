@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import { t } from '../i18n';
+import photoLeft from '../images/hero_tf_mimi_2.jpg';
+import photoRight from '../images/hero_tf_mimi_1.jpg';
+---
+
+<section class="grid overflow-hidden md:grid-cols-2">
+  <Image
+    src={photoLeft}
+    alt={t('hero.splitLeftAlt')}
+    data-i18n-alt="hero.splitLeftAlt"
+    widths={[720, 1100, 1600]}
+    sizes="(min-width: 768px) 50vw, 100vw"
+    class="aspect-[4/5] h-full w-full object-cover md:aspect-auto md:h-[85vh]"
+  />
+  <Image
+    src={photoRight}
+    alt={t('hero.splitRightAlt')}
+    data-i18n-alt="hero.splitRightAlt"
+    widths={[720, 1100, 1600]}
+    sizes="(min-width: 768px) 50vw, 100vw"
+    class="aspect-[4/5] h-full w-full object-cover md:aspect-auto md:h-[85vh]"
+  />
+</section>

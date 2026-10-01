@@ -18,11 +18,24 @@ const prefix = `offers.${offer.key}`;
 
 const pillars = [
   { label: 'offers.pillarSomatic', body: 'offers.pillarSomaticBody' },
-  { label: 'offers.pillarRelational', body: 'offers.pillarRelationalBody' },
+  {
+    label: 'offers.pillarRelational',
+    body: offer.key === 'somatics' ? 'offers.somatics.pillarRelationalBody' : 'offers.pillarRelationalBody',
+  },
   { label: 'offers.pillarAgency', body: 'offers.pillarAgencyBody' },
-  { label: 'offers.pillarContextual', body: 'offers.pillarContextualBody' },
-  { label: 'offers.pillarSlow', body: offer.key === 'therapy' ? 'offers.therapy.pillarSlowBody' : 'offers.pillarSlowBody' },
-] as const;
+  {
+    label: 'offers.pillarContextual',
+    body: offer.key === 'somatics' ? 'offers.somatics.pillarContextualBody' : 'offers.pillarContextualBody',
+  },
+  ...(offer.key === 'somatics'
+    ? []
+    : [
+        {
+          label: 'offers.pillarSlow',
+          body: offer.key === 'therapy' ? 'offers.therapy.pillarSlowBody' : 'offers.pillarSlowBody',
+        },
+      ]),
+];
 
 const defaultSteps = [
   { label: 'offers.sessionArrive', body: 'offers.sessionArriveBody', color: offer.sessionColors[0] },
@@ -325,6 +338,8 @@ const faqs = [
     </div>
   </section>
 
+  {
+    offer.key !== 'yoga' && (
   <section class="grid md:grid-cols-2">
     <Image
       src={faqPhoto}
@@ -349,7 +364,7 @@ const faqs = [
                 <span data-i18n={item.q}>{t(item.q)}</span>
               </summary>
               <p
-                class="font-nunito pt-1 pb-5 text-[12px] leading-[1.65] font-light text-paper/85"
+                class="font-nunito pt-1 pb-5 text-[max(12px,var(--step--1))] leading-[1.65] font-light text-paper/85"
                 data-i18n={item.a}
               >
                 {t(item.a)}
@@ -360,6 +375,8 @@ const faqs = [
       </div>
     </div>
   </section>
+    )
+  }
 </article>
 
 <style>
@@ -376,7 +393,7 @@ const faqs = [
     gap: 1.25rem;
     padding: 1.15rem 0;
     font-family: var(--font-nunito);
-    font-size: var(--step--2);
+    font-size: max(12px, var(--step--2));
     font-weight: 300;
     letter-spacing: 0.18em;
     text-transform: uppercase;

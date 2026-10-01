@@ -1,22 +1,19 @@
 ---
 import { Image } from 'astro:assets';
 import { t } from '../i18n';
-import heroMobile from '../images/tf_hero_mytam_2.jpg';
-// import heroMotion from '../images/hero_tf_mimi_2.jpg';
-import heroMotion from '../images/movement_hero.jpg';
-// import heroPortrait from '../images/hero_tf_mimi_1.jpg';
-import heroPortrait from '../images/mimi_hero.jpg';
+import heroMotion from '../images/tf_hero_mytam_2.jpg';
+import heroPortrait from '../images/tf_hero_mytam_1.jpg';
 ---
 
-<section class="relative grid h-svh min-h-svh overflow-hidden bg-mist lg:grid-cols-2 lg:h-dvh lg:min-h-dvh">
-  <div class="relative min-h-svh overflow-hidden lg:min-h-dvh">
+<section class="relative grid h-svh min-h-svh overflow-hidden bg-mist lg:grid-cols-2 lg:h-dvh lg:min-h-dvh lg:gap-0">
+  <div class="relative min-h-svh overflow-hidden lg:h-full lg:min-h-0">
     <Image
-      src={heroMobile}
+      src={heroMotion}
       alt={t('hero.mobileAlt')}
       data-i18n-alt="hero.mobileAlt"
       widths={[640, 960, 1280]}
       sizes="100vw"
-      class="absolute inset-0 size-full object-cover object-center grayscale lg:hidden"
+      class="absolute inset-0 block size-full object-cover object-center grayscale lg:hidden"
     />
     <Image
       src={heroMotion}
@@ -91,24 +88,24 @@ import heroPortrait from '../images/mimi_hero.jpg';
     </div>
   </div>
 
-  <div class="relative hidden min-h-dvh overflow-hidden lg:block">
+  <div class="relative hidden min-h-dvh overflow-hidden lg:block lg:h-full lg:min-h-0 lg:-ml-px">
     <Image
       src={heroPortrait}
       alt={t('hero.floorAlt')}
       data-i18n-alt="hero.floorAlt"
       widths={[640, 960, 1280, 2000]}
       sizes="50vw"
-      class="absolute inset-0 size-full object-cover object-[center_38%] grayscale"
+      class="absolute inset-0 block size-full object-cover object-center grayscale"
     />
 
     <button
       type="button"
-      class="font-nunito text-charcoal absolute top-8 right-10 z-10 flex items-center gap-2 text-xl tracking-[0.3em] font-normal uppercase"
+      class="font-nunito text-paper absolute top-8 right-10 z-10 flex items-center gap-2 text-xl tracking-[0.3em] font-normal uppercase"
       data-menu-open
       data-i18n-aria-label="hero.menuAria"
       aria-label={t('hero.menuAria')}
     >
-      <span class="bg-charcoal size-3.5 rounded-full"></span>
+      <span class="size-3.5 rounded-full bg-white"></span>
       <span data-i18n="hero.menu">{t('hero.menu')}</span>
     </button>
   </div>

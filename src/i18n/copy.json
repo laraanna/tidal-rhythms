@@ -19,7 +19,7 @@
       "fr": ""
     },
     "motionAlt": {
-      "en": "Blurred dancers moving through a studio",
+      "en": "Mytam in motion in the studio, hands on the floor",
       "fr": ""
     },
     "mobileAlt": {
@@ -27,7 +27,15 @@
       "fr": ""
     },
     "floorAlt": {
-      "en": "Mytam dancing in the studio, hands raised near her face",
+      "en": "Mytam lying on the studio floor, arm stretched overhead",
+      "fr": ""
+    },
+    "splitLeftAlt": {
+      "en": "Blurred dancers moving through a studio",
+      "fr": ""
+    },
+    "splitRightAlt": {
+      "en": "Mytam dancing in the studio, hand on her chest",
       "fr": ""
     },
     "titleDance": {
@@ -117,7 +125,7 @@
       "fr": ""
     },
     "itemSomatics": {
-      "en": "Somatics & Dance",
+      "en": "Somatics and Dance",
       "fr": ""
     },
     "itemYoga": {
@@ -125,7 +133,7 @@
       "fr": ""
     },
     "itemSomaticsAtWork": {
-      "en": "Somatics at work",
+      "en": "Somatics at Work",
       "fr": ""
     },
     "contact": {
@@ -135,21 +143,33 @@
   },
   "intro": {
     "body": {
-      "en": "Movement is at the center of Tidal Rhythms. As a way to reconnect, to our bodies, our emotions, our identities and ancestries, to one another, and to the world around us.",
+      "en": "Movement is at the center of Tidal Rhythms. As a way to reconnect, to our bodies, our emotions, our identities and ancestries, to one another, and to the world around\u00a0us.",
       "fr": ""
     }
   },
   "work": {
     "question": {
-      "en": "Looking for a team building session that helps your people reconnect?",
+      "en": "Looking for a team-building experience that cultivates genuine connection and well-being?",
       "fr": ""
     },
     "title": {
-      "en": "Somatics & Dance for Embodied Emotional Intelligence",
+      "en": "Somatics at Work",
+      "fr": ""
+    },
+    "landingBody": {
+      "en": "Guided somatic and dance movement sessions that help teams regulate stress, reconnect with their bodies, and build lasting team cohesion.",
       "fr": ""
     },
     "body": {
-      "en": "Guided somatic and dance movement sessions that help global teams regulate stress, reconnect with their bodies, and build lasting motivation and team cohesion.",
+      "en": "Guided somatics and movement sessions that help teams regulate stress, reconnect with their bodies, and build lasting team cohesion.",
+      "fr": ""
+    },
+    "title": {
+      "en": "Somatics at Work",
+      "fr": ""
+    },
+    "body": {
+      "en": "Guided somatics and movement sessions that help teams regulate stress, reconnect with their bodies, and build lasting team cohesion.",
       "fr": ""
     },
     "cta": {
@@ -197,7 +217,7 @@
       "fr": ""
     },
     "quote": {
-      "en": "“Somatic” simply means “of the body.” Instead of discussing stress and teamwork purely as mental ideas, somatic practices work directly through breath, movement, and physical awareness to build embodied emotional intelligence with immediate, lasting shifts.",
+      "en": "“Somatic” simply means “of the body.” Instead of discussing stress and teamwork purely as mental ideas, somatic practices work directly through breath, movement, and physical awareness to build embodied emotional intelligence.",
       "fr": ""
     },
     "photoLeftAlt": {
@@ -313,15 +333,15 @@
       "fr": ""
     },
     "format1": {
-      "en": "Discovery Workshop (2 Hours)",
+      "en": "Discovery workshop<br />(60-90 minutes)",
       "fr": ""
     },
     "format1Body": {
-      "en": "A focused session to relieve stress and reset team dynamics (8–20 participants).",
+      "en": "A focused session to relieve stress and reset team dynamics.",
       "fr": ""
     },
     "format2": {
-      "en": "Ongoing Resilience Cycle (4–6 Sessions)",
+      "en": "Ongoing Resilience Cycle<br />(4–6 Sessions)",
       "fr": ""
     },
     "format2Body": {
@@ -329,7 +349,7 @@
       "fr": ""
     },
     "format3": {
-      "en": "Interactive Keynote (45–60 Min)",
+      "en": "Interactive Keynote<br />(45–60 Min)",
       "fr": ""
     },
     "format3Body": {
@@ -337,7 +357,7 @@
       "fr": ""
     },
     "format4": {
-      "en": "Offsite Immersion (Half/Full Day)",
+      "en": "Offsite Immersion<br />(Half/Full Day)",
       "fr": ""
     },
     "format4Body": {
@@ -530,11 +550,11 @@
         "fr": ""
       },
       "pageTitle": {
-        "en": "Somatic & Dance - Group Session",
+        "en": "Somatics and Dance",
         "fr": ""
       },
       "introLead": {
-        "en": "Meet your whole self, in collective practice.",
+        "en": "Move with your inner world, together.",
         "fr": ""
       },
       "introBody": {
@@ -542,7 +562,15 @@
         "fr": ""
       },
       "approachIntro": {
-        "en": "Somatics is a body awareness practice. Through breath, movement, and soft attention, we become present to our inner sensations. Rather than thinking about the body, we learn to experience from the body, grounding into ourselves and the present moment.\n\nTogether, somatics and dance offer a practice of reconnecting — with ourselves, with one another, and with the world around us.",
+        "en": "Somatics is a body awareness practice rooted in diverse cultural lineages, spiritual traditions, and movement disciplines. Through breath, movement, and soft attention, we become present to our inner sensations. Rather than thinking about the body, we learn to experience from the body, grounding into ourselves and the present moment.",
+        "fr": ""
+      },
+      "pillarRelationalBody": {
+        "en": "This space invites curiosity and compassion into our relationship with our self, and others.",
+        "fr": ""
+      },
+      "pillarContextualBody": {
+        "en": "We are shaped by the worlds we belong to. Personal experiences are connected to family histories, culture, society, and our environment.",
         "fr": ""
       },
       "quote": {
@@ -610,7 +638,7 @@
         "fr": ""
       },
       "detailsPrice": {
-        "en": "25 € - 30 €",
+        "en": "25€ - 40€",
         "fr": ""
       },
       "photoLeftAlt": {
@@ -622,7 +650,7 @@
         "fr": ""
       },
       "metaTitle": {
-        "en": "Somatic & Dance - Group Session — Tidal Rhythms",
+        "en": "Somatics and Dance — Tidal Rhythms",
         "fr": ""
       }
     },
@@ -648,7 +676,7 @@
         "fr": ""
       },
       "approachIntro": {
-        "en": "<p>“Somatic” brings attention to the senses, and to a slower rhythm of movement in a Yoga Asana practice (physical postures). That slowness lets us arrive in the present moment, to be with our body.</p><p>Each session is curated for you and what you are working towards.</p><p>Somatic yoga sessions are based on Authentic Flow, an approach founded by <a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Satu Tuomela</a>. Read more about Authentic Flow → <a href=\"https://www.authentic-flow.com/authenticflow\" target=\"_blank\" rel=\"noreferrer\">www.authentic-flow.com/authenticflow</a></p>",
+        "en": "<p>“Somatic” brings attention to the senses, and to a slower rhythm of movement in a Yoga Asana practice (physical postures). That slowness lets us arrive in the present moment, to be with our body.</p><p>Each session is curated for you and what you are working towards.</p><p>Somatic yoga sessions are based on the Authentic Flow method —an approach founded by <a href=\"https://www.authentic-flow.com/\" target=\"_blank\" rel=\"noreferrer\">Satu Tuomela</a> who shaped her practice from the Nondual Tantra lineage of Yoga, rooted in the land and cultures of India. Read more about Authentic Flow → <a href=\"https://www.authentic-flow.com/authenticflow\" target=\"_blank\" rel=\"noreferrer\">www.authentic-flow.com/authenticflow</a></p>",
         "fr": ""
       },
       "quote": {

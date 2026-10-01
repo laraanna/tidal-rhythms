@@ -297,10 +297,9 @@ const contactEmail = t('work.detailsContact');
                 <span class="hidden h-px flex-1 bg-charcoal/50 md:block"></span>
                 <p
                   class="font-nunito shrink-0 text-right text-step--1 leading-tight font-light tracking-[0.28em] uppercase"
-                  data-i18n={item.label}
-                >
-                  {t(item.label)}
-                </p>
+                  data-i18n-html={item.label}
+                  set:html={t(item.label)}
+                />
               </div>
               <p class="font-nunito max-w-[38rem] text-step--1 leading-[1.7] font-light" data-i18n={item.body}>
                 {t(item.body)}
