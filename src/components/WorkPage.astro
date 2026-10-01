@@ -71,13 +71,25 @@ const contactEmail = t('work.detailsContact');
         <h1 class="font-founders text-step-6 leading-[1.1] font-light md:text-step-8" data-i18n="work.title">
           {t('work.title')}
         </h1>
+        <p
+          class="font-founders mt-4 text-step-0 font-light tracking-[0.22em] uppercase md:text-step-1"
+          data-i18n="work.subtitle"
+        >
+          {t('work.subtitle')}
+        </p>
       </div>
     </div>
 
     <div class="mx-auto mt-16 grid max-w-[92rem] items-start gap-12 px-8 md:px-16 lg:mt-24 lg:grid-cols-[1fr_minmax(16rem,22rem)] lg:gap-16 lg:px-20">
       <div data-fade-in style="--fade-delay: 80ms">
         <p
-          class="font-nunito max-w-[36rem] text-step--1 leading-[1.7] font-light md:text-step-0"
+          class="font-founders max-w-[22rem] text-step-2 font-light italic md:max-w-[32rem] md:text-step-3"
+          data-i18n="work.introLead"
+        >
+          {t('work.introLead')}
+        </p>
+        <p
+          class="font-nunito mt-4 max-w-[36rem] text-step--1 leading-[1.7] font-light md:text-step-0"
           data-i18n="work.body"
         >
           {t('work.body')}
@@ -91,7 +103,7 @@ const contactEmail = t('work.detailsContact');
         </a>
       </div>
 
-      <aside class="bg-[#E7E7E7]/60 px-8 py-8 md:px-10 md:py-10" data-fade-in style="--fade-delay: 140ms">
+      <aside class="bg-[#FFFFFF]/60 px-8 py-8 md:px-10 md:py-10" data-fade-in style="--fade-delay: 140ms">
         <h2
           class="font-founders text-step--1 font-medium tracking-[0.18em] uppercase"
           data-i18n="work.detailsTitle"
@@ -205,7 +217,7 @@ const contactEmail = t('work.detailsContact');
               <div class="flex items-center gap-5">
                 <span class="hidden h-px flex-1 bg-charcoal/50 md:block"></span>
                 <p
-                  class="font-nunito shrink-0 text-right text-step--1 leading-tight font-light tracking-[0.28em] uppercase"
+                  class="font-nunito w-full text-left text-step--1 leading-tight font-light tracking-[0.28em] uppercase md:w-auto md:shrink-0 md:text-right"
                   data-i18n={item.label}
                 >
                   {t(item.label)}
@@ -263,7 +275,7 @@ const contactEmail = t('work.detailsContact');
   <section class="px-8 pb-24 md:px-16 md:pb-32 lg:px-20">
     <div class="mx-auto max-w-[92rem] md:grid md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]">
       <div class="hidden md:block"></div>
-      <div class="bg-[#E7E7E7]/60 px-8 py-8 md:px-10 md:py-10" data-fade-in>
+      <div class="bg-[#FFFFFF]/60 px-8 py-8 md:px-10 md:py-10" data-fade-in>
         <h2
           class="font-founders text-step--1 font-medium tracking-[0.18em] uppercase"
           data-i18n="work.accessTitle"
@@ -280,12 +292,12 @@ const contactEmail = t('work.detailsContact');
     </div>
   </section>
 
-  <section class="px-8 pb-24 md:px-16 md:pb-32 lg:px-20">
+  <section class="px-8 pb-10 md:px-16 md:pb-32 lg:px-20">
     <div class="mx-auto max-w-[92rem]">
       <h2 class="font-founders text-step-6 font-light md:text-step-8" data-i18n="work.formatsTitle" data-fade-in>
         {t('work.formatsTitle')}
       </h2>
-      <div class="mt-16 flex flex-col gap-10 md:mt-20 md:gap-12">
+      <div class="mt-8 flex flex-col gap-6 md:mt-20 md:gap-12">
         {
           formats.map((item, index) => (
             <div
@@ -296,7 +308,7 @@ const contactEmail = t('work.detailsContact');
               <div class="flex items-center gap-5">
                 <span class="hidden h-px flex-1 bg-charcoal/50 md:block"></span>
                 <p
-                  class="font-nunito shrink-0 text-right text-step--1 leading-tight font-light tracking-[0.28em] uppercase"
+                  class="font-nunito w-full text-left text-step--1 leading-tight font-light tracking-[0.28em] uppercase md:w-auto md:shrink-0 md:text-right"
                   data-i18n-html={item.label}
                   set:html={t(item.label)}
                 />
@@ -311,7 +323,7 @@ const contactEmail = t('work.detailsContact');
     </div>
   </section>
 
-  <section id="reserve" class="px-8 pt-4xl pb-24 md:px-16 md:pb-32 lg:px-20">
+  <section id="reserve" class="px-8 pt-12 pb-24 md:px-16 md:pt-4xl md:pb-32 lg:px-20">
     <h2
       class="font-founders text-center text-step-6 font-light md:text-step-8"
       data-i18n="work.programTitle"

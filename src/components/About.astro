@@ -10,29 +10,27 @@ const paragraphs = ['about.intro', 'about.p1', 'about.p2', 'about.p3'] as const;
   id="about"
   class="bg-mist text-charcoal flex min-h-dvh items-center px-8 py-5xl md:px-16 lg:px-20"
 >
-  <div
-    class="mx-auto grid w-full max-w-[92rem] items-center gap-12 lg:grid-cols-[1fr_auto_1fr] lg:gap-14 xl:gap-20"
-  >
+  <div class="about-grid mx-auto grid w-full max-w-[92rem] gap-12">
     <h2
-      class="font-founders order-2 text-center text-step-0 leading-[1.75] font-light tracking-[0.3em] uppercase md:text-step-2 lg:order-1 lg:text-left"
+      class="about-title font-founders text-center text-step-0 leading-[1.75] font-light tracking-[0.3em] uppercase md:text-step-2 min-[1450px]:text-left"
       data-i18n-html="about.title"
       data-fade-in
       set:html={t('about.title')}
     />
 
-    <div class="order-1 justify-self-center lg:order-2" data-fade-in style="--fade-delay: 80ms">
+    <div class="about-image justify-self-center" data-fade-in style="--fade-delay: 80ms">
       <Image
         src={portrait}
         alt={t('about.photoAlt')}
         data-i18n-alt="about.photoAlt"
         widths={[480, 720, 1080, 1400]}
         sizes="(min-width: 1024px) 28vw, 85vw"
-        class="h-auto w-full max-w-[22rem] object-cover xl:max-w-[26rem]"
+        class="h-auto w-full max-w-[22rem] object-cover min-[1450px]:max-w-[26rem]"
       />
     </div>
 
     <div
-      class="order-3 flex w-full max-w-[22rem] flex-col min-[450px]:max-lg:mx-auto min-[450px]:max-lg:max-w-none min-[450px]:max-lg:px-12 xl:max-w-[26rem]"
+      class="about-body flex w-full max-w-[22rem] flex-col mx-auto min-[1000px]:mx-0 min-[1000px]:max-w-none min-[1450px]:max-w-[26rem]"
       data-fade-in
       style="--fade-delay: 140ms"
     >
@@ -40,7 +38,7 @@ const paragraphs = ['about.intro', 'about.p1', 'about.p2', 'about.p3'] as const;
         {
           paragraphs.map((key) => (
             <p
-              class="font-nunito text-[12px] leading-[1.65] font-light"
+              class="font-nunito text-step-0 leading-[1.65] font-light"
               data-i18n={key}
             >
               {t(key)}
@@ -63,3 +61,49 @@ const paragraphs = ['about.intro', 'about.p1', 'about.p2', 'about.p3'] as const;
     </div>
   </div>
 </section>
+
+<style>
+  .about-grid {
+    grid-template-areas:
+      'image'
+      'title'
+      'body';
+  }
+
+  .about-title {
+    grid-area: title;
+  }
+
+  .about-image {
+    grid-area: image;
+  }
+
+  .about-body {
+    grid-area: body;
+  }
+
+  @media (min-width: 1000px) and (max-width: 1449.98px) {
+    .about-grid {
+      grid-template-columns: auto minmax(0, 1fr);
+      grid-template-areas:
+        'image body'
+        'title body';
+      align-items: start;
+      column-gap: 3.5rem;
+    }
+
+    .about-body {
+      align-self: center;
+      padding-inline: 3.5rem;
+    }
+  }
+
+  @media (min-width: 1450px) {
+    .about-grid {
+      grid-template-columns: 1fr auto 1fr;
+      grid-template-areas: 'title image body';
+      align-items: center;
+      column-gap: 5rem;
+    }
+  }
+</style>

@@ -5,9 +5,8 @@ import { t } from '../i18n';
 <section class="flex items-center justify-center bg-mist px-10 py-4xl-5xl">
   <p
     class="font-cormorant text-center text-step-4 font-light text-charcoal text-pretty md:text-step-7 max-w-[85vw] md:max-w-[70vw] py-xl-2xl"
-    data-i18n="intro.body"
+    data-i18n-html="intro.body"
     data-fade-in
-  >
-    {t('intro.body')}
-  </p>
+    set:html={t('intro.body')}
+  />
 </section>

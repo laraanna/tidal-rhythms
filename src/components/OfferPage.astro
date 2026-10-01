@@ -143,7 +143,7 @@ const faqs = [
           </a>
         </div>
 
-        <aside class="bg-[#E7E7E7]/60 px-8 py-8 md:px-10 md:py-10" data-fade-in style="--fade-delay: 140ms">
+        <aside class="bg-[#FFFFFF]/60 px-8 py-8 md:px-10 md:py-10" data-fade-in style="--fade-delay: 140ms">
           <h2
             class="font-founders text-step--1 font-medium tracking-[0.18em] uppercase"
             data-i18n="offers.detailsTitle"
@@ -208,7 +208,7 @@ const faqs = [
     />
   </section>
 
-  <section class="px-8 py-20 md:px-16 md:py-28 lg:px-20 lg:py-32">
+  <section class="px-8 pt-20 pb-8 md:px-16 md:py-28 lg:px-20 lg:py-32">
     <div class="mx-auto max-w-[92rem]">
       <h2 class="font-founders text-step-6 font-light md:text-step-8" data-i18n="offers.approachTitle" data-fade-in>
         {t('offers.approachTitle')}
@@ -245,7 +245,7 @@ const faqs = [
               <div class="flex items-center gap-5">
                 <span class="hidden h-px flex-1 bg-charcoal/50 md:block"></span>
                 <p
-                  class="font-nunito shrink-0 text-right text-step--1 leading-tight font-light tracking-[0.28em] uppercase"
+                  class="font-nunito w-full text-left text-step--1 leading-tight font-light tracking-[0.28em] uppercase md:w-auto md:shrink-0 md:text-right"
                   data-i18n-html={pillar.label}
                   set:html={t(pillar.label)}
                 />
@@ -263,7 +263,7 @@ const faqs = [
       <div class="mt-24 md:mt-32 md:grid md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]">
         <div class="hidden md:block"></div>
         <div data-fade-in>
-          <h2 class="font-founders text-step-6 font-light md:text-step-8" data-i18n="offers.sessionTitle">
+          <h2 class="font-founders text-step-6 leading-[1.1] font-light md:text-step-8" data-i18n="offers.sessionTitle">
             {t('offers.sessionTitle')}
           </h2>
           {
@@ -307,16 +307,16 @@ const faqs = [
 
   {
     (offer.key === 'somatics' || offer.key === 'yoga') && (
-      <section class="px-8 pb-24 md:px-16 md:pb-32 lg:px-20">
+      <section class="px-8 pb-10 md:px-16 md:pb-32 lg:px-20">
         <div class="mx-auto max-w-[92rem]" data-fade-in>
           <h2
-            class="font-founders text-step-6 font-light md:text-step-8"
+            class="font-founders text-step-6 leading-[1.1] font-light md:text-step-8"
             data-i18n={`${prefix}.whoTitle`}
           >
             {t(`${prefix}.whoTitle`)}
           </h2>
           <p
-            class="font-founders mt-4 max-w-[40em] text-step-1 font-light italic md:text-step-3"
+            class="font-founders mt-2 max-w-[40em] text-step-1 font-light italic md:mt-4 md:text-step-3"
             data-i18n={`${prefix}.whoBody`}
           >
             {t(`${prefix}.whoBody`)}
@@ -326,7 +326,7 @@ const faqs = [
     )
   }
 
-  <section id="reserve" class="px-8 pt-4xl pb-24 md:px-16 md:pb-32 lg:px-20">
+  <section id="reserve" class="px-8 pt-12 pb-24 md:px-16 md:pt-4xl md:pb-32 lg:px-20">
     <h2
       class="font-founders text-center text-step-6 font-light md:text-step-8"
       data-i18n="offers.reserveTitle"

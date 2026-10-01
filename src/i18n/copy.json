@@ -143,8 +143,8 @@
   },
   "intro": {
     "body": {
-      "en": "Movement is at the center of Tidal Rhythms. As a way to reconnect, to our bodies, our emotions, our identities and ancestries, to one another, and to the world around\u00a0us.",
-      "fr": "Le mouvement est au cœur de Tidal Rhythms. Une invitation à se reconnecter à nos corps, nos émotions, nos identités et nos ancêtres, les uns aux autres, et au monde qui nous entoure."
+      "en": "Movement is at the center of Tidal Rhythms.<br class=\"hidden md:block\" /> As a way to reconnect, to our bodies, our emotions, our identities and ancestries, to one another, and to the world around\u00a0us.",
+      "fr": "Le mouvement est au cœur de Tidal Rhythms.<br class=\"hidden md:block\" /> Une invitation à se reconnecter à nos corps, nos émotions, nos identités et nos ancêtres, les uns aux autres, et au monde qui nous entoure."
     }
   },
   "work": {
@@ -155,6 +155,14 @@
     "title": {
       "en": "Somatics at Work",
       "fr": "Somatics En Entreprise"
+    },
+    "subtitle": {
+      "en": "Somatics & Dance for Embodied Emotional Intelligence",
+      "fr": "Somatics & Danse pour une intelligence émotionnelle incarnée"
+    },
+    "introLead": {
+      "en": "Cultivate genuine connection and well-being, through a guided practice of somatics and dance.",
+      "fr": "Cultiver une véritable cohésion et le bien-être, par une pratique guidée de somatics et de danse."
     },
     "landingBody": {
       "en": "Guided somatic and dance movement sessions that help teams regulate stress, reconnect with their bodies, and build lasting team cohesion.",
@@ -173,8 +181,8 @@
       "fr": "Somatics En Entreprise, Tidal Rhythms"
     },
     "bookCta": {
-      "en": "Book an Introductory Strategy Call",
-      "fr": "Réservez votre appel stratégique d'introduction"
+      "en": "Book an Intro Call",
+      "fr": "Réserver un premier appel"
     },
     "detailsTitle": {
       "en": "Details",
