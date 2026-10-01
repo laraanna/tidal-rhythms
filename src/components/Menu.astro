@@ -113,10 +113,10 @@ const links = [
           </div>
         </div>
 
-        <div class="absolute bottom-8 left-10">
+        <div class="absolute bottom-8 left-10" data-menu-stagger>
           <button
             type="button"
-            class="font-nunito flex items-center gap-2 text-xl font-medium tracking-[0.3em] text-[rgb(65,65,65)] uppercase"
+            class="font-nunito flex items-center gap-2 text-sm tracking-[0.28em] text-[rgb(65,65,65)] uppercase"
             data-lang-toggle
             aria-label={t('hero.langAriaEn')}
           >
@@ -134,14 +134,14 @@ const links = [
 
       <div class="relative flex h-full w-full flex-col px-6 pt-28 pb-10 lg:w-1/2 lg:px-10 lg:py-0">
         <nav
-          class="flex flex-1 flex-col items-start justify-center gap-8 lg:items-end"
+          class="flex flex-1 flex-col items-start justify-center gap-6 lg:items-end lg:gap-8"
           aria-label="Primary"
         >
           {
             links.map((link) => (
               <a
                 href={link.href}
-                class="font-nunito text-paper self-start text-left text-step-3 font-light tracking-[0.3em] uppercase lg:self-end lg:text-right"
+                class="font-nunito text-paper self-start text-left text-step-1 font-light tracking-[0.3em] uppercase lg:self-end lg:text-right lg:text-step-3"
                 data-menu-stagger
                 data-menu-close
                 data-i18n={link.key}
@@ -152,7 +152,7 @@ const links = [
           }
         </nav>
 
-        <div class="mb-20 w-[min(45%,18rem)] md:hidden" data-menu-image-mobile>
+        <div class="mb-14 w-[min(34%,13rem)] md:hidden" data-menu-image-mobile>
           <Image
             src={menuPhoto}
             alt={t('menu.photoAlt')}
@@ -163,16 +163,34 @@ const links = [
           />
         </div>
 
-        <a
-          href="#footer"
-          class="font-nunito text-paper mt-auto self-start text-sm tracking-[0.28em] uppercase lg:absolute lg:right-10 lg:bottom-8 lg:mt-0 lg:self-auto"
-          data-menu-stagger
-          data-menu-close
-          data-scroll-bottom
-          data-i18n="menu.contact"
-        >
-          {t('menu.contact')}
-        </a>
+        <div class="mt-auto flex w-full items-center justify-between lg:mt-0">
+          <a
+            href="#footer"
+            class="font-nunito text-paper text-sm tracking-[0.28em] uppercase lg:absolute lg:right-10 lg:bottom-8"
+            data-menu-stagger
+            data-menu-close
+            data-scroll-bottom
+            data-i18n="menu.contact"
+          >
+            {t('menu.contact')}
+          </a>
+          <button
+            type="button"
+            class="font-nunito flex items-center gap-2 text-sm tracking-[0.28em] text-paper uppercase lg:hidden"
+            data-menu-stagger
+            data-lang-toggle
+            aria-label={t('hero.langAriaEn')}
+          >
+            <span data-lang-label="en" class="opacity-80">EN</span>
+            <span class="relative h-6 w-11 rounded-full bg-black/80 ring-1 ring-white/35" aria-hidden="true">
+              <span
+                data-lang-knob
+                class="absolute top-0.5 left-0.5 size-5 rounded-full bg-white transition-transform duration-200"
+              ></span>
+            </span>
+            <span data-lang-label="fr" class="opacity-35">FR</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
