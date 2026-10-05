@@ -204,6 +204,7 @@ html {
   min-height: 100%;
   background: var(--mist);
   overflow-x: clip;
+  overscroll-behavior: none;
   scrollbar-width: thin;
   scrollbar-color: rgb(65 65 65 / 0.28) var(--mist);
 }
@@ -212,6 +213,7 @@ body {
   min-height: 100%;
   background: var(--mist);
   color: #fff;
+  overscroll-behavior: none;
 }
 
 a[href],

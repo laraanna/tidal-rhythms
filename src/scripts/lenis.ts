@@ -9,6 +9,7 @@ export function initLenis() {
     autoRaf: true,
     duration: 1.2,
     respectReducedMotion: true,
+    overscroll: false,
   });
 
   document.addEventListener(

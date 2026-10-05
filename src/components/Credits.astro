@@ -3,7 +3,7 @@ import { t } from '../i18n';
 ---
 
 <div
-  class="pointer-events-none fixed inset-0 z-[450] overflow-clip"
+  class="pointer-events-none fixed inset-0 z-[450] flex items-center justify-center overflow-hidden p-4"
   data-credits
   aria-hidden="true"
 >
@@ -15,7 +15,7 @@ import { t } from '../i18n';
   </div>
 
   <aside
-    class="bg-sand text-charcoal absolute top-1/2 left-1/2 flex max-h-[min(80dvh,36rem)] w-[min(32rem,calc(100%-2rem))] flex-col overflow-hidden outline-none"
+    class="bg-sand text-charcoal relative z-10 flex max-h-[min(80dvh,36rem)] w-full max-w-[32rem] flex-col overflow-hidden outline-none"
     data-credits-panel
     data-lenis-prevent
     role="dialog"
@@ -59,35 +59,35 @@ import { t } from '../i18n';
 </div>
 
 <style>
+  [data-credits]:not(.is-open) {
+    visibility: hidden;
+  }
+
   [data-credits].is-open {
     pointer-events: auto;
+    visibility: visible;
   }
 
   [data-credits-overlay] {
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.3s ease;
   }
 
   [data-credits].is-open [data-credits-overlay] {
     opacity: 1;
-    visibility: visible;
   }
 
   [data-credits-panel] {
-    transform: translate3d(-50%, calc(-50% + 0.75rem), 0);
+    transform: translate3d(0, 0.75rem, 0);
     opacity: 0;
-    visibility: hidden;
     transition:
       transform 0.3s ease-out,
-      opacity 0.3s ease-out,
-      visibility 0.3s ease-out;
+      opacity 0.3s ease-out;
   }
 
   [data-credits].is-open [data-credits-panel] {
-    transform: translate3d(-50%, -50%, 0);
+    transform: none;
     opacity: 1;
-    visibility: visible;
   }
 
   .credits-list :global(li) {
