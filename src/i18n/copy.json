@@ -913,6 +913,22 @@
     "photoAlt": {
       "en": "Dancer in the studio, hair in motion",
       "fr": "Danseuse dans le studio, les cheveux en mouvement"
+    },
+    "credits": {
+      "en": "Credits",
+      "fr": "Crédits"
+    },
+    "creditsOpenAria": {
+      "en": "Open credits",
+      "fr": "Ouvrir les crédits"
+    },
+    "creditsPhotography": {
+      "en": "Photography",
+      "fr": "Photographie"
+    },
+    "creditsList": {
+      "en": "<ul><li><a href=\"https://tonyfoulquier.com/\" target=\"_blank\" rel=\"noreferrer\">Tony Foulquier</a></li><li><a href=\"https://www.instagram.com/manola_photographies/\" target=\"_blank\" rel=\"noreferrer\">@manola_photographies</a></li></ul>",
+      "fr": "<ul><li><a href=\"https://tonyfoulquier.com/\" target=\"_blank\" rel=\"noreferrer\">Tony Foulquier</a></li><li><a href=\"https://www.instagram.com/manola_photographies/\" target=\"_blank\" rel=\"noreferrer\">@manola_photographies</a></li></ul>"
     }
   }
 }

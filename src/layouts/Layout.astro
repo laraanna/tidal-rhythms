@@ -4,6 +4,7 @@ import { t } from '../i18n';
 import Menu from '../components/Menu.astro';
 import ContactCard from '../components/ContactCard.astro';
 import Trainings from '../components/Trainings.astro';
+import Credits from '../components/Credits.astro';
 import LangSwitch from '../components/LangSwitch.astro';
 
 interface Props {
@@ -39,6 +40,7 @@ const { titleKey = 'meta.title', showContact = true } = Astro.props;
   <body class="antialiased">
     <Menu />
     <Trainings />
+    <Credits />
     {showContact && <ContactCard />}
     <LangSwitch />
     <slot />

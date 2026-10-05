@@ -1,0 +1,107 @@
+---
+import { t } from '../i18n';
+---
+
+<div
+  class="pointer-events-none fixed inset-0 z-[450] overflow-clip"
+  data-credits
+  aria-hidden="true"
+>
+  <div
+    class="absolute inset-0 bg-black/70"
+    data-credits-overlay
+    data-credits-close
+  >
+  </div>
+
+  <aside
+    class="bg-sand text-charcoal absolute top-1/2 left-1/2 flex max-h-[min(80dvh,36rem)] w-[min(32rem,calc(100%-2rem))] flex-col overflow-hidden outline-none"
+    data-credits-panel
+    data-lenis-prevent
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="credits-title"
+    tabindex="-1"
+  >
+    <button
+      type="button"
+      class="font-nunito absolute top-5 right-5 z-10 text-sm tracking-[0.28em] uppercase"
+      data-credits-close
+      data-i18n="menu.close"
+      data-i18n-aria-label="menu.closeAria"
+      aria-label={t('menu.closeAria')}
+    >
+      {t('menu.close')}
+    </button>
+
+    <div class="min-h-0 flex-1 overflow-y-auto px-8 py-12 md:px-10 md:py-14">
+      <h2
+        id="credits-title"
+        class="font-founders text-step-2 font-light tracking-[0.18em] uppercase"
+        data-i18n="footer.credits"
+      >
+        {t('footer.credits')}
+      </h2>
+
+      <h3
+        class="font-nunito mt-8 text-step--2 font-light tracking-[0.28em] uppercase"
+        data-i18n="footer.creditsPhotography"
+      >
+        {t('footer.creditsPhotography')}
+      </h3>
+      <div
+        class="credits-list font-nunito mt-3 text-step--1 font-light leading-[1.65]"
+        data-i18n-html="footer.creditsList"
+        set:html={t('footer.creditsList')}
+      />
+    </div>
+  </aside>
+</div>
+
+<style>
+  [data-credits].is-open {
+    pointer-events: auto;
+  }
+
+  [data-credits-overlay] {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  [data-credits].is-open [data-credits-overlay] {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  [data-credits-panel] {
+    transform: translate3d(-50%, calc(-50% + 0.75rem), 0);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      transform 0.3s ease-out,
+      opacity 0.3s ease-out,
+      visibility 0.3s ease-out;
+  }
+
+  [data-credits].is-open [data-credits-panel] {
+    transform: translate3d(-50%, -50%, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .credits-list :global(li) {
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .credits-list :global(a) {
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+</style>
+
+<script>
+  import { initCredits } from '../scripts/credits';
+  initCredits();
+</script>

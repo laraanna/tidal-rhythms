@@ -110,14 +110,28 @@ const links = [
         </div>
       </div>
 
-      <Image
-        src={footerPhoto}
-        alt={t('footer.photoAlt')}
-        data-i18n-alt="footer.photoAlt"
-        widths={[480, 720, 960]}
-        sizes="(min-width: 1024px) 18rem, 80vw"
-        class="h-[18rem] w-auto justify-self-start grayscale lg:justify-self-end"
-      />
+      <div class="flex w-fit flex-col items-end justify-self-start lg:justify-self-end">
+        <Image
+          src={footerPhoto}
+          alt={t('footer.photoAlt')}
+          data-i18n-alt="footer.photoAlt"
+          widths={[480, 720, 960]}
+          sizes="(min-width: 1024px) 18rem, 80vw"
+          class="h-[18rem] w-auto grayscale"
+        />
+        <button
+          type="button"
+          class="font-nunito mt-3 text-step--2 font-light tracking-[0.22em] uppercase"
+          data-credits-open
+          data-i18n="footer.credits"
+          data-i18n-aria-label="footer.creditsOpenAria"
+          aria-haspopup="dialog"
+          aria-controls="credits-title"
+          aria-label={t('footer.creditsOpenAria')}
+        >
+          {t('footer.credits')}
+        </button>
+      </div>
     </div>
   </section>
 </footer>
