@@ -110,18 +110,18 @@ const links = [
         </div>
       </div>
 
-      <div class="flex w-fit flex-col items-end justify-self-start lg:justify-self-end">
+      <div class="flex w-full items-end justify-between lg:w-fit lg:flex-col lg:items-end lg:justify-self-end">
         <Image
           src={footerPhoto}
           alt={t('footer.photoAlt')}
           data-i18n-alt="footer.photoAlt"
           widths={[480, 720, 960]}
           sizes="(min-width: 1024px) 18rem, 80vw"
-          class="h-[18rem] w-auto grayscale"
+          class="h-48 w-auto grayscale md:h-[18rem]"
         />
         <button
           type="button"
-          class="font-nunito mt-3 text-step--2 font-light tracking-[0.22em] uppercase"
+          class="font-nunito shrink-0 text-step--2 font-light tracking-[0.22em] uppercase lg:mt-3"
           data-credits-open
           data-i18n="footer.credits"
           data-i18n-aria-label="footer.creditsOpenAria"
