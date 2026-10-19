@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import { t } from '../i18n';
 import offerA from '../images/offer_A.jpg';
 import offerB from '../images/offer_B.jpg';
-import offerC from '../images/offer_C.jpg';
+// import offerC from '../images/offer_C.jpg';
 
 const offers = [
   {
@@ -20,22 +20,23 @@ const offers = [
     blurbKey: 'offers.somatics.blurb',
     image: offerB,
   },
-  {
-    id: 'somatic-yoga',
-    titleKey: 'menu.itemYoga',
-    eyebrowKey: 'offers.yoga.eyebrow',
-    blurbKey: 'offers.yoga.blurb',
-    image: offerC,
-  },
+  // Hidden for now — keep to restore later
+  // {
+  //   id: 'somatic-yoga',
+  //   titleKey: 'menu.itemYoga',
+  //   eyebrowKey: 'offers.yoga.eyebrow',
+  //   blurbKey: 'offers.yoga.blurb',
+  //   image: offerC,
+  // },
 ] as const;
 ---
 
-<section class="min-[1000px]:grid min-[1000px]:grid-cols-3" aria-label="Offers">
+<section class="min-[1000px]:grid min-[1000px]:grid-cols-2" aria-label="Offers">
   {
     offers.map((offer, index) => (
       <article
         id={offer.id}
-        class="text-charcoal relative flex flex-col overflow-hidden px-10 py-12 md:px-12 md:py-14 min-[1000px]:aspect-[4/5] min-[1000px]:p-0"
+        class="text-charcoal relative flex flex-col overflow-hidden px-10 py-12 md:px-12 md:py-14 min-[1000px]:aspect-[5/4] min-[1000px]:p-0"
         data-fade-in
         style={`--fade-delay: ${index * 90}ms`}
       >
@@ -43,7 +44,7 @@ const offers = [
           src={offer.image}
           alt=""
           widths={[720, 1100, 1600]}
-          sizes="(min-width: 1024px) 33vw, 100vw"
+          sizes="(min-width: 1024px) 50vw, 100vw"
           class="absolute inset-0 size-full object-cover"
           aria-hidden="true"
         />

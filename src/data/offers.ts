@@ -25,11 +25,14 @@ export const offers = [
     accent: '#b7c5c4',
     sessionColors: ['#CFE2DD', '#B8CDC8', '#AABBB7', '#96A8A4'],
     calendly: 'https://calendly.com/mayosmith-mytam/1-1-somatic-yoga',
+    hidden: true,
   },
 ] as const;
 
 export type Offer = (typeof offers)[number];
 export type OfferSlug = Offer['slug'];
+
+export const visibleOffers = offers.filter((offer) => !('hidden' in offer && offer.hidden));
 
 export function getOffer(slug: string) {
   return offers.find((offer) => offer.slug === slug);

@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import OfferPage from '../../components/OfferPage.astro';
 import Footer from '../../components/Footer.astro';
-import { getOffer, offers } from '../../data/offers';
+import { getOffer, visibleOffers } from '../../data/offers';
 import therapyLeft from '../../images/dmt_hero_1.jpg';
 import therapyRight from '../../images/dmt_hero_2.jpg';
 import somaticsLeft from '../../images/sad_hero_1.jpg';
@@ -20,7 +20,7 @@ const photos = {
 } as const;
 
 export function getStaticPaths() {
-  return offers.map((offer) => ({ params: { slug: offer.slug } }));
+  return visibleOffers.map((offer) => ({ params: { slug: offer.slug } }));
 }
 
 const offer = getOffer(Astro.params.slug ?? '');
