@@ -208,7 +208,7 @@ const faqs = [
     />
   </section>
 
-  <section class="px-8 pt-20 pb-8 md:px-16 md:py-28 lg:px-20 lg:py-32">
+  <section class="bg-[rgb(230,230,228)] px-8 pt-20 pb-20 md:px-16 md:py-28 lg:px-20 lg:py-32">
     <div class="mx-auto max-w-[92rem]">
       <h2 class="font-founders text-step-6 font-light md:text-step-8" data-i18n="offers.approachTitle" data-fade-in>
         {t('offers.approachTitle')}
@@ -283,7 +283,12 @@ const faqs = [
         )
       }
 
-      <div class="mt-24 md:mt-32 md:grid md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]">
+    </div>
+  </section>
+
+  <section class="px-8 pt-20 pb-16 md:px-16 md:pt-28 md:pb-20 lg:px-20 lg:pt-32 lg:pb-24">
+    <div class="mx-auto max-w-[92rem]">
+      <div class="md:grid md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]">
         <div class="hidden md:block"></div>
         <div data-fade-in>
           <h2 class="font-founders text-step-6 leading-[1.1] font-light md:text-step-8" data-i18n="offers.sessionTitle">
@@ -345,12 +350,10 @@ const faqs = [
         ))
       }
     </div>
-  </section>
 
-  {
-    (offer.key === 'somatics' || offer.key === 'yoga') && (
-      <section class="px-8 pb-10 md:px-16 md:pb-32 lg:px-20">
-        <div class="mx-auto max-w-[92rem]" data-fade-in>
+    {
+      (offer.key === 'somatics' || offer.key === 'yoga') && (
+        <div class="mx-auto max-w-[92rem] px-8 pt-24 md:px-16 md:pt-32 lg:px-20 lg:pt-36" data-fade-in>
           <h2
             class="font-founders text-step-6 leading-[1.1] font-light md:text-step-8"
             data-i18n={`${prefix}.whoTitle`}
@@ -358,15 +361,15 @@ const faqs = [
             {t(`${prefix}.whoTitle`)}
           </h2>
           <p
-            class="font-nunito mt-2 max-w-[40em] text-step--1 leading-[1.7] font-light md:mt-4 md:text-step-0"
+            class="font-founders mt-4 max-w-[32em] text-step-1 font-light italic md:text-step-3"
             data-i18n={`${prefix}.whoBody`}
           >
             {t(`${prefix}.whoBody`)}
           </p>
         </div>
-      </section>
-    )
-  }
+      )
+    }
+  </section>
 
   <section id="reserve" class="px-8 pt-12 pb-24 md:px-16 md:pt-4xl md:pb-32 lg:px-20">
     <h2
