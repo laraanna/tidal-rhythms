@@ -772,6 +772,14 @@
       "en": "With roots in Vietnam and the United States, my relationship to dance is also shaped by questions of culture, colonialism, racism, and inherited histories. Dancing is a process of decolonization. Through dance, I find space to embody, release, and imagine new possibilities of belonging.",
       "fr": "Avec des racines au Vietnam et aux États-Unis, ma relation à la danse est aussi traversée par des questions de culture, de colonialisme, de racisme, et d'histoires héritées. Danser peut être un processus de décolonisation. Par la danse, je trouve un espace pour incarner, relâcher, et imaginer de nouvelles possibilités d'appartenance."
     },
+    "readMore": {
+      "en": "Read more",
+      "fr": "En savoir plus"
+    },
+    "readLess": {
+      "en": "Read less",
+      "fr": "Réduire"
+    },
     "trainings": {
       "en": "Trainings",
       "fr": "Formations"

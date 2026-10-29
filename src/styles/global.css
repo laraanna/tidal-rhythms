@@ -224,6 +224,23 @@
   transform: rotate(180deg);
 }
 
+.format-card summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.format-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.format-card-arrow {
+  transition: transform 0.2s ease;
+}
+
+.format-card[open] .format-card-arrow {
+  transform: rotate(180deg);
+}
+
 html {
   min-height: 100%;
   background: var(--mist);

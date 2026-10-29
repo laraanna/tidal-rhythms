@@ -35,16 +35,34 @@ const paragraphs = ['about.intro', 'about.p1', 'about.p2', 'about.p3'] as const;
       style="--fade-delay: 140ms"
     >
       <div class="flex flex-col gap-5 lg:gap-6">
+        <input id="about-more" type="checkbox" class="peer sr-only" />
         {
           paragraphs.map((key) => (
             <p
-              class="font-nunito text-[18px] leading-[1.65] font-light min-[1000px]:text-[20px]"
+              class:list={[
+                'font-nunito text-[18px] leading-[1.65] font-light min-[1000px]:text-[20px]',
+                key !== 'about.intro' && key !== 'about.p1' && 'hidden peer-checked:block min-[1000px]:block',
+              ]}
               data-i18n={key}
             >
               {t(key)}
             </p>
           ))
         }
+        <label
+          for="about-more"
+          class="font-nunito w-fit cursor-pointer text-[18px] font-light underline underline-offset-[0.18em] min-[1000px]:hidden peer-checked:hidden"
+          data-i18n="about.readMore"
+        >
+          {t('about.readMore')}
+        </label>
+        <label
+          for="about-more"
+          class="font-nunito hidden w-fit cursor-pointer text-[18px] font-light underline underline-offset-[0.18em] peer-checked:block min-[1000px]:hidden min-[1000px]:peer-checked:hidden"
+          data-i18n="about.readLess"
+        >
+          {t('about.readLess')}
+        </label>
       </div>
       <button
         type="button"

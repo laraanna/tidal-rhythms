@@ -97,7 +97,7 @@ const contactEmail = t('work.detailsContact');
         </p>
         <a
           href="#reserve"
-          class="font-nunito mt-10 inline-flex border border-charcoal px-10 py-3.5 text-step--1 font-light tracking-[0.32em] uppercase"
+          class="font-nunito mt-10 inline-flex border border-charcoal px-10 py-3.5 text-[12px] font-light tracking-[0.32em] uppercase md:text-step--1"
           data-i18n="work.bookCta"
         >
           {t('work.bookCta')}
@@ -201,26 +201,55 @@ const contactEmail = t('work.detailsContact');
       <div class="mt-10 grid gap-4 md:mt-14 md:grid-cols-2 md:gap-5">
         {
           formats.map((item, index) => (
-            <article
-              class="bg-[#FFFFFF]/60 px-8 py-8 md:px-10 md:py-10"
-              data-fade-in
-              style={`--fade-delay: ${index * 60}ms`}
-            >
-              <p class="font-founders text-step-0 font-light tracking-[0.22em] text-charcoal/45">
-                {String(index + 1).padStart(2, '0')}
-              </p>
-              <h3
-                class="font-founders mt-4 text-step-3 leading-[1.2] font-light md:text-step-4"
-                data-i18n-html={item.label}
-                set:html={t(item.label)}
-              />
-              <p
-                class="font-nunito mt-4 max-w-[28rem] text-step--1 leading-[1.7] font-light md:text-[18px]"
-                data-i18n={item.body}
+            <>
+              <details
+                class="format-card bg-[#FFFFFF]/60 md:hidden"
+                data-fade-in
+                style={`--fade-delay: ${index * 60}ms`}
               >
-                {t(item.body)}
-              </p>
-            </article>
+                <summary class="flex cursor-pointer list-none items-start justify-between gap-4 px-8 py-6">
+                  <div class="min-w-0">
+                    <p class="font-founders text-step-0 font-light tracking-[0.22em] text-charcoal/45">
+                      {String(index + 1).padStart(2, '0')}
+                    </p>
+                    <h3
+                      class="font-founders mt-3 text-step-3 leading-[1.2] font-light"
+                      data-i18n-html={item.label}
+                      set:html={t(item.label)}
+                    />
+                  </div>
+                  <svg class="format-card-arrow mt-1 h-3 w-3 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.25" />
+                  </svg>
+                </summary>
+                <p
+                  class="font-nunito px-8 pt-1 pb-6 text-step--1 leading-[1.7] font-light"
+                  data-i18n={item.body}
+                >
+                  {t(item.body)}
+                </p>
+              </details>
+              <article
+                class="hidden bg-[#FFFFFF]/60 px-8 py-8 md:block md:px-10 md:py-10"
+                data-fade-in
+                style={`--fade-delay: ${index * 60}ms`}
+              >
+                <p class="font-founders text-step-0 font-light tracking-[0.22em] text-charcoal/45">
+                  {String(index + 1).padStart(2, '0')}
+                </p>
+                <h3
+                  class="font-founders mt-4 text-step-3 leading-[1.2] font-light md:text-step-4"
+                  data-i18n-html={item.label}
+                  set:html={t(item.label)}
+                />
+                <p
+                  class="font-nunito mt-4 max-w-[28rem] text-step--1 leading-[1.7] font-light md:text-[18px]"
+                  data-i18n={item.body}
+                >
+                  {t(item.body)}
+                </p>
+              </article>
+            </>
           ))
         }
       </div>
