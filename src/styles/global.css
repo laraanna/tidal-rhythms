@@ -207,6 +207,23 @@
   --step-1: max(16px, clamp(0.9rem, 0.8068rem + 0.3824vw, 1.2656rem));
 }
 
+.session-step summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.session-step summary::-webkit-details-marker {
+  display: none;
+}
+
+.session-step-arrow {
+  transition: transform 0.2s ease;
+}
+
+.session-step[open] .session-step-arrow {
+  transform: rotate(180deg);
+}
+
 html {
   min-height: 100%;
   background: var(--mist);

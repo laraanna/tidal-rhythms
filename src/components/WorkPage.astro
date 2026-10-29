@@ -252,21 +252,40 @@ const contactEmail = t('work.detailsContact');
     <div class="flex flex-col gap-2">
       {
         steps.map((step) => (
-          <div class="grid grid-cols-1 items-start md:grid-cols-[minmax(8rem,38%)_1fr] md:items-center">
-            <p
-              class="font-nunito flex min-h-14 items-center px-6 py-3 text-left text-step--1 leading-tight font-light tracking-[0.18em] text-charcoal uppercase md:min-h-20 md:justify-end md:px-8 md:text-right md:tracking-[0.4em]"
-              style={`background: ${step.color}`}
-              data-i18n={step.label}
-            >
-              {t(step.label)}
-            </p>
-            <div class="flex items-center gap-3 px-6 py-4 md:gap-6 md:px-10 md:py-5">
-              <span class="hidden h-px w-8 shrink-0 bg-charcoal/35 md:block md:w-16"></span>
-              <p class="font-nunito max-w-[36rem] text-step--2 leading-[1.65] font-light md:text-step--1" data-i18n={step.body}>
+          <>
+            <details class="session-step md:hidden">
+              <summary
+                class="font-nunito flex min-h-14 items-center justify-between gap-4 px-6 py-3 text-left text-step--1 leading-tight font-light tracking-[0.18em] text-charcoal uppercase"
+                style={`background: ${step.color}`}
+              >
+                <span data-i18n={step.label}>{t(step.label)}</span>
+                <svg class="session-step-arrow h-3 w-3 shrink-0" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.25" />
+                </svg>
+              </summary>
+              <p
+                class="font-nunito px-6 py-4 text-step--2 leading-[1.65] font-light"
+                data-i18n={step.body}
+              >
                 {t(step.body)}
               </p>
+            </details>
+            <div class="hidden md:grid md:grid-cols-[minmax(8rem,38%)_1fr] md:items-center">
+              <p
+                class="font-nunito flex min-h-20 items-center justify-end px-8 py-3 text-right text-step--1 leading-tight font-light tracking-[0.4em] text-charcoal uppercase"
+                style={`background: ${step.color}`}
+                data-i18n={step.label}
+              >
+                {t(step.label)}
+              </p>
+              <div class="flex items-center gap-6 px-10 py-5">
+                <span class="h-px w-16 shrink-0 bg-charcoal/35"></span>
+                <p class="font-nunito max-w-[36rem] text-step--1 leading-[1.65] font-light" data-i18n={step.body}>
+                  {t(step.body)}
+                </p>
+              </div>
             </div>
-          </div>
+          </>
         ))
       }
     </div>
