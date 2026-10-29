@@ -158,11 +158,11 @@
     },
     "subtitle": {
       "en": "Somatics & Dance for Embodied Emotional Intelligence",
-      "fr": "Somatics & Danse pour une intelligence émotionnelle incarnée"
+      "fr": "Moins de stress, plus de cohésion : l'intelligence émotionnelle en équipe."
     },
     "introLead": {
       "en": "Cultivate genuine connection and well-being, through a guided practice of somatics and dance.",
-      "fr": "Cultiver une véritable cohésion et le bien-être, par une pratique guidée de somatics et de danse."
+      "fr": "Des interventions de somatics & mouvement libre conçues et guidées pour aider vos collaborateurs à réguler leur système nerveux, libérer les tensions liées aux écrans et restaurer une énergie collective durable."
     },
     "landingBody": {
       "en": "Guided somatic and dance movement sessions that help teams regulate stress, reconnect with their bodies, and build lasting team cohesion.",
@@ -170,7 +170,7 @@
     },
     "body": {
       "en": "Guided somatics and movement sessions that help teams regulate stress, reconnect with their bodies, and build lasting team cohesion.",
-      "fr": "Des séances guidées de somatics et danse/mouvement qui aident les équipes à réguler le stress, à se reconnecter à leur corps, et à construire une cohésion durable."
+      "fr": "Créée et menée par une danse-thérapeute diplômée d'un Master en Danse-Mouvement Thérapie (Université Paris Cité) et forte de plus de 550 heures de pratique clinique en milieu hospitalier et de santé mentale à Paris.\n\nInterventions bilingues disponibles en français et en anglais (FR / EN)."
     },
     "cta": {
       "en": "Discover now",
@@ -228,17 +228,9 @@
       "en": "Mytam seated in a black dress in the studio",
       "fr": "Mytam assise en robe noire dans le studio"
     },
-    "overviewTitle": {
-      "en": "Executive Overview",
-      "fr": "Présentation"
-    },
-    "overviewBody": {
-      "en": "Combining dance movement therapy (DMT) principles with Body-Mind Centering, these sessions offer an embodied approach to releasing accumulated tension, reconnecting with physical presence, and restoring collective energy.",
-      "fr": "En associant les principes de la danse-mouvement thérapie (DMT) au Body-Mind Centering, ces séances proposent une approche incarnée pour relâcher les tensions accumulées, se reconnecter à la présence physique, et restaurer l'énergie collective."
-    },
     "benefitsTitle": {
       "en": "Measurable Team Benefits",
-      "fr": "Bénéfices concrets pour l'équipe"
+      "fr": "Bénéfices mesurables & impact QVCT"
     },
     "benefitsCol1": {
       "en": "Core Team Benefit",
@@ -250,35 +242,35 @@
     },
     "benefit1": {
       "en": "Relieve Deep Stress",
-      "fr": "Soulager le stress profond"
+      "fr": "Prévention des risques psycho\u2011sociaux\u00A0(RPS)"
     },
     "benefit1Body": {
       "en": "Practical somatic tools to lower stress, release physical tension, and restore focus during intense work cycles.",
-      "fr": "Des outils somatiques concrets pour baisser le stress, relâcher les tensions physiques, et retrouver la concentration pendant les cycles de travail intenses."
+      "fr": "Apport d'outils corporels ciblés pour réguler le système nerveux, prévenir le burn-out et restaurer la clarté mentale lors des pics d'activité."
     },
     "benefit2": {
       "en": "Reconnect with the Body",
-      "fr": "Se reconnecter au corps"
+      "fr": "Prévention des TMS & détente physique"
     },
     "benefit2Body": {
       "en": "Heightened awareness of physical cues and stress signals to shift out of screen fatigue and mental overthinking.",
-      "fr": "Une conscience accrue des signaux physiques et du stress, pour sortir de la fatigue des écrans et de la rumination mentale."
+      "fr": "Une conscience corporelle accrue pour libérer les tensions liées à la sédentarité, contrarier la fatigue liée aux écrans et relâcher les crispations cervicales et dorsales."
     },
     "benefit3": {
       "en": "Renew Motivation & Vitality",
-      "fr": "Renouveler motivation et vitalité"
+      "fr": "Récupération & énergie collective"
     },
     "benefit3Body": {
       "en": "Dynamic, creative movement that clears mental blockages and restores energy after long hours at screens.",
-      "fr": "Un mouvement dynamique et créatif qui dégage les blocages mentaux et restaure l'énergie après de longues heures devant les écrans."
+      "fr": "Un espace de mouvement dynamique et créatif pour dissiper la charge mentale, stimuler l'engagement et réinsuffler de la vitalité après de longues heures de travail sur écran."
     },
     "benefit4": {
       "en": "Strengthen Team Connection",
-      "fr": "Renforcer le lien d'équipe"
+      "fr": "Cohésion & sécurité psychologique"
     },
     "benefit4Body": {
       "en": "Shared, low-stakes movement that breaks down hierarchy, builds psychological safety, and deepens non-verbal trust.",
-      "fr": "Un mouvement partagé, sans enjeu de performance, qui assouplit la hiérarchie, construit la sécurité psychologique, et approfondit la confiance."
+      "fr": "Une pratique corporelle partagée et inclusive, sans enjeu de performance, qui renforce la confiance interpersonnelle et favorise la cohésion d'équipe."
     },
     "sessionTitle": {
       "en": "Session Structure",
@@ -333,36 +325,36 @@
       "fr": "Formats d'intervention"
     },
     "format1": {
-      "en": "Discovery workshop<br />(60-90 minutes)",
-      "fr": "Atelier découverte<br />(60-90 minutes)"
+      "en": "Discovery workshop<br />(45–90 minutes)",
+      "fr": "Pause découverte QVCT ou atelier découverte<br />(45–90 min)"
     },
     "format1Body": {
       "en": "A focused session to relieve stress and reset team dynamics.",
-      "fr": "Une séance ciblée pour soulager le stress et réinitialiser la dynamique d'équipe."
+      "fr": "Une session ciblée pour déconnecter des écrans, relâcher les tensions corporelles liées à la sédentarité et réinitialiser l'énergie de l'équipe. Idéal pour une pause méridienne ou une journée de cohésion."
     },
     "format2": {
       "en": "Ongoing Resilience Cycle<br />(4–6 Sessions)",
-      "fr": "Cycle de résilience<br />(4–6 séances)"
+      "fr": "Cycle bien-être & prévention<br />(4–6 séances)"
     },
     "format2Body": {
       "en": "Sustained practice over time for habit formation, ongoing stress management, and culture building.",
-      "fr": "Une pratique dans la durée, pour ancrer des habitudes, accompagner le stress au fil du temps, et nourrir la culture d'équipe."
+      "fr": "Une pratique ancrée dans la durée pour installer des micro-habitudes psychocorporelles, prévenir durablement le stress professionnel et nourrir un climat de travail bienveillant."
     },
     "format3": {
       "en": "Interactive Keynote<br />(45–60 Min)",
-      "fr": "Keynote interactive<br />(45–60 min)"
+      "fr": "Keynote active & atelier<br />(45–60 min)"
     },
     "format3Body": {
       "en": "High-impact talk combining brief concepts with guided movement for conferences, summits, or all-hands.",
-      "fr": "Une intervention à fort impact, associant de brefs apports et du mouvement guidé, pour vos conférences, conventions ou séminaires d'entreprise."
+      "fr": "Une intervention à fort impact pour vos conventions, all-hands ou temps forts (ex: Semaine de la QVT en juin). Allie courts apports théoriques sur la co-régulation du système nerveux et mise en mouvement accessible à tous."
     },
     "format4": {
       "en": "Offsite Immersion<br />(Half/Full Day)",
-      "fr": "Immersion offsite<br />(demi-journée / journée)"
+      "fr": "Immersion séminaire<br />(demi-journée / journée)"
     },
     "format4Body": {
       "en": "Deep-dive experience tailored for executive retreats and team seminars.",
-      "fr": "Une expérience immersive, conçue pour les retraites de direction et les séminaires d'équipe."
+      "fr": "Une expérience immersive sur-mesure pour vos séminaires de rentrée ou retraites d'équipe. Conçue pour approfondir la cohésion, libérer la créativité collective et renforcer la sécurité psychologique."
     },
     "programTitle": {
       "en": "Build a Program for Your Team",
@@ -504,8 +496,12 @@
         "fr": "Séances de danse-mouvement thérapie de 60 minutes, dans un studio calme à Paris. Un espace pour se reconnecter au corps, s'exprimer, et intégrer son vécu."
       },
       "approachIntro": {
-        "en": "Dance Movement Therapy is a guided space to feel, express, and integrate emotions.",
-        "fr": "La danse-mouvement thérapie est un espace guidé pour sentir, exprimer et intégrer les émotions."
+        "en": "Dance Movement Therapy (DMT) is an established creative arts therapy practiced and researched globally since the 1960s. It is the psychotherapeutic use of movement to promote emotional, cognitive, physical, and social integration. The main premise is that body, mind, spirit are interconnected.",
+        "fr": "La danse-mouvement thérapie (DMT) est une art-thérapie reconnue, pratiquée et étudiée à l'échelle mondiale depuis les années 1960. Elle utilise le mouvement à des fins psychothérapeutiques pour favoriser l'intégration émotionnelle, cognitive, physique et sociale. Son principe fondateur repose sur l'interconnexion entre le corps, l'esprit et la psyché."
+      },
+      "approachBgTitle": {
+        "en": "Background & Training",
+        "fr": "Parcours et formation"
       },
       "quote": {
         "en": "When we meet our difficult experiences with care and tenderness, or with rawness and surrender, we come back to ourselves.",

@@ -123,7 +123,7 @@ const faqs = [
       </div>
     </div>
 
-    <div class="mx-auto mt-16 grid max-w-[92rem] items-start gap-12 px-8 md:px-16 lg:mt-24 lg:grid-cols-[1fr_minmax(16rem,22rem)] lg:gap-16 lg:px-20">
+    <div class="mx-auto mt-16 grid max-w-[92rem] items-start gap-12 px-8 md:px-16 lg:mt-24 lg:grid-cols-[1fr_minmax(16rem,22rem)] lg:items-end lg:gap-16 lg:px-20">
         <div data-fade-in style="--fade-delay: 80ms">
           <p class="font-founders text-step-2 font-light italic md:text-step-3" data-i18n={`${prefix}.introLead`}>
             {t(`${prefix}.introLead`)}
@@ -136,7 +136,7 @@ const faqs = [
           </p>
           <a
             href="#reserve"
-            class="font-nunito mt-8 inline-flex border border-charcoal px-6 py-2.5 text-step--1 font-light tracking-[0.22em] uppercase md:mt-10 md:px-10 md:py-3.5 md:tracking-[0.32em]"
+            class="font-nunito mt-8 inline-flex w-fit border border-charcoal px-9 py-3.5 text-step--1 font-light tracking-[0.28em] uppercase md:mt-10 lg:px-10"
             data-i18n="offers.bookCta"
           >
             {t('offers.bookCta')}
@@ -150,7 +150,7 @@ const faqs = [
           >
             {t('offers.detailsTitle')}
           </h2>
-          <dl class="font-nunito mt-5 space-y-1 text-step--1 font-light leading-[1.7]">
+          <dl class="font-nunito mt-5 space-y-1 font-light leading-[1.7] text-step--1">
             <div>
               <dt class="inline" data-i18n="offers.detailsFormatLabel">{t('offers.detailsFormatLabel')}</dt>
               <span>: </span>
@@ -223,7 +223,7 @@ const faqs = [
           />
         ) : (
           <p
-            class="font-nunito mt-4 max-w-[36em] text-step--1 leading-[1.7] font-light whitespace-pre-line md:text-step-0"
+            class="font-founders mt-4 max-w-[32em] text-step-1 font-light italic md:text-step-3"
             data-i18n={`${prefix}.approachIntro`}
             data-fade-in
           >
@@ -233,24 +233,47 @@ const faqs = [
       }
 
       {
+        offer.key === 'therapy' && (
+          <button
+            type="button"
+            class="font-nunito mt-8 inline-flex w-fit border border-charcoal px-10 py-3 text-step--1 font-light tracking-[0.32em] uppercase"
+            data-trainings-open
+            data-i18n={`${prefix}.approachBgTitle`}
+            data-i18n-aria-label="about.trainingsOpenAria"
+            aria-haspopup="dialog"
+            aria-controls="trainings-title"
+            aria-label={t('about.trainingsOpenAria')}
+            data-fade-in
+          >
+            {t(`${prefix}.approachBgTitle`)}
+          </button>
+        )
+      }
+
+      {
         offer.key !== 'yoga' && (
-      <div class="mt-16 flex flex-col gap-10 md:mt-20 md:gap-12">
+      <div
+        class:list={[
+          'flex flex-col gap-10 md:gap-12',
+          offer.key === 'therapy' ? 'mt-24 md:mt-32' : 'mt-16 md:mt-20',
+        ]}
+      >
         {
           pillars.map((pillar, index) => (
             <div
-              class="grid items-start gap-4 md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]"
+              class="grid items-start gap-4 md:grid-cols-[minmax(12rem,28%)_1fr] md:items-baseline md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]"
               data-fade-in
               style={`--fade-delay: ${index * 60}ms`}
             >
-              <div class="flex items-center gap-5">
-                <span class="hidden h-px flex-1 bg-charcoal/50 md:block"></span>
+              <div class="flex items-baseline gap-5 md:flex-row-reverse">
                 <p
-                  class="font-nunito w-full text-left text-step--1 leading-tight font-light tracking-[0.28em] uppercase md:w-auto md:shrink-0 md:text-right"
+                  class="font-nunito w-full text-left text-step--1 leading-tight font-medium tracking-[0.28em] uppercase md:w-auto md:shrink-0 md:text-right md:text-step-0"
                   data-i18n-html={pillar.label}
                   set:html={t(pillar.label)}
                 />
+                <span class="hidden h-px flex-1 self-center bg-charcoal/50 md:block"></span>
               </div>
-              <p class="font-nunito max-w-[38rem] text-step--1 leading-[1.7] font-light" data-i18n={pillar.body}>
+              <p class="font-nunito max-w-[38rem] text-step--1 leading-[1.7] font-light md:text-[18px]" data-i18n={pillar.body}>
                 {t(pillar.body)}
               </p>
             </div>
@@ -297,7 +320,7 @@ const faqs = [
                 </svg>
               </summary>
               <p
-                class="font-nunito px-6 py-4 text-step--2 leading-[1.65] font-light"
+                class="font-nunito px-6 py-4 text-step--1 leading-[1.65] font-light"
                 data-i18n={step.body}
               >
                 {t(step.body)}
@@ -313,7 +336,7 @@ const faqs = [
               </p>
               <div class="flex items-center gap-6 px-10 py-5">
                 <span class="h-px w-16 shrink-0 bg-charcoal/35"></span>
-                <p class="font-nunito max-w-[36rem] text-step--1 leading-[1.65] font-light" data-i18n={step.body}>
+                <p class="font-nunito max-w-[36rem] text-[18px] leading-[1.65] font-light" data-i18n={step.body}>
                   {t(step.body)}
                 </p>
               </div>

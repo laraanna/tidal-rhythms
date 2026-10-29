@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import { t } from '../i18n';
 import type { ImageMetadata } from 'astro';
 import CalendlyEmbed from './CalendlyEmbed.astro';
+import About from './About.astro';
 
 interface Props {
   photoLeft: ImageMetadata;
@@ -80,16 +81,16 @@ const contactEmail = t('work.detailsContact');
       </div>
     </div>
 
-    <div class="mx-auto mt-16 grid max-w-[92rem] items-start gap-12 px-8 md:px-16 lg:mt-24 lg:grid-cols-[1fr_minmax(16rem,22rem)] lg:gap-16 lg:px-20">
+    <div class="mx-auto mt-16 grid max-w-[92rem] items-start gap-12 px-8 md:px-16 lg:mt-24 lg:grid-cols-[1fr_minmax(16rem,22rem)] lg:items-end lg:gap-16 lg:px-20">
       <div data-fade-in style="--fade-delay: 80ms">
         <p
-          class="font-founders max-w-[22rem] text-step-2 font-light italic md:max-w-[32rem] md:text-step-3"
+          class="font-founders max-w-[22rem] text-step-2 font-light italic md:max-w-[38rem] md:text-step-3"
           data-i18n="work.introLead"
         >
           {t('work.introLead')}
         </p>
         <p
-          class="font-nunito mt-4 max-w-[36rem] text-step--1 leading-[1.7] font-light md:text-step-0"
+          class="font-nunito mt-4 max-w-[38rem] text-step--1 leading-[1.7] font-light whitespace-pre-line md:text-step-0"
           data-i18n="work.body"
         >
           {t('work.body')}
@@ -110,7 +111,7 @@ const contactEmail = t('work.detailsContact');
         >
           {t('work.detailsTitle')}
         </h2>
-        <dl class="font-nunito mt-5 space-y-1 text-step--1 font-light leading-[1.7]">
+        <dl class="font-nunito mt-5 space-y-1 text-step--1 leading-[1.7] font-light break-words">
           <div>
             <dt class="inline" data-i18n="work.detailsBasedLabel">{t('work.detailsBasedLabel')}</dt>
             <span>: </span>
@@ -132,6 +133,91 @@ const contactEmail = t('work.detailsContact');
           </div>
         </dl>
       </aside>
+    </div>
+
+    <div class="mx-auto mt-24 max-w-[92rem] px-8 md:mt-32 md:px-16 lg:px-20">
+      <h2
+        class="font-founders text-step-6 font-light md:text-step-8"
+        data-i18n="work.benefitsTitle"
+        data-fade-in
+      >
+        {t('work.benefitsTitle')}
+      </h2>
+      <div
+        class="mt-10 hidden items-end gap-12 md:mt-16 md:grid md:grid-cols-[minmax(12rem,28%)_1fr] lg:grid-cols-[minmax(14rem,32%)_1fr]"
+        data-fade-in
+      >
+        <p
+          class="font-founders text-right text-step-2 font-light italic md:text-step-3"
+          data-i18n="work.benefitsCol1"
+        >
+          {t('work.benefitsCol1')}
+        </p>
+        <p
+          class="font-founders text-step-2 font-light italic md:text-step-3"
+          data-i18n="work.benefitsCol2"
+        >
+          {t('work.benefitsCol2')}
+        </p>
+      </div>
+      <div class="mt-8 flex flex-col gap-10 md:mt-12 md:gap-12">
+        {
+          benefits.map((item, index) => (
+            <div
+              class="grid items-start gap-4 md:grid-cols-[minmax(12rem,28%)_1fr] md:items-baseline md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]"
+              data-fade-in
+              style={`--fade-delay: ${index * 60}ms`}
+            >
+              <div class="flex w-full items-baseline gap-5 md:flex-row-reverse">
+                <p
+                  class="font-nunito min-w-0 w-full text-left text-step--1 leading-[1.45] font-medium tracking-[0.28em] break-keep hyphens-none uppercase md:w-auto md:max-w-[18rem] md:text-right"
+                  data-i18n={item.label}
+                >
+                  {t(item.label)}
+                </p>
+                <span class="hidden h-px min-w-10 flex-1 self-center bg-charcoal/50 md:block"></span>
+              </div>
+              <p class="font-nunito max-w-[38rem] text-step--1 leading-[1.7] font-light md:text-[18px]" data-i18n={item.body}>
+                {t(item.body)}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+
+      <h2
+        class="font-founders mt-24 text-step-6 font-light md:mt-32 md:text-step-8"
+        data-i18n="work.formatsTitle"
+        data-fade-in
+      >
+        {t('work.formatsTitle')}
+      </h2>
+      <div class="mt-10 grid gap-4 md:mt-14 md:grid-cols-2 md:gap-5">
+        {
+          formats.map((item, index) => (
+            <article
+              class="bg-[#FFFFFF]/60 px-8 py-8 md:px-10 md:py-10"
+              data-fade-in
+              style={`--fade-delay: ${index * 60}ms`}
+            >
+              <p class="font-founders text-step-0 font-light tracking-[0.22em] text-charcoal/45">
+                {String(index + 1).padStart(2, '0')}
+              </p>
+              <h3
+                class="font-founders mt-4 text-step-3 leading-[1.2] font-light md:text-step-4"
+                data-i18n-html={item.label}
+                set:html={t(item.label)}
+              />
+              <p
+                class="font-nunito mt-4 max-w-[28rem] text-step--1 leading-[1.7] font-light md:text-[18px]"
+                data-i18n={item.body}
+              >
+                {t(item.body)}
+              </p>
+            </article>
+          ))
+        }
+      </div>
     </div>
   </section>
 
@@ -171,67 +257,7 @@ const contactEmail = t('work.detailsContact');
 
   <section class="relative z-10 bg-[#DDDDD3] px-8 py-20 md:px-16 md:py-28 lg:px-20 lg:py-32">
     <div class="mx-auto max-w-[92rem]">
-      <h2 class="font-founders text-step-6 font-light md:text-step-8" data-i18n="work.overviewTitle" data-fade-in>
-        {t('work.overviewTitle')}
-      </h2>
-      <p
-        class="font-founders mt-4 max-w-[36em] text-step-1 font-light md:text-step-3"
-        data-i18n="work.overviewBody"
-        data-fade-in
-      >
-        {t('work.overviewBody')}
-      </p>
-
-      <h2
-        class="font-founders mt-24 text-step-6 font-light md:mt-32 md:text-step-8"
-        data-i18n="work.benefitsTitle"
-        data-fade-in
-      >
-        {t('work.benefitsTitle')}
-      </h2>
-      <div
-        class="mt-10 hidden items-end gap-12 md:mt-16 md:grid md:grid-cols-[minmax(12rem,28%)_1fr] lg:grid-cols-[minmax(14rem,32%)_1fr]"
-        data-fade-in
-      >
-        <p
-          class="font-nunito text-right text-step--2 font-light tracking-[0.28em] uppercase"
-          data-i18n="work.benefitsCol1"
-        >
-          {t('work.benefitsCol1')}
-        </p>
-        <p
-          class="font-nunito text-step--2 font-light tracking-[0.28em] uppercase"
-          data-i18n="work.benefitsCol2"
-        >
-          {t('work.benefitsCol2')}
-        </p>
-      </div>
-      <div class="mt-8 flex flex-col gap-10 md:mt-12 md:gap-12">
-        {
-          benefits.map((item, index) => (
-            <div
-              class="grid items-start gap-4 md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]"
-              data-fade-in
-              style={`--fade-delay: ${index * 60}ms`}
-            >
-              <div class="flex items-center gap-5">
-                <span class="hidden h-px flex-1 bg-charcoal/50 md:block"></span>
-                <p
-                  class="font-nunito w-full text-left text-step--1 leading-tight font-light tracking-[0.28em] uppercase md:w-auto md:shrink-0 md:text-right"
-                  data-i18n={item.label}
-                >
-                  {t(item.label)}
-                </p>
-              </div>
-              <p class="font-nunito max-w-[38rem] text-step--1 leading-[1.7] font-light" data-i18n={item.body}>
-                {t(item.body)}
-              </p>
-            </div>
-          ))
-        }
-      </div>
-
-      <div class="mt-24 md:mt-32 md:grid md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]">
+      <div class="md:grid md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]">
         <div class="hidden md:block"></div>
         <div data-fade-in>
           <h2 class="font-founders text-step-6 font-light md:text-step-8" data-i18n="work.sessionTitle">
@@ -280,7 +306,7 @@ const contactEmail = t('work.detailsContact');
               </p>
               <div class="flex items-center gap-6 px-10 py-5">
                 <span class="h-px w-16 shrink-0 bg-charcoal/35"></span>
-                <p class="font-nunito max-w-[36rem] text-step--1 leading-[1.65] font-light" data-i18n={step.body}>
+                <p class="font-nunito max-w-[36rem] text-[18px] leading-[1.65] font-light" data-i18n={step.body}>
                   {t(step.body)}
                 </p>
               </div>
@@ -302,7 +328,7 @@ const contactEmail = t('work.detailsContact');
           {t('work.accessTitle')}
         </h2>
         <p
-          class="font-nunito mt-4 max-w-[36rem] text-step--1 leading-[1.7] font-light"
+          class="font-nunito mt-4 max-w-[36rem] text-step--1 leading-[1.7] font-light md:text-[18px]"
           data-i18n="work.accessBody"
         >
           {t('work.accessBody')}
@@ -310,39 +336,11 @@ const contactEmail = t('work.detailsContact');
       </div>
     </div>
   </section>
+</article>
 
-  <section class="px-8 pb-10 md:px-16 md:pb-32 lg:px-20">
-    <div class="mx-auto max-w-[92rem]">
-      <h2 class="font-founders text-step-6 font-light md:text-step-8" data-i18n="work.formatsTitle" data-fade-in>
-        {t('work.formatsTitle')}
-      </h2>
-      <div class="mt-8 flex flex-col gap-6 md:mt-20 md:gap-12">
-        {
-          formats.map((item, index) => (
-            <div
-              class="grid items-start gap-4 md:grid-cols-[minmax(12rem,28%)_1fr] md:gap-12 lg:grid-cols-[minmax(14rem,32%)_1fr]"
-              data-fade-in
-              style={`--fade-delay: ${index * 60}ms`}
-            >
-              <div class="flex items-center gap-5">
-                <span class="hidden h-px flex-1 bg-charcoal/50 md:block"></span>
-                <p
-                  class="font-nunito w-full text-left text-step--1 leading-tight font-light tracking-[0.28em] uppercase md:w-auto md:shrink-0 md:text-right"
-                  data-i18n-html={item.label}
-                  set:html={t(item.label)}
-                />
-              </div>
-              <p class="font-nunito max-w-[38rem] text-step--1 leading-[1.7] font-light" data-i18n={item.body}>
-                {t(item.body)}
-              </p>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
+<About />
 
-  <section id="reserve" class="px-8 pt-12 pb-24 md:px-16 md:pt-4xl md:pb-32 lg:px-20">
+<section id="reserve" class="bg-[#DDDDD3] text-charcoal px-8 pt-12 pb-24 md:px-16 md:pt-4xl md:pb-32 lg:px-20">
     <h2
       class="font-founders text-center text-step-6 font-light md:text-step-8"
       data-i18n="work.programTitle"
@@ -359,4 +357,3 @@ const contactEmail = t('work.detailsContact');
       <CalendlyEmbed url={calendly} label={t('work.bookCta')} />
     </div>
   </section>
-</article>
